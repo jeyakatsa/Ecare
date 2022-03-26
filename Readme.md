@@ -1,8 +1,6 @@
 # Mona Lisa
 ## A New Kind of Ethereum Token
 
-### ERC-20 tokens vs. Fiat currencies vs. MonaLisa tokens:
-
 ![](https://i.imgur.com/EanU6S8.jpg)
 
 ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts whereas Fiat currencies are used solely as exchange barters for goods and services.
