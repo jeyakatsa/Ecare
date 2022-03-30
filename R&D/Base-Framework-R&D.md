@@ -32,4 +32,20 @@ contract myToken is ERC20{
   }
 }
 ```
+### Steps to test an Ethereum smart contract
+1. Try to run all your smart contract methods like transfer, total supply, and balance(in the above smart contract example). These methods are present at the right-hand side of the remix window and you can run all the processes from there itself.
+2. Try to transfer some tokens to other ethereum wallet addresses and then check the balance of that address by calling the balance method.
+3. Try to get total supply by running the total supply method.
+
+### Steps to deploy Ethereum Smart Contracts
+1. To make your smart contract live, switch to the main ethereum network at metamask
+2. Add some real ethers.
+3. Now again, deploy your smart contract using remix as mentioned in the above steps.
+4. When a smart contract is deployed successfully, visit http://www.etherscan.io and search your smart contract address there. Select your smart contract.
+5. Now you need to verify your smart contract here, click “verify the contract.”
+6. Copy your smart contract code and paste it at Etherscan. Select the same compiler version that you selected at remix to compile your code.
+7. Check “optimization” to Yes, if you had selected optimization at remix; otherwise, select No.
+8. Click Verify.
+9. It will take a few minutes and your smart contract will be live if no issue occurs.
+10. You can now run your smart contract methods at Etherscan.
 
