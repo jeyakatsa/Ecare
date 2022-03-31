@@ -49,3 +49,17 @@ contract myToken is ERC20{
 9. It will take a few minutes and your smart contract will be live if no issue occurs.
 10. You can now run your smart contract methods at Etherscan.
 
+### Tools and Technologies
+#### Truffle
+An Ethereum development framework that allows developers to write and test smart contracts. Written in JavaScript, Truffle contains a compiler for the Solidity programming language. Truffle Contract is a JavaScript library that allows importing of compiled smart contracts.
+#### Web3.js
+An Ethereum JavaScript API that interacts with the Ethereum network via RPC calls.
+#### Visual Studio Code
+A functional code editor.
+#### Ganache CLI
+An Ethereum remote procedure call client within the Truffle framework that is also known as TestRPC.
+#### Parity
+A secure and fast Ethereum client for handling Ethereum accounts and tokens.
+#### Node.js
+A javascript runtime environment used for server-side programming. Node.js is required to test the Ethereum smart contract’s functionality while ensuring its secure and proper operation. You need to install a package manager, for example, Yarn along with Node.js.
+
