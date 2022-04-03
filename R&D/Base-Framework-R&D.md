@@ -63,3 +63,7 @@ A secure and fast Ethereum client for handling Ethereum accounts and tokens.
 #### Node.js
 A javascript runtime environment used for server-side programming. Node.js is required to test the Ethereum smart contract’s functionality while ensuring its secure and proper operation. You need to install a package manager, for example, Yarn along with Node.js.
 
+## Specific Steps Notes:
+- https://www.toptal.com/ethereum/create-erc20-token-tutorial
+- https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
+
