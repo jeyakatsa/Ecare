@@ -63,7 +63,26 @@ A secure and fast Ethereum client for handling Ethereum accounts and tokens.
 #### Node.js
 A javascript runtime environment used for server-side programming. Node.js is required to test the Ethereum smart contract’s functionality while ensuring its secure and proper operation. You need to install a package manager, for example, Yarn along with Node.js.
 
-## Specific Steps Notes:
+### Expanded Steps:
+
+#### Total Supply
+For the needs of our ECR20 tutorial, we shall use the simplest approach: Set the total amount of tokens at contract creation time and initially assign all of them to the “contract owner” i.e. the account that deployed the smart contract:
+
+```solidity
+uint256 totalSupply_;
+constructor(uint256 total) public {
+   totalSupply_ = total;
+   balances[msg.sender] = _totalSupply;
+}
+```
+
+A constructor is a special function automatically called by Ethereum right after the contract is deployed. It is typically used to initialize the token’s state using parameters passed by the contract’s deploying account.
+
+msg is a global variable declared and populated by Ethereum itself. It contains important data for performing the contract. The field we are using here: msg.sender contains the Ethereum account executing the current contract function.
+
+Only the deploying account can enter a contract’s constructor. When the contract is started up, this function allocates available tokens to the ‘contract owner’ account.
+
+#### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
 
