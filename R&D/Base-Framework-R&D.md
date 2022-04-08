@@ -82,6 +82,40 @@ msg is a global variable declared and populated by Ethereum itself. It contains 
 
 Only the deploying account can enter a contract’s constructor. When the contract is started up, this function allocates available tokens to the ‘contract owner’ account.
 
+#### Get Total Token Supply
+```solidity
+function totalSupply() public view returns (uint256) {
+  return totalSupply_;
+}
+```
+This function will return the number of all tokens allocated by this contract regardless of owner.
+
+#### Get Token Balance of Owner
+```solidity
+function balanceOf(address tokenOwner) public view returns (uint) {
+  return balances[tokenOwner];
+}
+```
+
+`balanceOf` will return the current token balance of an account, identified by its owner’s address.
+
+#### Transfer Tokens to Another Account
+```solidity
+function transfer(address receiver,
+                 uint numTokens) public returns (bool) {
+  require(numTokens <= balances[msg.sender]);
+  balances[msg.sender] = balances[msg.sender] — numTokens;
+  balances[receiver] = balances[receiver] + numTokens;
+  emit Transfer(msg.sender, receiver, numTokens);
+  return true;
+}
+```
+As its name suggests, the transfer function is used to move `numTokens` amount of tokens from the owner’s balance to that of another user, or receiver. The transferring owner is `msg.sender` i.e. the one executing the function, which implies that only the owner of the tokens can transfer them to others.
+
+Solidity’s way of asserting a predicate is require. In this case that the transferring account has a sufficient balance to execute the transfer. If a require statement fails, the transaction is immediately rolled back with no changes written into the blockchain.
+
+Right before exiting, the function fires ERC20 event Transfer allowing registered listeners to react to its completion.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
