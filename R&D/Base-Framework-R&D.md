@@ -116,6 +116,59 @@ Solidity’s way of asserting a predicate is require. In this case that the tran
 
 Right before exiting, the function fires ERC20 event Transfer allowing registered listeners to react to its completion.
 
+#### Approve Delegate to Withdraw Tokens
+This function is most often used in a token marketplace scenario.
+
+```solidity
+function approve(address delegate,
+                uint numTokens) public returns (bool) {
+  allowed[msg.sender][delegate] = numTokens;
+  emit Approval(msg.sender, delegate, numTokens);
+  return true;
+}
+```
+
+What approve does is to allow an owner i.e. msg.sender to approve a delegate account — possibly the marketplace itself — to withdraw tokens from his account and to transfer them to other accounts.
+
+As you can see, this function is used for scenarios where owners are offering tokens on a marketplace. It allows the marketplace to finalize the transaction without waiting for prior approval.
+
+At the end of its execution, this function fires an Approval event.
+
+#### Get Number of Tokens Approved for Withdrawal
+
+```solidity
+function allowance(address owner,
+                  address delegate) public view returns (uint) {
+  return allowed[owner][delegate];
+}
+```
+
+This function returns the current approved number of tokens by an owner to a specific delegate, as set in the approve function.
+
+#### Transfer Tokens by Delegate
+
+The transferFrom function is the peer of the approve function, which we discussed previously. It allows a delegate approved for withdrawal to transfer owner funds to a third-party account.
+
+```solidity
+function transferFrom(address owner, address buyer,
+                     uint numTokens) public returns (bool) {
+  require(numTokens <= balances[owner]);
+  require(numTokens <= allowed[owner][msg.sender]);
+  balances[owner] = balances[owner] — numTokens;
+  allowed[owner][msg.sender] =
+        allowed[from][msg.sender] — numTokens;
+  balances[buyer] = balances[buyer] + numTokens;
+  Transfer(owner, buyer, numTokens);
+  return true;
+}
+```
+
+The two require statements at function start are to verify that the transaction is legitimate, i.e. that the owner has enough tokens to transfer and that the delegate has approval for (at least) numTokens to withdraw.
+
+In addition to transferring the numTokens amount from owner to buyer, this function also subtracts numTokens from the delegate’s allowance. This basically allows a delegate with a given allowance to break it into several separate withdrawals, which is typical marketplace behavior.
+
+We could stop here and have a valid ERC20 implementation. However, we want to go a step further, as we want an industrial strength token. This requires us to make our code a bit more secure, though we will still be able to keep the token relatively simple, if not basic.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
