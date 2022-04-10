@@ -169,6 +169,46 @@ In addition to transferring the numTokens amount from owner to buyer, this funct
 
 We could stop here and have a valid ERC20 implementation. However, we want to go a step further, as we want an industrial strength token. This requires us to make our code a bit more secure, though we will still be able to keep the token relatively simple, if not basic.
 
+#### SafeMath Solidity Library
+
+SafeMath is a Solidity library aimed at dealing with one way hackers have been known to break contracts: integer overflow attack. In such an attack, the hacker forces the contract to use incorrect numeric values by passing parameters that will take the relevant integers past their maximal values.
+
+SafeMath protects against this by testing for overflow before performing the arithmetic action, thus removing the danger of overflow attack. The library is so small that the impact on contract size is minimal, incurring no performance and little storage cost penalties.
+
+```solidity
+library SafeMath { // Only relevant functions
+function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+  assert(b <= a);
+  return a — b;
+}
+function add(uint256 a, uint256 b) internal pure returns (uint256)   {
+  uint256 c = a + b;
+  assert(c >= a);
+  return c;
+}
+}
+```
+
+SafeMath uses `assert` statements to verify the correctness of the passed parameters. Should assert fail, the function execution will be immediately stopped and all blockchain changes shall be rolled back.
+
+Next, let us add the following statement introducing the library to the Solidity compiler:
+
+```solidity
+using SafeMath for uint256;
+```
+
+Then, we replace the naive arithmetics we used at the beginning with SafeMath functions:
+
+```solidity
+balances[msg.sender] = balances[msg.sender].sub(numTokens);
+balances[receiver] = balances[receiver].add(numTokens);
+balances[buyer] = balances[buyer].add(numTokens);
+balances[owner] = balances[owner].sub(numTokens);
+```
+
+##### PACKING IT ALL TOGETHER
+In Solidity, a smart contract’s functions and events are wrapped into an entity called a contract which you can silently translate to a “blockchain class.” Below is the ERC20-compatible contract we created, including a Gist of our code. The name and symbol fields can be changed at will. Most tokens keep the decimal value at 18, so we will do the same.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
