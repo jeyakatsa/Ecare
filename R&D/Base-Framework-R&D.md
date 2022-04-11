@@ -209,7 +209,33 @@ balances[owner] = balances[owner].sub(numTokens);
 ##### PACKING IT ALL TOGETHER
 In Solidity, a smart contract’s functions and events are wrapped into an entity called a contract which you can silently translate to a “blockchain class.” Below is the ERC20-compatible contract we created, including a Gist of our code. The name and symbol fields can be changed at will. Most tokens keep the decimal value at 18, so we will do the same.
 
+#### Contract creation
+The first and most important part of deploying a smart contract is the actual creation of the contract. According to the Ethereum yellow paper, the base cost of a create operation is a whopping 32,000 gas, and added to that is the base cost of 21,000 gas for entering a new transaction onto the block itself. This alone puts the creation price at 53,000 gas.
+
+Given that: `3,000 Gas * 0.0000001 Ether per Gas * $4000 per Ether = $21.20`
+
+That is $21 for the deployment of the contract itself. This is far from the final cost, as we will see, but this is still a sizeable cost for simply initializing a blank contract.
+
+For larger applications such as a platform like a pancake swap, their application is not a single contract but a collection of contracts all talking and working together. There will be multiple deployments, each of which needs to pay this fee. That is $21 per empty contract. See their open-source repo here:
+
+#### Contract storage
+Contracts also need to be stored somewhere. Ethereum has a cost for storage according to the whitepaper of 20,000 gas per 256 bits. A kilobyte of data adds up to a whopping 640,000 gas or just over $250 dollars.
+
+So how big is our contract in this example? We can gauge this by checking similar sizes of other contracts.
+
+Using Ether-scan (a site to explore the state of the chain) to find a few example contracts like so:
+https://etherscan.io/tx/0xeed6c791744af81bde027c6bcb2ac927b6d7964535edfc434c060fec7d24de2b
+https://etherscan.io/tx/0x28c44bb10d469cbd42accf97bd00b73eabbace138e9d44593e851231fbed1cb7
+
+We can see that these contracts are running about 8KB in length. These are large and popular examples, so our simple example can be smaller, but it’s good to know they exist.
+If we were asking for 8KB to store our bytecode at 640,000 gas per KB, we get a price of over $2000!
+
+`8 KB * 640000 Gas Each * 0.0000001 Ether * $4000 = $2048`
+
+That is one expensive contract! The ones I cited there were deployed on particularly high gas-cost days, with one of them guzzling 6 million gas at 300 Gwei each. Not a cheap operation at all.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
+- https://medium.com/the-capital/how-much-does-it-cost-to-deploy-a-smart-contract-on-ethereum-11bcd64da1
 
