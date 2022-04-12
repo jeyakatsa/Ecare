@@ -234,6 +234,18 @@ If we were asking for 8KB to store our bytecode at 640,000 gas per KB, we get a 
 
 That is one expensive contract! The ones I cited there were deployed on particularly high gas-cost days, with one of them guzzling 6 million gas at 300 Gwei each. Not a cheap operation at all.
 
+#### Contract execution
+Now that we have committed to deploying the contract and have paid the cost to store it, it’s finally time to run it! The last step for Ethereum is to run the initialization function of the contract. This is a block of code that is written to allocate and variables or do whatever else you want on deployment.
+This is the most variable of all the costs as depending on what you want to do here, it could be free, or it could be the largest price by far. 
+
+Allocation of memory for a contract costs 200 Gwei per byte, which is expensive, to say the least. If your application was memory-hungry and wanted to take up a single gigabyte for internal storage it would cost over 80 MILLION DOLLARS:
+
+`1 Billion Bytes * 200 Gas* 0.0000001 Ether * $4000 = $80,000,000`
+
+Choose to be more conservative with memory and take a few kilobytes of data for internal states and user data. What would this cost? $1600.
+
+`20,000 Bytes * 200 Gas Each * 0.0000001 Ether per Gwei * 4000 Dolars`
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
