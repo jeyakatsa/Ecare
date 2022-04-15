@@ -244,7 +244,15 @@ Allocation of memory for a contract costs 200 Gwei per byte, which is expensive,
 
 Choose to be more conservative with memory and take a few kilobytes of data for internal states and user data. What would this cost? $1600.
 
-`20,000 Bytes * 200 Gas Each * 0.0000001 Ether per Gwei * 4000 Dolars`
+`20,000 Bytes * 200 Gas Each * 0.0000001 Ether per Gwei * 4000 Dolars`4
+
+#### In Closing
+Simply put, Ethereum’s main chain is suffering from multiple compounding issues at once.
+1. Ether is surging in price, meaning everything is more expensive when converted to USD.
+2. The network has a limited bandwidth, with limited space, this is increasingly causing bidding wars for space on blocks.
+3. The network is hitting major network effects. As everyone floods onto the platform, the value of the platform rises, and thus people are willing to pay more and more to join the party.
+
+At the end of the day, deployment to the Ethereum main chain is likely a bad idea for most projects. If you are looking for alternatives, there are many layer-2-chains that boast much lower prices and many of the benefits Ethereum brings.
 
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
