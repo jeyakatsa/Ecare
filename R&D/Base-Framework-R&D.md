@@ -1,6 +1,6 @@
-## Base Framework Research & Development
+# Base Framework Research & Development
 
-### Basic Smart-Contract Framework:
+## Basic Smart-Contract Framework:
 
 ```solidity
 pragma solidity ^0.4.0;
@@ -270,7 +270,7 @@ So how does it work?
 
 Liquidity Providers, also known as LPs, form a market by depositing two tokens of equivalent value, which can either be an ETH and an ERC-20 token or two ERC20 tokens. Mostly, these pools are made of stablecoins like DAI. Liquidity providers get liquidity tokens in return, which:
 
--depict their share in the liquidity pool
+- depict their share in the liquidity pool
 - can be redeemed for the share they represent.
 
 The main idea behind Uniswap is that the total liquidity in the liquidity pool must remain constant. Let’s understand this with the help of an example.
