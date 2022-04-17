@@ -254,6 +254,33 @@ Simply put, Ethereum’s main chain is suffering from multiple compounding issue
 
 At the end of the day, deployment to the Ethereum main chain is likely a bad idea for most projects. If you are looking for alternatives, there are many layer-2-chains that boast much lower prices and many of the benefits Ethereum brings.
 
+## Exchange (Uniswap possibility)
+Contrary to the traditional architecture of the “order book” model which many crypto exchange platforms use, Uniswap works with the help of the following two components:
+
+- Liquidity Pools
+- Constant Product Market Maker Protocol
+
+### Liquidity Pools
+Simply defined, liquidity pools refer to token pools locked in smart contracts. They provide liquidity to facilitate trading. Several decentralized exchange platforms use liquidity pools.
+
+### Constant Product Market Maker Protocol
+The constant product market maker protocol is a form of the much known automated market maker (AMM) model. Basically, automated market makers are smart contracts that hold liquidity pools. These pools are funded by liquidity providers so that the traders can trade against these pools. Traders pay a fee to the pool in return, which is proportionally divided among the liquidity providers, according to their shares. The constant product market maker protocol works similarly, along with the advantage that any token can be added to Uniswap if it is funded with an equal value of ETH or ERC20 token being traded.
+
+So how does it work?
+
+Liquidity Providers, also known as LPs, form a market by depositing two tokens of equivalent value, which can either be an ETH and an ERC-20 token or two ERC20 tokens. Mostly, these pools are made of stablecoins like DAI. Liquidity providers get liquidity tokens in return, which:
+
+-depict their share in the liquidity pool
+- can be redeemed for the share they represent.
+
+The main idea behind Uniswap is that the total liquidity in the liquidity pool must remain constant. Let’s understand this with the help of an example.
+
+The liquidity pool we’ll take into consideration is the ETH/USDT liquidity pool. Let’s refer to the ETH portion as x and the USDT portion as y. To calculate the pool’s total liquidity (which we will consider as k), Uniswap multiplies these two quantities: **x x y = k**
+
+So, if you buy 1 ETH for 300 USDT via the ETH/USDT liquidity pool, you increase the USDT portion and reduce the ETH portion of the pool. This implies that the price of ETH will rise because k must remain constant, so the price of ETH is based on how much shift the given transaction/trade causes between x and y. This is the mechanism that determines the pricing. Hence, it is conceivable that with large liquidity pools, it is easier to process large trades as the shift between x and y is lower as compared to smaller liquidity pools.
+
+This mechanism brings us to the concept of impermanent losses. 
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
