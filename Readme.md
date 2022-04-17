@@ -13,7 +13,7 @@ The goal for MonaLisa tokens are for them to be exchanged into and out of both E
 
 ### Exchange Rate Mechanics:
 
-***MonaLisa tokens will act as "Personal Currencies"*** so in order for them to be successfully exchanged, they will need the consent of both parties *(like trading one NFT for another OR specifically speaking, trading 1 Yuan for 1 Dollar, or 50 Yuans for 1 Dollar, etc)*.
+In order for them to be successfully exchanged, they will need the consent of both parties *(like trading one NFT for another OR specifically speaking, trading 1 Yuan for 1 Dollar, or 50 Yuans for 1 Dollar, etc)*.
 
 **Scenario 1:** *Party A agrees to exchange 1 of their Tokens for 1 Token from Party B.*
 
