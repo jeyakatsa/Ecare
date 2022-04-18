@@ -1,5 +1,9 @@
 # Base Framework Research & Development
 
+## Contents:
+- [Basic Smart-Contract Framework](#basic-smart-contract-framework)
+- [Exchange Launching](#exchange-launching)
+
 ## Basic Smart-Contract Framework:
 
 ```solidity
@@ -254,7 +258,9 @@ Simply put, Ethereum’s main chain is suffering from multiple compounding issue
 
 At the end of the day, deployment to the Ethereum main chain is likely a bad idea for most projects. If you are looking for alternatives, there are many layer-2-chains that boast much lower prices and many of the benefits Ethereum brings.
 
-## Exchange (Uniswap possibility)
+## Exchange Launching
+
+### Uniswap
 Contrary to the traditional architecture of the “order book” model which many crypto exchange platforms use, Uniswap works with the help of the following two components:
 
 - Liquidity Pools
@@ -294,6 +300,7 @@ At this price, according to your 10% share, you own 0.5 ETH and 200 USDT (total 
 
 - when the price of ETH returns to its original value, i.e., 100 USDT.
 - by earning LP fees over time.
+
 However, if you withdraw your funds at this time, then your loss will become permanent as you’ll only receive a total value of 400 USDT.
 
 #### More Info:
