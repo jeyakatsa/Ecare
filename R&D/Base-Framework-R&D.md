@@ -281,6 +281,21 @@ So, if you buy 1 ETH for 300 USDT via the ETH/USDT liquidity pool, you increase 
 
 This mechanism brings us to the concept of impermanent losses. 
 
+### Impermanent Losses
+Liquidity providers earn a fee in exchange for providing liquidity for traders to swap tokens. But often, liquidity providers don’t take every aspect into account while providing liquidity to the pools. One such aspect is impermanent losses, which you’ll understand better with the help of an example.
+
+Suppose there is a pool on Uniswap with 10 ETH and 1,000 USDT, and you deposit 1 ETH and 100 USDT in it. Token pairs have to be of equal value, which implies:
+
+**Price of 1 ETH = 100 USDT**
+
+This implies that you have a 10% share of the pool. The total liquidity here will be 10,000. If a few trades take place and cause a shift in the ratio of USDT and ETH to 2,000 and 5 respectively, the price of 1 ETH will rise to 400 USDT. Why? The reason behind this is precisely what we discussed earlier, i.e., the total liquidity must be constant. So, the arbitrage traders will remove ETH and add USDT to the pool until the ratio stabilizes.
+
+At this price, according to your 10% share, you own 0.5 ETH and 200 USDT (total 400 USDT), which is lesser than what you had deposited (total 500 USDT at this price). The loss here is “impermanent” because as long as you don’t withdraw your funds from the pool, this loss can be recovered or balanced:
+
+- when the price of ETH returns to its original value, i.e., 100 USDT.
+- by earning LP fees over time.
+However, if you withdraw your funds at this time, then your loss will become permanent as you’ll only receive a total value of 400 USDT.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
