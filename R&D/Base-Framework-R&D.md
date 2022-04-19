@@ -303,6 +303,27 @@ At this price, according to your 10% share, you own 0.5 ETH and 200 USDT (total 
 
 However, if you withdraw your funds at this time, then your loss will become permanent as you’ll only receive a total value of 400 USDT.
 
+### Create an Exchange
+The first thing you need to do is create an exchange so that Uniswap knows about your token. You may take the following steps to create an exchange:
+
+Step 1: Go to https://uniswap.exchange/ This screen will appear.
+
+Listing Tokens on Uniswap ExchangeStep 2: Connect with your MetaMask Wallet.
+
+Uniswap Exchange - Connect with your MetaMask WalletAs you can see, it will give a few other options to connect a wallet and ask you to download MetaMask if you haven’t done it already.
+
+Step 3: Select the “Pool” option on the upper right corner of the screen.
+
+Step 4: Select “Create Exchange”
+
+Step 5: Press the “Select a Token”option.
+
+Step 6: Enter your token’s address in the “Search Name or Address” field. Now select your token from the dropdown.
+
+Step 7: Click on the “Create Exchange”option.
+
+Step 8: A pop-up will show up. Click on the “Confirm” option.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
