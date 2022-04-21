@@ -324,6 +324,25 @@ Step 7: Click on the “Create Exchange”option.
 
 Step 8: A pop-up will show up. Click on the “Confirm” option.
 
+### Add Liquidity
+Now that you have created an exchange for your tokens, it is time to add liquidity. You will have to deposit both ETH and your own token. The price will be set according to how many tokens you deposit. Why? Because, as we discussed earlier, the tokens are supposed to be deposited in pairs and should be of equal value, as the total liquidity of the pool must remain constant. Hence, if you deposit 1 ETH with 1 of your token, then it would imply that your token price will be equal to 1 ETH.
+
+Step 1:Click on the dropdown on the same page and press “Add Liquidity.”
+
+Step 2: Put in the amount of ETH you wish to deposit.
+
+Step 3: Now select the “Select a Token” option.
+
+Step 4: Enter your token’s address in the “Token Address” field and select your token from the dropdown.
+
+Step 5: Press the “Unlock” option. You’ll find it next to your token symbol.
+
+Step 6: Click on “Confirm” once the pop-up shows up. Your transaction will be confirmed.
+
+Step 7: Now, in the same way, enter the amount of your tokens you wish to deposit. Make sure to check the calculated exchange rate.
+
+Step 8: Now, select the “Add Liquidity” option and click “Confirm” once the pop-up shows up.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
