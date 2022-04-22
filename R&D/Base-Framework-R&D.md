@@ -343,6 +343,23 @@ Step 7: Now, in the same way, enter the amount of your tokens you wish to deposi
 
 Step 8: Now, select the “Add Liquidity” option and click “Confirm” once the pop-up shows up.
 
+### Remove Liquidity
+Suppose you sell your tokens to investors and wish to remove your liquidity/deposits from the platform. You may follow the following steps to do so:
+
+Step 1: Go to https://uniswap.exchange/remove-liquidity.
+
+Step 2:Press the “Select a Token” option.
+
+Step 3: Put in your token’s address in the “Token Address”field.
+
+Step 4:Choose your token from the dropdown.
+
+Step 5: Uniswap will provide you with your pool’s balance. Enter the amount you wish to withdraw.
+
+Step 6: Uniswap will show you the funds you’ll receive for both ETH and your token. Press the “Remove Liquidity” option.
+
+Step 7: Select the “Confirm” option when the MetaMask pop-up shows up.
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
