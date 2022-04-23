@@ -360,6 +360,14 @@ Step 6: Uniswap will show you the funds you’ll receive for both ETH and your t
 
 Step 7: Select the “Confirm” option when the MetaMask pop-up shows up.
 
+### Conclusion/Cost Analysis
+The main cost involved is with the base asset of the liquidity pool. There’s no exact answer as to how much is a good starting point as it depends on expected trading volumes and how much supply and demand for the new token there will be. As a rough estimate I think five times the expected daily trading volume would be a good place to start but each pool will be different.
+
+The cost of deploying the contracts and setting up the liquidity pool were as follows:
+
+Deployment of the ERC20 Token cost 0.0649833 ETH
+Deployment of the liquidity pool cost 0.031548 ETH
+
 #### More Info:
 - https://www.toptal.com/ethereum/create-erc20-token-tutorial
 - https://blog.logrocket.com/create-deploy-erc-20-token-ethereum-blockchain/
