@@ -359,6 +359,12 @@ Step 5: Uniswap will provide you with your pool’s balance. Enter the amount yo
 Step 6: Uniswap will show you the funds you’ll receive for both ETH and your token. Press the “Remove Liquidity” option.
 
 Step 7: Select the “Confirm” option when the MetaMask pop-up shows up.
+To show the tokens in Metamask go to Assets then Add Token then paste the contract address in.
+
+So to summarise we have two addresses:
+
+- A public key address, this is our personal address which we set up on metamask to move funds around and pay for transaction fees. It also has unique ownership rights to the token contract which enables us to mint new tokens and carry out other administrative tasks.
+- A contract address where the token is deployed which is used to access the contract functions. You can think of the contract address as the location at which your new token exists on the Ethereum network. It will be used when we setup a liquidity pool.
 
 ### Conclusion/Cost Analysis
 The main cost involved is with the base asset of the liquidity pool. There’s no exact answer as to how much is a good starting point as it depends on expected trading volumes and how much supply and demand for the new token there will be. As a rough estimate I think five times the expected daily trading volume would be a good place to start but each pool will be different.
