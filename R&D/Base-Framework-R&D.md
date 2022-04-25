@@ -361,6 +361,22 @@ Step 6: Uniswap will show you the funds you’ll receive for both ETH and your t
 Step 7: Select the “Confirm” option when the MetaMask pop-up shows up.
 To show the tokens in Metamask go to Assets then Add Token then paste the contract address in.
 
+## Minting Tokens Using Truffle Console
+While we are in the truffle console we can interact with the deployed contract. Let’s first create an instance of it using the command
+
+`const instance = await myToken.deployed();`
+
+Then let’s try minting tokens to an address, so copy and paste the public key address from metamask or the truffle output in to the following command:
+
+`instance.mint('0x...','1000000000000000000000');`
+
+Note that both fields are strings encapsulated in quotes. Also the value is the lowest denomination and by default the contract is set to 18 decimals so this will mint 1000 whole tokens. If we enter our public key address into the Ropsten ethernet explorer we will see these tokens in our account. We can also transfer and check balances from within Truffle.
+
+```
+instance.transfer('0x...','500000000000000000000');
+instance.balanceOf('0x...');
+```
+
 So to summarise we have two addresses:
 
 - A public key address, this is our personal address which we set up on metamask to move funds around and pay for transaction fees. It also has unique ownership rights to the token contract which enables us to mint new tokens and carry out other administrative tasks.
