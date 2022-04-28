@@ -86,6 +86,27 @@ msg is a global variable declared and populated by Ethereum itself. It contains 
 
 Only the deploying account can enter a contract’s constructor. When the contract is started up, this function allocates available tokens to the ‘contract owner’ account.
 
+#### Set the events of the token
+We will declare the events Transfer and Approval inside our contract:
+
+```solidity
+event Transfer(address indexed from, address indexed to, uint tokens);
+
+event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
+```
+
+#### Set the name, symbol, and decimal of the token
+
+Next, we set the name of our token, its symbol, and the decimal to use:
+
+```solidity
+string public constant name = "ND Coin";
+string public constant symbol = "NDN";
+uint8 public constant decimals = 18;
+```
+
+Our token name is ND Coin and our symbol is NDN. We set the decimals to be 18.
+
 #### Get Total Token Supply
 ```solidity
 function totalSupply() public view returns (uint256) {
