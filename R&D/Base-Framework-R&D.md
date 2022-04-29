@@ -107,6 +107,29 @@ uint8 public constant decimals = 18;
 
 Our token name is ND Coin and our symbol is NDN. We set the decimals to be 18.
 
+#### Set the balances and allowances map
+
+```solidity
+mapping(address => uint256) balances;
+
+mapping(address => mapping (address => uint256)) allowed;
+```
+
+A mapping in Solidity is similar to a key-value pair. So in the balances, an address is the key while the uint256 (unsigned integer of 256 bits) is the value.
+
+According to the Solidity docs, an address type is a 160-bit value that does not allow any arithmetic operations. It is suitable for storing addresses of contracts, or a hash of the public half of a key pair belonging to external accounts.
+
+The balances maps an address to a uint256 int:
+
+```
+Address	uint256
+0x01	23
+0x02	10
+0x03	2
+```
+
+An address refers to its balance. The allowed mapping is also a key-value pair that maps addresses to another mapping. This last mapping maps addresses to their unit256 values. It allows you to store the number of tokens that can be transferred to a recipient.
+
 #### Get Total Token Supply
 ```solidity
 function totalSupply() public view returns (uint256) {
