@@ -185,6 +185,36 @@ Solidity’s way of asserting a predicate is require. In this case that the tran
 
 Right before exiting, the function fires ERC20 event Transfer allowing registered listeners to react to its completion.
 
+#### Approve a token transfer
+
+The next method is approve:
+```solidity
+function approve(address delegate, uint numTokens) public returns (bool) {
+    allowed[msg.sender][delegate] = numTokens;
+    emit Approval(msg.sender, delegate, numTokens);
+    return true;
+}
+```
+
+This method has arguments called delegate and numTokens.
+
+- `delegate` is the address we want to set the number of tokens that the deployer can send to it
+- `numTokens` is the number of tokens the deployer can send to the `delegate`
+- 
+In the method body, we reference the `delegate` map in the `allowed` mapping to set the number of tokens to it. Then, we emit the `Approval` event and return true.
+
+#### Get the allowance status of an account
+
+The method is `allowance`:
+
+```solidity
+function allowance(address owner, address delegate) public view returns (uint) {
+    return allowed[owner][delegate];
+}
+```
+
+This method has the following arguments: `owner` and `delegate`. `owner` is the address to return the number of tokens transferable to the recipient in the `delegate`.
+
 ##### Full Code:
 
 ```solidity
