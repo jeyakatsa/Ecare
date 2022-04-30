@@ -130,6 +130,27 @@ Address	uint256
 
 An address refers to its balance. The allowed mapping is also a key-value pair that maps addresses to another mapping. This last mapping maps addresses to their unit256 values. It allows you to store the number of tokens that can be transferred to a recipient.
 
+#### Declare the total supply
+The next line of code is as follows:
+
+```solidity
+uint256 totalSupply_;
+```
+
+This stores the number of tokens that are available in our contract.
+
+#### Set the amount of the total supply and the balances
+Next, we have the constructor. We know that constructors are called when the class is being created. In smart contracts, the constructor is called when the contract is deployed to the network.
+
+```solidity
+constructor(uint256 total) {
+  totalSupply_ = total;
+  balances[msg.sender] = totalSupply_;
+}
+```
+
+Here, the constructor is called with the total number of tokens we want to be in our contract (total). The total is set to `totalSupply_`, and the balance of the deploying address is set to the total tokens. The `msg.sender` contains the Ethereum account of the currently executing contract function.
+
 #### Get Total Token Supply
 ```solidity
 function totalSupply() public view returns (uint256) {
