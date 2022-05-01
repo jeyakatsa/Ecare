@@ -168,23 +168,6 @@ function balanceOf(address tokenOwner) public view returns (uint) {
 
 `balanceOf` will return the current token balance of an account, identified by its owner’s address.
 
-#### Transfer Tokens to Another Account
-```solidity
-function transfer(address receiver,
-                 uint numTokens) public returns (bool) {
-  require(numTokens <= balances[msg.sender]);
-  balances[msg.sender] = balances[msg.sender] — numTokens;
-  balances[receiver] = balances[receiver] + numTokens;
-  emit Transfer(msg.sender, receiver, numTokens);
-  return true;
-}
-```
-As its name suggests, the transfer function is used to move `numTokens` amount of tokens from the owner’s balance to that of another user, or receiver. The transferring owner is `msg.sender` i.e. the one executing the function, which implies that only the owner of the tokens can transfer them to others.
-
-Solidity’s way of asserting a predicate is require. In this case that the transferring account has a sufficient balance to execute the transfer. If a require statement fails, the transaction is immediately rolled back with no changes written into the blockchain.
-
-Right before exiting, the function fires ERC20 event Transfer allowing registered listeners to react to its completion.
-
 #### Approve a token transfer
 
 The next method is approve:
@@ -214,6 +197,30 @@ function allowance(address owner, address delegate) public view returns (uint) {
 ```
 
 This method has the following arguments: `owner` and `delegate`. `owner` is the address to return the number of tokens transferable to the recipient in the `delegate`.
+
+#### Transfer tokens from an account to another account
+The method to transfer tokens from one account to another is `transferFrom`:
+
+```solidity
+function transferFrom(address owner, address buyer, uint numTokens) public returns (bool) {
+    require(numTokens <= balances[owner]);
+    require(numTokens <= allowed[owner][msg.sender]);
+    balances[owner] -= numTokens;
+    allowed[owner][msg.sender] -= numTokens;
+    balances[buyer] += numTokens;
+    emit Transfer(owner, buyer, numTokens);
+    return true;
+}
+```
+
+`transferFrom` has args called `owner`, `buyer` and `numTokens`.
+
+- `owner` is the address of the balances from which we will transfer the `numTokens` 
+- `buyer` is the address in the balances that we will credit the `numTokens` `numTokens` is the number of tokens to be transferred from `owner` to `buyer`.
+
+In the method body, we first check whether the balance in the owner is enough and whether the owner is approved to send that amount of tokens to the buyer.
+
+Next, the transfer is made by subtracting the number of tokens from the owner’s balance and allowed balance. Then, the number of tokens is added to the buyer’s balance. The `Transfer` event is emitted and the boolean `true` is returned.
 
 ##### Full Code:
 
