@@ -1,8 +1,51 @@
 # Base Framework Research & Development
 
 ## Contents:
+- [JSON Example](#json-example)
 - [Basic Smart-Contract Framework](#basic-smart-contract-framework)
 - [Exchange Launching](#exchange-launching)
+
+## JSON Example:
+It can be represented in JSON like this:
+
+```javascript
+{
+  "to": "0xalice",
+  "from": "0xbob",
+  "amount": "30BLC"
+}
+```
+
+This is a simple record or transaction. It tells us that bob transferred 30BLC to Alice.
+
+Now, this transaction is recorded inside a block. Let’s represent a transaction inside a block in JSON, like this:
+
+```javascript
+[
+  {
+    "to": "0xalice",
+    "from": "0xbob",
+    "amount": "30BLC"
+  }
+]
+```
+
+A block is like an array that contains objects of transactions. So this block can contain many transactions:
+
+```javascript
+[
+  {
+    "to": "0xalice",
+    "from": "0xbob",
+    "amount": "30BLC"
+  },
+  {
+    "to": "0xtheresa",
+    "from": "0xarinze",
+    "amount": "5BLC"
+  }
+]
+```
 
 ## Basic Smart-Contract Framework:
 
