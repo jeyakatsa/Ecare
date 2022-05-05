@@ -46,6 +46,48 @@ A block is like an array that contains objects of transactions. So this block ca
   }
 ]
 ```
+When a block is verified by the nodes and set to be added to the network, this block has a pointer that points to the hash of the last block in the network.
+
+```javascript
+[
+  {
+    "hash": "0x0",
+    "prevHash": "",
+    "txns": [
+      {
+        "to": "0xalice",
+        "from": "0xbob",
+        "amount": "30BLC"
+      },
+      {
+        "hash": "0x1",
+        "prevHash": "0x0",
+        "to": "0xtheresa",
+        "from": "0xarinze",
+        "amount": "5BLC"
+      }
+    ]
+  },
+  {
+    "hash": "0x1",
+    "prevHash": "0x0",
+    "txns": [
+      {
+        "to": "0xalice",
+        "from": "0xbob",
+        "amount": "30BLC"
+      },
+      {
+        "to": "0xtheresa",
+        "from": "0xarinze",
+        "amount": "5BLC"
+      }
+    ]
+  }
+]
+```
+
+The first block with hash `0x0` is the genesis block. The next block with hash `0x1` has a `prevHash` that points to `0x0`. This points to the first block in the network.
 
 ## Basic Smart-Contract Framework:
 
