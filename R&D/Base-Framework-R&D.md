@@ -89,6 +89,37 @@ When a block is verified by the nodes and set to be added to the network, this b
 
 The first block with hash `0x0` is the genesis block. The next block with hash `0x1` has a `prevHash` that points to `0x0`. This points to the first block in the network.
 
+### The ERC-20 body
+The body of an ERC-20 token contains the methods and events an ERC-20 token must have.
+
+An ERC-20 token must be able to:
+
+- Transfer tokens from one account to another
+- Return the balance of an account
+- Return the total tokens available in the token
+- Transfer tokens to an account
+- In practice, an ERC-20 would look something like this in Solidity:
+
+```solidity
+function name() public view returns (string)
+
+function symbol() public view returns (string)
+
+function decimals() public view returns (uint8)
+
+function totalSupply() public view returns (uint256)
+
+function balanceOf(address _owner) public view returns (uint256 balance)
+
+function transfer(address _to, uint256 _value) public returns (bool success)
+
+function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
+
+function approve(address _spender, uint256 _value) public returns (bool success)
+
+function allowance(address _owner, address _spender) public view returns (uint256 remaining)
+```
+
 ## Basic Smart-Contract Framework:
 
 ```solidity
