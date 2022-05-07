@@ -120,6 +120,20 @@ function approve(address _spender, uint256 _value) public returns (bool success)
 function allowance(address _owner, address _spender) public view returns (uint256 remaining)
 ```
 
+The following methods can be available in an ERC-20 token:
+
+- `name` returns the name of the token (e.g., Binance Coin)
+- `symbol` returns the symbol of the token (e.g., BNB)
+- `decimals` returns the number of decimals the token uses
+- `totalSupply` returns the total number initially supplied to the token
+- `balanceOf` returns the balance of an account
+- `transfer` transfers a certain amount of tokens to an address
+- `transferFrom` transfers a certain amount of tokens from a beneficiary address to a recipient address
+- `approve` withdraws tokens from the owner’s address up to a certain amount of tokens
+- `allowance` returns the number of tokens withdrawable from the owner’s account
+
+Events can also be registered on our token to capture certain events when they are emitted.
+
 ## Basic Smart-Contract Framework:
 
 ```solidity
