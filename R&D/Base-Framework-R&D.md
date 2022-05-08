@@ -134,6 +134,15 @@ The following methods can be available in an ERC-20 token:
 
 Events can also be registered on our token to capture certain events when they are emitted.
 
+```solidity
+event Transfer(address indexed _from, address indexed _to, uint256 _value)
+
+event Approval(address indexed _owner, address indexed _spender, uint256 _value)
+```
+
+- `Transfer`, which must be triggered when tokens are transferred
+- `Approval`, which must be triggered when an account is approved to collect a certain amount of tokens
+
 ## Basic Smart-Contract Framework:
 
 ```solidity
