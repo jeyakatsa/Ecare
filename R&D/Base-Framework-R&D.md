@@ -513,6 +513,10 @@ balances[buyer] = balances[buyer].add(numTokens);
 balances[owner] = balances[owner].sub(numTokens);
 ```
 
+##### Providing Price Data
+
+https://market.link/
+
 ##### PACKING IT ALL TOGETHER
 In Solidity, a smart contract’s functions and events are wrapped into an entity called a contract which you can silently translate to a “blockchain class.” Below is the ERC20-compatible contract we created, including a Gist of our code. The name and symbol fields can be changed at will. Most tokens keep the decimal value at 18, so we will do the same.
 
