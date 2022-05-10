@@ -567,6 +567,10 @@ At the end of the day, deployment to the Ethereum main chain is likely a bad ide
 
 ## Exchange Launching
 
+### MonaLisa AMM Creation
+
+https://learn.figment.io/tutorials/create-an-amm-on-avalanche#introduction
+
 ### Uniswap
 Contrary to the traditional architecture of the “order book” model which many crypto exchange platforms use, Uniswap works with the help of the following two components:
 
