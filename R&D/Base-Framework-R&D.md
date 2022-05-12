@@ -586,6 +586,24 @@ contract AMM {
 }
 ```
 
+##### State Variables
+
+Next, we define the state variables needed to operate the AMM. We will be using the same mathematical formula as used by Uniswap to determine the price of the assets (K = totalToken1 * totalToken2). For simplicity purposes, We are maintaining our own internal balance mapping (token1Balance & token2Balance) instead of dealing with the ERC-20 tokens. As Solidity doesn't support floating-point numbers, we will reserve the first six digits of an integer value to represent the decimal value after the dot. This is achieved by scaling the numbers by a factor of 10^6 (PRECISION).
+
+```solidity
+uint256 totalShares;  // Stores the total amount of share issued for the pool
+uint256 totalToken1;  // Stores the amount of Token1 locked in the pool
+uint256 totalToken2;  // Stores the amount of Token2 locked in the pool
+uint256 K;            // Algorithmic constant used to determine price (K = totalToken1 * totalToken2)
+
+uint256 constant PRECISION = 1_000_000;  // Precision of 6 decimal places
+
+mapping(address => uint256) shares;  // Stores the share holding of each provider
+
+mapping(address => uint256) token1Balance;  // Stores the available balance of user outside of the AMM
+mapping(address => uint256) token2Balance;
+```
+
 ### Uniswap
 Contrary to the traditional architecture of the “order book” model which many crypto exchange platforms use, Uniswap works with the help of the following two components:
 
