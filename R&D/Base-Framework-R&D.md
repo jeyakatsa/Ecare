@@ -569,6 +569,8 @@ At the end of the day, deployment to the Ethereum main chain is likely a bad ide
 
 ### MonaLisa AMM Creation
 
+**Try to use ETH/L2 as bridge first.**
+
 https://learn.figment.io/tutorials/create-an-amm-on-avalanche#introduction
 
 Uniswap uses p * q = k, where p is the amount of one token in the liquidity pool, and q is the amount of the other. Here “k” is a fixed constant which means the pool’s total liquidity always has to remain the same. For further explanation let us take an example if an AMM has coin A and Coin B, two volatile assets, every time A is bought, the price of A goes up as there is less A in the pool than before the purchase. Conversely, the price of B goes down as there is more B in the pool. The pool stays in constant balance, where the total value of A in the pool will always equal the total value of B in the pool. The size will expand only when new liquidity providers join the pool.
