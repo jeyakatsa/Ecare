@@ -1,15 +1,15 @@
 <img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/MonaLisa-Icon.png" width="100px">
 
 # MonaLisa
-## A New Kind of Ethereum Token
+## A New Kind of Ethereum Exchange Rate System
 
 <img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/Platitude.jpg" width="500px">
 
 ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts whereas Fiat currencies are used solely as exchange barters for goods and services.
 
-MonaLisa tokens are encapsulated to act as Fiat currencies, but with a twist... The tokens are not to be "bought and sold" via fiat-on-ramp exchanges but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap, etc). *Thus, their market caps will rise and fall based on the exchange rates agreed upon*. 
+Mona Lisa tokens are encapsulated to act as Fiat currencies, but with a twist... The tokens are not to be "bought and sold" via fiat-on-ramp exchanges but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap, etc). *Thus, their market caps will rise and fall based on the exchange rates agreed upon*. 
 
-The goal for MonaLisa tokens are for them to be exchanged into and out of both ERC-20 tokens and Fiat currencies without the act of "buying and selling" the tokens.
+The goal for tokens using the Mona Lisa system are for them to be exchanged into and out of both ERC-20 tokens and Fiat currencies without the act of "buying and selling" the tokens.
 
 ### Exchange Rate Mechanics:
 
