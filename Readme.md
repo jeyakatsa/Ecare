@@ -7,7 +7,7 @@
 
 ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts whereas Fiat currencies are used solely as exchange barters for goods and services.
 
-MonaLisa tokens are encapsulated to act as Fiat currencies, but with a twist... The tokens are not to be "bought and sold" via fiat-on-ramp exchanges but rather, only exchanged or "swapped" via decentralized exchanges like Uniswap, etc. *Thus, their market caps will rise and fall based on the exchange rates agreed upon*. 
+MonaLisa tokens are encapsulated to act as Fiat currencies, but with a twist... The tokens are not to be "bought and sold" via fiat-on-ramp exchanges but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap, etc). *Thus, their market caps will rise and fall based on the exchange rates agreed upon*. 
 
 The goal for MonaLisa tokens are for them to be exchanged into and out of both ERC-20 tokens and Fiat currencies without the act of "buying and selling" the tokens.
 
