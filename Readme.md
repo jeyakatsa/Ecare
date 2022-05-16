@@ -3,13 +3,15 @@
 # ECARE
 ## Ethereum Combinatorial Auction Rate Exchange
 
-<img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/Platitude.jpg" width="500px">
+#### ECARE (previously known as MonaLisa) is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate the prices/market-caps of ERC-20 tokens based on the exchange rates agreed upon. 
 
-ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts whereas Fiat currencies are used solely as exchange barters for goods and services.
+### Motivation:
 
-ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" via fiat-on-ramp exchanges but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap or an ECARE AMM). *Thus, their market caps will rise and fall based on the exchange rates agreed upon*. 
+ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts thus needing consistent investment to maintain their values.
 
-The goal for tokens using ECARE are for them to be exchanged without the act of "buying and selling" the tokens.
+ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap or an ECARE AMM). 
+
+*Thus, ECARE token prices/market-caps rise and fall based on exchange rates agreed upon further calcifying a self-sustaining token ecosystem absent of consistent investment.*
 
 ### Mechanics:
 
