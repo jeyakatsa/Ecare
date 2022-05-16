@@ -3,7 +3,7 @@
 # ECARE
 ## Ethereum Combinatorial Auction Rate Exchange
 
-#### ECARE (previously known as MonaLisa) is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate the prices/market-caps of ERC-20 tokens based on the exchange rates agreed upon. 
+#### ECARE (previously known as MonaLisa) is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate a self-sustaining exchange rate ecosystem immune to bear-markets. 
 
 ### Motivation:
 
