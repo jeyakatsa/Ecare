@@ -1,6 +1,4 @@
-# ECARE MVP
-
-## Estimated Roadmap 
+## ECARE MVP (Estimated Roadmap) 
 
 ### 
 
