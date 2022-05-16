@@ -1,7 +1,7 @@
 <img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/MonaLisa-Icon.png" width="100px">
 
 # MonaLisa
-## A New Kind of Ethereum Exchange Rate System
+## A Combinatorial Auction Ethereum Exchange Rate System
 
 <img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/Platitude.jpg" width="500px">
 
