@@ -7,7 +7,7 @@
 
 ### Motivation:
 
-ERC-20 tokens in their current forms act not only as currencies, but are mostly used as investment contracts thus needing consistent investment to maintain their values.
+Bear markets are insufficient for non-profits operating under Ethereum since ERC-20 tokens in their current forms are mostly used as investment contracts needing consistent investment to maintain their values.
 
 ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap or an ECARE AMM). 
 
