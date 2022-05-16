@@ -10,5 +10,5 @@
   - [ ] Create Twitter page *[announced]*
 
 **Month 1**
-  - [ ] Complete Front-End Prototype Work *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
-  - [ ] Complete Back-End Prototype Work *[In-Development]*
+  - [ ] Complete Front-End Prototype *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
+  - [ ] Complete Back-End Prototype *[In-Development]*
