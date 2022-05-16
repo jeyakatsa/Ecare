@@ -5,7 +5,7 @@
 ### 
 
 - Overall: 
-  - [X] Begin building ECARE *[In-Development]*
+  - [X] Begin building ECARE *[In-Development](https://github.com/jeyakatsa/monalisa)*
 
 **Month 0**
   - [ ] Publish official website for updates/blog-posts/etc *[announced]*.
