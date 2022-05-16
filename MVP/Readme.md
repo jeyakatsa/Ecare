@@ -1,4 +1,4 @@
-## ECARE MVP (Estimated Roadmap) 
+## ECARE MVP [prototype] (Roadmap) 
 
 ### 
 
@@ -10,5 +10,5 @@
   - [ ] Create Twitter page *[announced]*
 
 **Month 1**
-  - [ ] Complete Front-End Work *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
-  - [ ] Complete Back-End Work *[In-Development]*
+  - [ ] Complete Front-End Prototype Work *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
+  - [ ] Complete Back-End Prototype Work *[In-Development]*
