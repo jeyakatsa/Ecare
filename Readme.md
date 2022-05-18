@@ -58,4 +58,5 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 ### More Info:
 
 [Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
+
 [Combinatorial Auction Design ex.](https://www.jstor.org/stable/4133996)
