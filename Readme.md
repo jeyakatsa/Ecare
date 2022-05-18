@@ -54,3 +54,8 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 > | 1 Token = 1.997USD            | 1 Token = 1.048USD             |
 
 --------------------------------------------------
+
+### More Info:
+
+[Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
+[Combinatorial Auction Design ex.](https://www.jstor.org/stable/4133996)
