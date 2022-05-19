@@ -2,9 +2,7 @@
 
 ### AMM Creation
 
-***Possibly Fork Uniswap***
-
-Uniswap uses p * q = k, where p is the amount of one token in the liquidity pool, and q is the amount of the other. Here “k” is a fixed constant which means the pool’s total liquidity always has to remain the same. For further explanation let us take an example if an AMM has coin A and Coin B, two volatile assets, every time A is bought, the price of A goes up as there is less A in the pool than before the purchase. Conversely, the price of B goes down as there is more B in the pool. The pool stays in constant balance, where the total value of A in the pool will always equal the total value of B in the pool. The size will expand only when new liquidity providers join the pool.
+Most known AMM's uses p * q = k, where p is the amount of one token in the liquidity pool, and q is the amount of the other. Here “k” is a fixed constant which means the pool’s total liquidity always has to remain the same. For further explanation let us take an example if an AMM has coin A and Coin B, two volatile assets, every time A is bought, the price of A goes up as there is less A in the pool than before the purchase. Conversely, the price of B goes down as there is more B in the pool. The pool stays in constant balance, where the total value of A in the pool will always equal the total value of B in the pool. The size will expand only when new liquidity providers join the pool.
 
 #### Implementing the smart contract
 
@@ -37,7 +35,50 @@ mapping(address => uint256) token1Balance;  // Stores the available balance of u
 mapping(address => uint256) token2Balance;
 ```
 
-### Uniswap
+Now we will define modifiers that will be used to check the validity of the parameters passed to the functions and restrict certain activities when the pool is empty.
+
+```solidity
+// Ensures that the _qty is non-zero and the user has enough balance
+modifier validAmountCheck(mapping(address => uint256) storage _balance, uint256 _qty) {
+    require(_qty > 0, "Amount cannot be zero!");
+    require(_qty <= _balance[msg.sender], "Insufficient amount");
+    _;
+}
+
+// Restricts withdraw, swap feature till liquidity is added to the pool
+modifier activePool() {
+    require(totalShares > 0, "Zero Liquidity");
+    _;
+}
+```
+
+The following functions are used to get the present state of the smart contract
+
+```solidity
+// Returns the balance of the user
+function getMyHoldings() external view returns(uint256 amountToken1, uint256 amountToken2, uint256 myShare) {
+    amountToken1 = token1Balance[msg.sender];
+    amountToken2 = token2Balance[msg.sender];
+    myShare = shares[msg.sender];
+}
+
+// Returns the total amount of tokens locked in the pool and the total shares issued corresponding to it
+function getPoolDetails() external view returns(uint256, uint256, uint256) {
+    return (totalToken1, totalToken2, totalShares);
+}
+```
+
+As we are not using the ERC-20 tokens and instead, maintaining a record of the balance ourselves; we need a way to allocate tokens to the new users so that they can interact with the dApp. Users can call the faucet function to get some tokens to play with!
+
+```solidity
+// Sends free token(s) to the invoker
+function faucet(uint256 _amountToken1, uint256 _amountToken2) external {
+    token1Balance[msg.sender] = token1Balance[msg.sender].add(_amountToken1);
+    token2Balance[msg.sender] = token2Balance[msg.sender].add(_amountToken2);
+}
+```
+
+### Uniswap Point of Reference:
 Contrary to the traditional architecture of the “order book” model which many crypto exchange platforms use, Uniswap works with the help of the following two components:
 
 - Liquidity Pools
