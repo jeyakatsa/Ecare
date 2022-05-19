@@ -123,6 +123,52 @@ function faucet(uint256 _amountToken1, uint256 _amountToken2) external {
     token2Balance[msg.sender] = token2Balance[msg.sender].add(_amountToken2);
 }
 ```
+
+#### Provide
+`provide` function takes two parameters - amount of token1 & amount of token2 that the user wants to lock in the pool. If the pool is initially empty then the equivalence rate is set as _amountToken1 : _amountToken2 and the user is issued 100 shares for it. Otherwise, it is checked whether the two amounts provided by the user have equivalent value or not. This is done by checking if the two amounts are in equal proportion to the total number of their respective token locked in the pool i.e. _amountToken1 : totalToken1 :: _amountToken2 : totalToken2 should hold.
+
+```solidity
+// Adding new liquidity in the pool
+// Returns the amount of share issued for locking given assets
+function provide(uint256 _amountToken1, uint256 _amountToken2) external validAmountCheck(token1Balance, _amountToken1) validAmountCheck(token2Balance, _amountToken2) returns(uint256 share) {
+    if(totalShares == 0) { // Genesis liquidity is issued 100 Shares
+        share = 100*PRECISION;
+    } else{
+        uint256 share1 = totalShares.mul(_amountToken1).div(totalToken1);
+        uint256 share2 = totalShares.mul(_amountToken2).div(totalToken2);
+        require(share1 == share2, "Equivalent value of tokens not provided...");
+        share = share1;
+    }
+
+    require(share > 0, "Asset value less than threshold for contribution!");
+    token1Balance[msg.sender] -= _amountToken1;
+    token2Balance[msg.sender] -= _amountToken2;
+
+    totalToken1 += _amountToken1;
+    totalToken2 += _amountToken2;
+    K = totalToken1.mul(totalToken2);
+
+    totalShares += share;
+    shares[msg.sender] += share;
+}
+```
+
+Carefully notice the order of balance update we are performing in the above function. We are first deducting the tokens from the users' account and in the very last step, we are updating her share balance. This is done to prevent a reentrancy attack.
+
+The given functions help the user get an estimate of the amount of the second token that they need to lock for the given token amount. Here again, we use the proportion _amountToken1 : totalToken1 :: _amountToken2 : totalToken2 to determine the amount of token1 required if we wish to lock given amount of token2 and vice-versa.
+
+```solidity
+// Returns amount of Token1 required when providing liquidity with _amountToken2 quantity of Token2
+function getEquivalentToken1Estimate(uint256 _amountToken2) public view activePool returns(uint256 reqToken1) {
+    reqToken1 = totalToken1.mul(_amountToken2).div(totalToken2);
+}
+
+// Returns amount of Token2 required when providing liquidity with _amountToken1 quantity of Token1
+function getEquivalentToken2Estimate(uint256 _amountToken1) public view activePool returns(uint256 reqToken2) {
+    reqToken2 = totalToken2.mul(_amountToken1).div(totalToken1);
+}
+```
+
 --------------------------------------------------------------
 
 ### Uniswap Point of Reference:
