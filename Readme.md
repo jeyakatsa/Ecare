@@ -13,7 +13,7 @@ ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" but r
 
 *Thus, ECARE token prices/market-caps rise and fall based on exchange rates agreed upon further calcifying a self-sustaining token ecosystem absent of consistent investment.*
 
-### Mechanics:
+### Mechanics (*in-development*):
 
 In order for ECARE tokens to be successfully exchanged, they will need the consent of both parties *(like trading one NFT for another OR specifically speaking, trading 1 Yuan for 1 Dollar, or 50 Yuans for 1 Dollar, etc)*.
 
@@ -52,6 +52,12 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 > | Market Cap = 1.900kUSD        | Market Cap = 1.100kUSD         |
 > | Tokens In Circulation = .951k | Tokens In Circulation = 1.049k |
 > | 1 Token = 1.997USD            | 1 Token = 1.048USD             |
+
+#### In Summary:
+
+While at the expense of Party A, Part B's token/market-cap continues to increase in value. So unless Party B agrees to exchange its token, Party B's token continues to maintain its value shielded from exterior market dynamics.
+
+ECARE's mechanics (unlike other exchange rate systems) isn't based on the market cap of the tokens, but is based solely on the tokens in circulation, thus absolving token dependency of bear or bull markets.
 
 --------------------------------------------------
 
