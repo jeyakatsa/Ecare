@@ -8,7 +8,7 @@ import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactor
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class EcareWebbAppApplication {
+public class EcareWebAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EcareWebAppApplication.class, args);
