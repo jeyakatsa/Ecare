@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ecare</groupId>
-	<artifactId>EcareLp</artifactId>
+	<artifactId>EcareWebApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>EcareLp</name>
-	<description>Ecare Landing Page project for Spring Boot</description>
+	<name>EcareWebApp</name>
+	<description>Ecare Web App project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
