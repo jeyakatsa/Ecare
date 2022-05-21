@@ -1,4 +1,4 @@
-<img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/MonaLisa-Icon.png" width="100px">
+<img src="https://github.com/jeyakatsa/monalisa/blob/main/assets/EcareIcon.png" width="60px">
 
 # ECARE
 ## Ethereum Combinatorial Auction Rate Exchange
