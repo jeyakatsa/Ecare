@@ -57,7 +57,7 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 
 While at the expense of Party A, Part B's token/market-cap continues to increase in value. So unless Party B agrees to exchange its token, Party B's token continues to maintain its value shielded from exterior market dynamics.
 
-ECARE's mechanics (unlike other exchange rate systems) isn't based on the market cap of the tokens, but is based solely on the tokens in circulation, thus absolving its token dependencies from bear or bull markets.
+ECARE's mechanics (unlike other exchange rate systems) aren't based on the market caps of the tokens, but are based solely on the tokens in circulation, thus absolving its tokens' dependencies from bear or bull markets.
 
 Understandably during bull markets, it wouldn't be wise to use ECARE as most tokens during such markets all rise with the tide. But during bear markets when almost every token looses value, using a system that maintains a token's value without exterior investment is paramount to any organization/individual using that token. 
 
