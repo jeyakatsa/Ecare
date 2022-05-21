@@ -53,4 +53,18 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 > | Tokens In Circulation = .951k | Tokens In Circulation = 1.049k |
 > | 1 Token = 1.997USD            | 1 Token = 1.048USD             |
 
+### In Summary:
+
+While at the expense of Party A, Part B's token/market-cap continues to increase in value. So unless Party B agrees to exchange its token, Party B's token continues to maintain its value shielded from exterior market dynamics.
+
+ECARE's mechanics (unlike other exchange rate systems) isn't based on the market cap of the tokens, but is based solely on the tokens in circulation, thus absolving its token dependencies from bear or bull markets.
+
+Understandably during bull markets, it wouldn't be wise to use ECARE as most tokens during such markets all rise with the tide. But during bear markets when almost every token looses value, using a system that maintains a token's value without exterior investment is paramount to any organization/individual using that token. 
+
 --------------------------------------------------
+
+#### More Info:
+
+[Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
+
+[Combinatorial Auction Design ex.](https://www.jstor.org/stable/4133996)
