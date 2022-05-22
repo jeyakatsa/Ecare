@@ -6,7 +6,7 @@
   - [X] Begin building ECARE *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
 
 **Month 0**
-  - [ ] Publish official website for updates/blog-posts/etc *[announced]*
+  - [ ] Publish official website for updates/blog-posts/etc *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
   - [ ] Create Twitter page *[announced]*
 
 **Month 1**
