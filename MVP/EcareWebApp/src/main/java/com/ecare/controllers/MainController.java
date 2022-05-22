@@ -13,30 +13,4 @@ public class MainController {
 		return "index.jsp";
 	}
 	
-	@GetMapping("/ethereum")
-	public String Ethereum() {
-		return "Ethereum.jsp";
-	}
-	
-	@GetMapping("/javascript")
-	public String JavaScriptDoc() {
-		return "JavaScript-Doc-Page.jsp";
-	}
-	
-	@GetMapping("/productpage")
-	public String ProductLandingPage() {
-		return "Product-Landing-Page.jsp";
-	}
-	
-//	@GetMapping("/surveyform")
-//	public String SurveyForm() {
-//		return "Survey-Form.jsp";
-//	}
-	
-	@GetMapping("/tribute")
-	public String TributePage() {
-		return "Tribute-Page.jsp";
-	}
-	
-	
 }
