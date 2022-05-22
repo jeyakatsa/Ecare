@@ -21,37 +21,37 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 
 > ***Before Exchange***
 > 
-> | Party A Token              | Party B Token              |
-> | -------------------------- | -------------------------- |
-> | Market Cap = 2kUSD         | Market Cap = 1kUSD         |
-> | Tokens In Circulation = 1k | Tokens In Circulation = 1k |
-> | 1 Token = 2USD             | 1 Token = 1USD             |
+> | Party A Token                 | Party B Token                 |
+> | ----------------------------- | ----------------------------- |
+> | Market Cap = 2,000 USD        | Market Cap = 1,000 USD        |
+> | Tokens In Circulation = 1,000 | Tokens In Circulation = 1,000 |
+> | 1 Token = 2 USD               | 1 Token = 1 USD               |
 > 
 > ***After Exchange***
 > 
-> | Party A Token              | Party B Token              |
-> | -------------------------- | -------------------------- |
-> | Market Cap = 1.998kUSD     | Market Cap = 1.002kUSD     |
-> | Tokens In Circulation = 1k | Tokens In Circulation = 1k |
-> | 1 Token = 1.998USD         | 1 Token = 1.002USD         |
+> | Party A Token                 | Party B Token              |
+> | ----------------------------  | -------------------------- |
+> | Market Cap = 1,998 USD        | Market Cap = 1,002 USD     |
+> | Tokens In Circulation = 1,000 | Tokens In Circulation = 1k |
+> | 1 Token = 1.998 USD           | 1 Token = 1.002 USD        |
 
 **Scenario 2:** *Party A agrees to exchange 50 of their Tokens for 1 Token from Party B.*
 
 > ***Before Exchange***
 > 
-> | Party A Token              | Party B Token              |
-> | -------------------------- | -------------------------- |
-> | Market Cap = 2kUSD         | Market Cap = 1kUSD         |
-> | Tokens In Circulation = 1k | Tokens In Circulation = 1k |
-> | 1 Token = 2USD             | 1 Token = 1USD             |
+> | Party A Token                 | Party B Token                 |
+> | ----------------------------- | ----------------------------- |
+> | Market Cap = 2,000 USD        | Market Cap = 1,000 USD        |
+> | Tokens In Circulation = 1,000 | Tokens In Circulation = 1,000 |
+> | 1 Token = 2 USD               | 1 Token = 1 USD               |
 > 
 > ***After Exchange***
 > 
 > | Party A Token                 | Party B Token                  |
 > | ----------------------------- | ------------------------------ |
-> | Market Cap = 1.900kUSD        | Market Cap = 1.100kUSD         |
-> | Tokens In Circulation = .951k | Tokens In Circulation = 1.049k |
-> | 1 Token = 1.997USD            | 1 Token = 1.048USD             |
+> | Market Cap = 1,900 USD        | Market Cap = 1,100 USD         |
+> | Tokens In Circulation = 951 | Tokens In Circulation = 1,049    |
+> | 1 Token = 1.997 USD            | 1 Token = 1.048 USD           |
 
 ### In Summary:
 
