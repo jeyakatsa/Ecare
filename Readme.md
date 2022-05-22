@@ -55,8 +55,9 @@ Unlike other exchange rate systems, ECARE's system isn't based on the market cap
 
 --------------------------------------------------
 
-#### More Info:
+## [Prototype](https://github.com/jeyakatsa/monalisa/tree/main/MVP)
+### [Roadmap](https://github.com/jeyakatsa/monalisa/blob/main/MVP/Readme.md)
 
-[Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
+#### [Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
 
-[Combinatorial Auction Design ex.](https://www.jstor.org/stable/4133996)
+#### [Combinatorial Auction Design ex.](https://www.jstor.org/stable/4133996)
