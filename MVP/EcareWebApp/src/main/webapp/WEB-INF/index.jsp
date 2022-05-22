@@ -17,7 +17,7 @@
 		<meta name="author" content="Ecare">
 		<meta name="viewport" id="viewport" content="width=device-width,user-scalable=yes,initial-scale=1" >
 		
-		<link rel="icon" type="image/x-icon" href="/icons&images/Iconix.ico" sizes="156x156">
+		<link rel="icon" type="image/x-icon" href="/icons&images/Iconic.ico" sizes="156x156">
 		<link rel="canonical" href="https://ecare.exchange">
 		
 		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/169689737-80b6cafd-f6be-4a31-a65c-805e37ea89b2.jpg">	
