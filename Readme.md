@@ -33,7 +33,7 @@ In order for ECARE tokens to be successfully exchanged, they will need the conse
 > | ----------------------------  | ----------------------------- |
 > | Market Cap = 2,000 USD        | Market Cap = 1,002 USD        |
 > | Tokens In Circulation = 1,000 | Tokens In Circulation = 1,000 |
-> | 1 Token = 2.002 USD           | 1 Token = 1.002 USD           |
+> | 1 Token = 2 USD               | 1 Token = 1.002 USD           |
 
 **Scenario 2:** *Party A agrees to exchange 50 of their Tokens for 1 Token from Party B.*
 
