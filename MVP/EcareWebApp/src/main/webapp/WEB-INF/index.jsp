@@ -5,7 +5,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/chrome-index.css">	
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 			
 		<meta charset="UTF-8">
 		
@@ -20,7 +19,7 @@
 		<link rel="icon" type="image/x-icon" href="/icons&images/Iconic.ico" sizes="156x156">
 		<link rel="canonical" href="https://ecare.exchange">
 		
-		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/169689737-80b6cafd-f6be-4a31-a65c-805e37ea89b2.jpg">	
+		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">	
 		<meta property="og:site_name" content="Ecare">	
 		<meta property="og:type" content="object">				
 		<meta property="og:title" content="Ecare">
@@ -30,8 +29,8 @@
 		<meta property="og:image:width" content="700">
 		<meta property="og:image:height" content="400">
 		
-		<meta name="twitter:title" content="Ecare: Ethereum Combinatorial Auction Rate Exchange">
-		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/169689737-80b6cafd-f6be-4a31-a65c-805e37ea89b2.jpg">
+		<meta name="twitter:title" content="Ecare">
+		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">
 		<meta name="twitter:url" content="https://ecare.exchange">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:description" content="Ethereum Combinatorial Auction Rate Exchange">
@@ -53,12 +52,11 @@
 	   	  <p>rate</p> 
 	   	  <p>exchange</p>
 	  </div>
-	  <a id="github"
-	   href="https://github.com/jeyakatsa/monalisa"
+	  <a href="https://github.com/jeyakatsa/monalisa"
 	      target="_blank"
 	      class="btn contact-details">
-	      <i class="fa fa-github" aria-hidden="true"></i>
-	      </a>  
+	      <img id="github" src="/icons&images/Github.png">
+	  </a>  
 	</section>
 	
 	</body>
