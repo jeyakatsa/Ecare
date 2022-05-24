@@ -167,6 +167,32 @@ function getEquivalentToken1Estimate(uint256 _amountToken2) public view activePo
 function getEquivalentToken2Estimate(uint256 _amountToken1) public view activePool returns(uint256 reqToken2) {
     reqToken2 = totalToken2.mul(_amountToken1).div(totalToken1);
 }
+```solidity
+#### Withdraw
+Withdraw is used when a user wishes to burn a given amount of share to get back their tokens. Token1 and Token2 are released from the pool in proportion to the share burned with respect to total shares issued i.e. **share : totalShare :: amountTokenX : totalTokenX.**
+
+```
+// Returns the estimate of Token1 & Token2 that will be released on burning given _share
+function getWithdrawEstimate(uint256 _share) public view activePool returns(uint256 amountToken1, uint256 amountToken2) {
+    require(_share <= totalShares, "Share should be less than totalShare");
+    amountToken1 = _share.mul(totalToken1).div(totalShares);
+    amountToken2 = _share.mul(totalToken2).div(totalShares);
+}
+
+// Removes liquidity from the pool and releases corresponding Token1 & Token2 to the withdrawer
+function withdraw(uint256 _share) external activePool validAmountCheck(shares, _share) returns(uint256 amountToken1, uint256 amountToken2) {
+    (amountToken1, amountToken2) = getWithdrawEstimate(_share);
+    
+    shares[msg.sender] -= _share;
+    totalShares -= _share;
+
+    totalToken1 -= amountToken1;
+    totalToken2 -= amountToken2;
+    K = totalToken1.mul(totalToken2);
+
+    token1Balance[msg.sender] += amountToken1;
+    token2Balance[msg.sender] += amountToken2;
+}
 ```
 
 --------------------------------------------------------------
