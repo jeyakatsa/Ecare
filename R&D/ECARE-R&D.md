@@ -167,7 +167,8 @@ function getEquivalentToken1Estimate(uint256 _amountToken2) public view activePo
 function getEquivalentToken2Estimate(uint256 _amountToken1) public view activePool returns(uint256 reqToken2) {
     reqToken2 = totalToken2.mul(_amountToken1).div(totalToken1);
 }
-```solidity
+```
+
 #### Withdraw
 Withdraw is used when a user wishes to burn a given amount of share to get back their tokens. Token1 and Token2 are released from the pool in proportion to the share burned with respect to total shares issued i.e. **share : totalShare :: amountTokenX : totalTokenX.**
 
@@ -193,6 +194,34 @@ function withdraw(uint256 _share) external activePool validAmountCheck(shares, _
     token1Balance[msg.sender] += amountToken1;
     token2Balance[msg.sender] += amountToken2;
 }
+```
+#### Swap
+
+To swap from Token1 to Token2 we will implement three functions - `getSwapToken1Estimate`, `getSwapToken1EstimateGivenToken2` & `swapToken1`. The first two functions only determine the values of swap for estimation purposes while the last one does the conversion.
+
+`getSwapToken1Estimate` returns the amount of token2 that the user will get when depositing a given amount of token1. The amount of token2 is obtained from the equation K = totalToken1 * totalToken2 where the K should remain the same before/after the operation. This gives us K = (totalToken1 + amountToken1) * (totalToken2 - amountToken2) and we get the value `amountToken2` from solving this equation. In the last line, we are ensuring that the pool is never drained completely from either side, which would make the equation undefined.
+
+```solidity
+// Returns the amount of Token2 that the user will get when swapping a given amount of Token1 for Token2
+function getSwapToken1Estimate(uint256 _amountToken1) public view activePool returns(uint256 amountToken2) {
+    uint256 token1After = totalToken1.add(_amountToken1);
+    uint256 token2After = K.div(token1After);
+    amountToken2 = totalToken2.sub(token2After);
+
+    // To ensure that Token2's pool is not completely depleted leading to inf:0 ratio
+    if(amountToken2 == totalToken2) amountToken2--;
+}
+```
+
+`getSwapToken1EstimateGivenToken2` returns the amount of token1 that the user should deposit to get a given amount of token2. Amount of token1 is similarly obtained by solving the following equation K = (totalToken1 + amountToken1) * (totalToken2 - amountToken2).
+
+```solidity
+// Returns the amount of Token1 that the user should swap to get _amountToken2 in return
+function getSwapToken1EstimateGivenToken2(uint256 _amountToken2) public view activePool returns(uint256 amountToken1) {
+    require(_amountToken2 < totalToken2, "Insufficient pool balance");
+    uint256 token2After = totalToken2.sub(_amountToken2);
+    uint256 token1After = K.div(token2After);
+    amountToken1 = token1After.sub(totalToken1);
 ```
 
 --------------------------------------------------------------
