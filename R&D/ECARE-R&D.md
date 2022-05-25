@@ -236,6 +236,20 @@ function getSwapToken1EstimateGivenToken2(uint256 _amountToken2) public view act
 }
 ```
 
+`swapToken1` actually swaps the amount instead of just giving an estimate.
+
+```solidity
+// Swaps given amount of Token1 to Token2 using algorithmic price determination
+function swapToken1(uint256 _amountToken1) external activePool validAmountCheck(token1Balance, _amountToken1) returns(uint256 amountToken2) {
+    amountToken2 = getSwapToken1Estimate(_amountToken1);
+
+    token1Balance[msg.sender] -= _amountToken1;
+    totalToken1 += _amountToken1;
+    totalToken2 -= amountToken2;
+    token2Balance[msg.sender] += amountToken2;
+}
+```
+
 --------------------------------------------------------------
 
 ### Uniswap Point of Reference:
