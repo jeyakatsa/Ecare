@@ -455,6 +455,13 @@ contract AMM {
     }
 }
 ```
+------------------------------------------------------
+
+### Possible Front-End Strategy:
+
+- Link Metamask Wallet to each Ecare "Wallet". 
+- Incoming API price locks, then trades and exports external API price to market {might have to create own internal market}
+- Link to Plaid, sell to cash option?
 
 --------------------------------------------------------------
 
