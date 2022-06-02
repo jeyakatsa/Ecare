@@ -53,9 +53,15 @@ Unlike other exchange rate systems, ECARE's system isn't based on the market cap
 > | Tokens = 951                  | Tokens = 1,049                 |
 > | 1 Token = 2.103 USD           | 1 Token = 1.048 USD            |
 
---------------------------------------------------
+------------------------------------------------------------------------------------------
 
 ## [Prototype](https://github.com/jeyakatsa/monalisa/tree/main/MVP)
+
+#### Concept: 
+<img src="https://github.com/jeyakatsa/monalisa/blob/main/MVP/ecare/prototypeConcept/PrototypeConceptHome(First-Draft).jpg" width="800px">
+
+--------------------------------------------------
+
 ### [Roadmap](https://github.com/jeyakatsa/monalisa/blob/main/MVP/Readme.md)
 
 #### [Combinatorial Auction Implementations](https://www.sciencedirect.com/topics/computer-science/combinatorial-auction)
