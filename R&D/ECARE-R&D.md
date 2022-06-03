@@ -172,7 +172,7 @@ function getEquivalentToken2Estimate(uint256 _amountToken1) public view activePo
 #### Withdraw
 Withdraw is used when a user wishes to burn a given amount of share to get back their tokens. Token1 and Token2 are released from the pool in proportion to the share burned with respect to total shares issued i.e. **share : totalShare :: amountTokenX : totalTokenX.**
 
-```
+```solidity
 // Returns the estimate of Token1 & Token2 that will be released on burning given _share
 function getWithdrawEstimate(uint256 _share) public view activePool returns(uint256 amountToken1, uint256 amountToken2) {
     require(_share <= totalShares, "Share should be less than totalShare");
@@ -252,7 +252,7 @@ function swapToken1(uint256 _amountToken1) external activePool validAmountCheck(
 
 Similarly for Token2 to Token1 swap we implement the three functions - `getSwapToken2Estimate`, `getSwapToken2EstimateGivenToken1` & `swapToken2` as below.
 
-```
+```solidity
 // Returns the amount of Token2 that the user will get when swapping a given amount of Token1 for Token2
 function getSwapToken2Estimate(uint256 _amountToken2) public view activePool returns(uint256 amountToken1) {
     uint256 token2After = totalToken2.add(_amountToken2);
@@ -462,6 +462,20 @@ contract AMM {
 - Link Metamask Wallet to each Ecare "Wallet". 
 - Incoming API price locks, then trades and exports external API price to market {might have to create own internal market}
 - Link to Plaid, sell to cash option?
+
+Possibly keep the React components in the src/components directory.
+- **BoxTemplate :-**
+It renders the box containing the input field, its header, and the element on the right of the box, which can be a token name, a button, or is empty.
+- **FaucetComponent :-**
+Takes amount of token1 (KAR) and token2 (KOTHI) as input and funds the user address with that much amount.
+- **ProvideComponent :-**
+Takes amount of one token (KAR or KOTHI) fills in the estimated amount of the other token and helps provide liquidity to the pool.
+- **SwapComponent :-**
+Helps swap a token to another. It takes the amount of token in input field From and estimates the amount of token in input field To and vise versa.
+- **WithdrawComponent :-**
+Helps withdraw the share one has. Also enables to withdraw to his maximum limit.
+- **ContainerComponent :-**
+This component renders the main body of our application which contains the center box containing the tabs to switch between the four components Swap, Provide, Faucet, Withdraw. And also renders the account details and pool details.
 
 --------------------------------------------------------------
 
