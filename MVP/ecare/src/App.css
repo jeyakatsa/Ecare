@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  font-family: Arial;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: white;
+  margin-bottom: 0%;
+}
+
+@media screen and (max-width: 650px) {
+  .App {
+    -webkit-text-size-adjust: none;
+  }
 }
 
 .App-logo {
