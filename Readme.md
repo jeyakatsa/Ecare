@@ -58,7 +58,7 @@ Unlike other exchange rate systems, ECARE's system isn't based on the market cap
 ## [Prototype](https://github.com/jeyakatsa/monalisa/tree/main/MVP)
 
 #### Concept: 
-<img src="https://github.com/jeyakatsa/monalisa/blob/main/MVP/ecare/prototypeConcept/PrototypeConceptHome(First-Draft).jpg" width="750px">
+<img src="https://github.com/jeyakatsa/monalisa/blob/main/MVP/prototypeConcept/PrototypeConceptHome(First-Draft).jpg" width="750px">
 
 --------------------------------------------------
 
