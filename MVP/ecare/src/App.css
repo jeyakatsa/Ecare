@@ -43,6 +43,37 @@ img {
   box-shadow: 0px 10px 30px -20px black;
 }
 
+#label{
+  color: gray;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 17px;
+}
+#input {
+  padding: 10px;
+  color: white;
+  border: solid;
+  border-color: silver;
+  border-width: 5px;
+  border-radius: 30px;
+  font-size: 18px;
+  height: 25px;
+}
+#input:focus {
+  border-color: rgb(18, 18, 18);
+  transition: 1s;
+}
+.form-control:focus{
+ -webkit-box-shadow: none !important;
+ -moz-box-shadow: none !important;
+ box-shadow: none !important;
+}
+#errors{
+  color: #383838;
+  font-style: bold;
+   font-weight: 800;
+}
+
 #connect-wallet {
   background:white;
   color: gray;
@@ -98,6 +129,7 @@ hr {
   font-weight: 700;
   margin-top: 25px; 
   opacity: .6;
+  margin-bottom: 30px;
 }
 
 p {
@@ -112,6 +144,7 @@ p {
   #name {
     display: block;
     margin-top: 45px;
+    margin-bottom: 45px;
   }
 
   p {

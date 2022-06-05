@@ -9,10 +9,27 @@ function App() {
 
         <section class="exchange-grid">
           <div id="left-top-wallet">
+            <form action="/connect-wallet" method="post" modelAttribute="charity">
+            <div class="form-group" id="enter-content">
+              <label id="label" path="name">Balance</label>
+              <errors id="errors" path="name"></errors>
+              <input id="input" class="form-control" path="name"></input>
+            </div>
+            <div class="form-group" id="enter-content">
+              <label id="label" path="website">Total Tokens</label>					
+              <errors id="errors" path="website"></errors>
+              <input id="input" class="form-control" path="website"></input>
+            </div>
+            <div class="form-group" id="enter-content">
+              <label id="label" path="email">Exchange Tokens</label>						
+              <errors id="errors" path="email"></errors>
+              <input id="input" class="form-control" path="email"></input>
+            </div>										
+            <br></br>
+              <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
+          </form>
 
-            <button type="button" id="connect-wallet">
-              Connect Wallet One
-            </button>
+
             <p id="wallet-connected">
               Wallet One Connected
             </p>
