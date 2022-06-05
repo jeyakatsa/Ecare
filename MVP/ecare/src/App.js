@@ -10,36 +10,55 @@ function App() {
         <section class="exchange-grid">
           <div id="left-top-wallet">
             <form action="/connect-wallet" method="post" modelAttribute="charity">
-            <div class="form-group" id="enter-content">
-              <label id="label" path="name">Balance</label>
-              <errors id="errors" path="name"></errors>
-              <input id="input" class="form-control" path="name"></input>
-            </div>
-            <div class="form-group" id="enter-content">
-              <label id="label" path="website">Total Tokens</label>					
-              <errors id="errors" path="website"></errors>
-              <input id="input" class="form-control" path="website"></input>
-            </div>
-            <div class="form-group" id="enter-content">
-              <label id="label" path="email">Exchange Tokens</label>						
-              <errors id="errors" path="email"></errors>
-              <input id="input" class="form-control" path="email"></input>
-            </div>										
-            <br></br>
-              <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
-          </form>
-
-
+              <div class="form-group" id="enter-content">
+                <label id="label" path="name">Balance</label>
+                <br></br>
+                <errors id="errors" path="name"></errors>
+                <label id="numbers" path="name">$0.00</label>
+              </div>
+              <div class="form-group" id="enter-content">
+                <label id="label" path="website">Total Tokens</label>					
+                <br></br>
+                <errors id="errors" path="website"></errors>
+                <label id="numbers" path="name">0.00</label>
+              </div>
+              <div class="form-group" id="enter-content">
+                <label id="label" path="email">Exchange Tokens</label>						
+                <br></br>
+                <errors id="errors" path="email"></errors>
+                <input id="input" class="form-control" path="email"></input>
+              </div>										
+              <br></br>
+                <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
+            </form>
             <p id="wallet-connected">
               Wallet One Connected
             </p>
           </div>
 
           <div id="right-bottom-wallet">
-
-            <button type="button" id="connect-wallet">
-              Connect Wallet Two
-            </button>
+            <form action="/connect-wallet" method="post" modelAttribute="charity">
+                <div class="form-group" id="enter-content">
+                  <label id="label" path="name">Balance</label>
+                  <br></br>
+                  <errors id="errors" path="name"></errors>
+                  <label id="numbers" path="name">$0.00</label>
+                </div>
+                <div class="form-group" id="enter-content">
+                  <label id="label" path="website">Total Tokens</label>					
+                  <br></br>
+                  <errors id="errors" path="website"></errors>
+                  <label id="numbers" path="name">0.00</label>
+                </div>
+                <div class="form-group" id="enter-content">
+                  <label id="label" path="email">Exchange Tokens</label>						
+                  <br></br>
+                  <errors id="errors" path="email"></errors>
+                  <input id="input" class="form-control" path="email"></input>
+                </div>										
+                <br></br>
+                  <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
+              </form>
             <p id="wallet-connected">
               Wallet Two Connected
             </p>

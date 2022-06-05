@@ -16,7 +16,7 @@
 
 img {
   width: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -27,37 +27,55 @@ img {
 }
 .exchange-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   grid-gap: 30px;
   width: 100%;
-  max-width: 1280px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
 #left-top-wallet, #right-bottom-wallet {
+  width: 350px;
   background: white;
   border-radius: 50px;
   padding: 30px;
   box-shadow: 0px 10px 30px -20px black;
 }
 
+.form-group{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #label{
+  color: rgb(149, 149, 149);
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#numbers{
   color: gray;
   font-family: Arial;
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 20px;
 }
+
 #input {
-  padding: 10px;
-  color: white;
-  border: solid;
-  border-color: silver;
-  border-width: 5px;
-  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(237, 237, 237);
+  color: gray;
+  border: none;
+  width: 160px;
+  border-width: 2px;
+  border-radius: 20px;
   font-size: 18px;
-  height: 25px;
+  height: 15px;
 }
 #input:focus {
   border-color: rgb(18, 18, 18);
@@ -80,6 +98,7 @@ img {
   padding: 15px;
   border: none;
   width: 200px;
+  margin-bottom: 20px;
   border-radius: 30px;
   box-shadow: 0px 5px 8px 1px silver;
 }
@@ -104,7 +123,6 @@ box-shadow: 0px 5px 8px 1px white;
   border: none;
   border-radius: 30px;
   width: 300px;
-  margin: 0 auto;
 }
 #exchange:hover {
   background: silver;
@@ -113,7 +131,7 @@ box-shadow: 0px 5px 8px 1px white;
   }
 
 hr {
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: silver;
   border: none;
   height: 6px;
@@ -127,9 +145,9 @@ hr {
   font-size: 12pt;
   color: gray;
   font-weight: 700;
-  margin-top: 25px; 
+  margin-top: 10px; 
   opacity: .6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -140,6 +158,9 @@ p {
 @media screen and (max-width: 650px){
   .exchange-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #left-top-wallet, #right-bottom-wallet {
+    width: 300px;
   }
   #name {
     display: block;
