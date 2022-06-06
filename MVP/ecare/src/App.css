@@ -14,9 +14,9 @@
   }
 }
 
-img {
+#img {
   width: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -29,105 +29,131 @@ img {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  grid-gap: 30px;
+  grid-gap: 20px;
   width: 100%;
-  max-width: 900px;
+  max-width: 870px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
-#left-top-wallet, #right-bottom-wallet {
-  width: 350px;
-  background: white;
-  border-radius: 50px;
-  padding: 30px;
-  box-shadow: 0px 10px 30px -20px black;
-}
+  #left-top-wallet, #right-bottom-wallet {
+    width: 350px;
+    background: white;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px -20px black;
+  }
 
-.form-group{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-#label{
-  color: rgb(149, 149, 149);
-  font-family: Arial;
-  font-weight: 500;
-  font-size: 15px;
-}
+  #choose-token {
+    background:white;
+    color: rgb(132, 132, 132);
+    padding: 15px;
+    font-size: 12px;
+    border: none;
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 0px rgb(210, 209, 209);
+  }
+  #choose-token:hover {
+    background: rgb(44, 44, 44);
+    color: white;
+    transition: 2s;
+    box-shadow: 0px 5px 8px 1px white;
+  }
+  #ethicon {
+    height: 15px;
+    margin-right: 5px;
+  }
 
-#numbers{
-  color: gray;
-  font-family: Arial;
-  font-weight: 700;
-  font-size: 25px;
-  padding: 20px;
-}
 
-#input {
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(237, 237, 237);
-  color: gray;
-  border: none;
-  width: 160px;
-  border-width: 2px;
-  border-radius: 20px;
-  font-size: 18px;
-  height: 15px;
-}
-#input:focus {
-  border-color: rgb(18, 18, 18);
-  transition: 1s;
-}
-.form-control:focus{
- -webkit-box-shadow: none !important;
- -moz-box-shadow: none !important;
- box-shadow: none !important;
-}
-#errors{
-  color: #383838;
-  font-style: bold;
-   font-weight: 800;
-}
+  #label{
+    color: rgb(149, 149, 149);
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 15px;
+  }
 
-#connect-wallet {
-  background:white;
-  color: gray;
-  padding: 15px;
-  border: none;
-  width: 200px;
-  margin-bottom: 20px;
-  border-radius: 30px;
-  box-shadow: 0px 5px 8px 1px silver;
-}
-#connect-wallet:hover {
-background: rgb(44, 44, 44);
-color: white;
-transition: 2s;
-box-shadow: 0px 5px 8px 1px white;
-}
+  #numbers{
+    color: gray;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 20px;
+  }
 
-#wallet-connected {
-  display: none;
-}
+  #input {
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px;
+    background-color: rgb(237, 237, 237);
+    color: gray;
+    border: none;
+    width: 160px;
+    border-width: 2px;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 25px;
+    height: 15px;
+  }
+  #input:focus {
+    outline: none;
+    background-color: rgb(216, 216, 216);
+    transition: 1s;
+  }
+  .form-control:focus{
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  #errors{
+    color: #383838;
+    font-style: bold;
+    font-weight: 800;
+  }
 
-#exchange {
-  background: rgb(18, 18, 18);
-  color: white;
-  font-weight:700;
-  font-size: 12px;
-  letter-spacing: 2px;
-  padding: 20px;
-  border: none;
-  border-radius: 30px;
-  width: 300px;
-}
-#exchange:hover {
-  background: silver;
-  color: white;
-  transition: 1s;
+  #connect-wallet {
+    background:white;
+    color: rgb(98, 98, 98);
+    padding: 15px;
+    border: none;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 8px 1px silver;
+  }
+  #connect-wallet:hover {
+    background: rgb(44, 44, 44);
+    color: white;
+    transition: 2s;
+    box-shadow: 0px 5px 8px 1px white;
+  }
+
+  #wallet-connected {
+    display: none;
+  }
+
+  #exchange {
+    background: rgb(18, 18, 18);
+    color: white;
+    font-weight:700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+  }
+  #exchange:hover {
+    background: silver;
+    color: white;
+    transition: 1s;
   }
 
 hr {
@@ -142,11 +168,11 @@ hr {
 
 #name {
   display: inline-flex;
-  font-size: 12pt;
+  font-size: 10pt;
   color: gray;
   font-weight: 700;
-  margin-top: 10px; 
-  opacity: .6;
+  margin-top: 5px; 
+  opacity: .8;
   margin-bottom: 20px;
 }
 
