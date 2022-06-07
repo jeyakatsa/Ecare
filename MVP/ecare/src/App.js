@@ -12,10 +12,17 @@ function App() {
 
         <div id="left-top-wallet">
           <form action="/connect-wallet" method="post" modelAttribute="charity">
-            
-            <button type="button" id="choose-token">
-              <img id="ethicon" src="eth-icon.png"/>ETH
-            </button>
+
+            <select name="currencies" id="choose-token">
+              <option value="ETH">
+                <img id="ethicon" src="eth-icon.png"/>
+                ETH
+              </option>
+              <option value="WETH">
+                <img id="ethicon" src="weth-icon.png"/>
+                WETH
+              </option>
+            </select>
             
             <div class="form-group" id="enter-content">
               <label id="label" path="name">Balance</label>
@@ -51,9 +58,16 @@ function App() {
         <div id="right-bottom-wallet">
           <form action="/connect-wallet" method="post" modelAttribute="charity">
 
-              <button type="button" id="choose-token">
-                <img id="ethicon" src="weth-icon.png"/>WETH
-              </button>
+              <select name="currencies" id="choose-token">
+                <option value="WETH">
+                  <img id="ethicon" src="weth-icon.png"/>
+                  WETH
+                </option>
+                <option value="ETH">
+                  <img id="ethicon" src="eth-icon.png"/>
+                  ETH
+                </option>
+              </select>
 
               <div class="form-group" id="enter-content">
                 <label id="label" path="name">Balance</label>
