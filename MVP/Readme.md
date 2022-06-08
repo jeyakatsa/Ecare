@@ -3,17 +3,16 @@
 ### 
 
 - Overall: 
-  - [X] Begin building Ecare *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
-  - [ ] Complete Ecare *[In Development]*
+  - [X] Ecare Fundamentals Process *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
+  - [ ] Ecare Publishing *[In Development]*
 
 **Month 0**
-  - [X] Publish official website for updates/blog-posts/etc *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
-  - [ ] Create Twitter page *[announced]*
+  - [X] Official website for updates/blog-posts/etc *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
 
 **Month 1**
-  - [ ] Complete Front-End Prototype (Proof of Concept (POC)) *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
-  - [ ] Complete Back-End Prototype (Proof of Concept (POC)) *[In-Development]*
+  - [X] Prototype Front-End *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
+  - [ ] Prototype Back-End *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
 
 **Month 2 - Year 2023/2024**
-  - [X] Begin Research & Development *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
-  - [ ] Complete MVP/Full-Product *[announced]*
+  - [X] Research & Development *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
+  - [ ] MVP/Full-Product *[announced]*
