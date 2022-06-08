@@ -13,4 +13,8 @@ public class MainController {
 		return "index.jsp";
 	}
 	
+	@GetMapping("/prototype")
+	public String Prototype() {
+		return "prototype.jsp";
+	}
 }
