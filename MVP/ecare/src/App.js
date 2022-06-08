@@ -11,18 +11,12 @@ function App() {
       <section class="exchange-grid">
 
         <div id="left-top-wallet">
-          <form action="/connect-wallet" method="post" modelAttribute="charity">
+          <section>
 
-            <select name="currencies" id="choose-token">
-              <option value="ETH">
-                <img id="ethicon" src="eth-icon.png"/>
-                ETH
-              </option>
-              <option value="WETH">
-                <img id="ethicon" src="weth-icon.png"/>
-                WETH
-              </option>
-            </select>
+            <button class="eth" id="choose-token">
+              <img id="ethicon" src="eth-icon.png"/>
+              <p id="eth-name">ETH</p>
+            </button>
             
             <div class="form-group" id="enter-content">
               <label id="label" path="name">Balance</label>
@@ -49,51 +43,45 @@ function App() {
 
               <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
           
-          </form>
+          </section>
           <p id="wallet-connected">
             Wallet One Connected
           </p>
         </div>
 
         <div id="right-bottom-wallet">
-          <form action="/connect-wallet" method="post" modelAttribute="charity">
+          <section>
 
-              <select name="currencies" id="choose-token">
-                <option value="WETH">
-                  <img id="ethicon" src="weth-icon.png"/>
-                  WETH
-                </option>
-                <option value="ETH">
-                  <img id="ethicon" src="eth-icon.png"/>
-                  ETH
-                </option>
-              </select>
+            <button class="weth" id="choose-token">
+              <img id="ethicon" src="weth-icon.png"/>
+              <p id="weth-name">WETH</p>
+            </button>
 
-              <div class="form-group" id="enter-content">
-                <label id="label" path="name">Balance</label>
-                <br></br>
-                <errors id="errors" path="name"></errors>
-                <label id="numbers" path="name">$0.00</label>
-              </div>
-              
-              <div class="form-group" id="enter-content">
-                <label id="label" path="website">Total Tokens</label>					
-                <br></br>
-                <errors id="errors" path="website"></errors>
-                <label id="numbers" path="name">0.00</label>
-              </div>
-              
-              <div class="form-group" id="enter-content">
-                <label id="label" path="email">Exchange Tokens</label>						
-                <br></br>
-                <errors id="errors" path="email"></errors>
-                <input id="input" class="form-control" path="email"></input>
-              </div>										
-              
+            <div class="form-group" id="enter-content">
+              <label id="label" path="name">Balance</label>
               <br></br>
+              <errors id="errors" path="name"></errors>
+              <label id="numbers" path="name">$0.00</label>
+            </div>
+            
+            <div class="form-group" id="enter-content">
+              <label id="label" path="website">Total Tokens</label>					
+              <br></br>
+              <errors id="errors" path="website"></errors>
+              <label id="numbers" path="name">0.00</label>
+            </div>
+            
+            <div class="form-group" id="enter-content">
+              <label id="label" path="email">Exchange Tokens</label>						
+              <br></br>
+              <errors id="errors" path="email"></errors>
+              <input id="input" class="form-control" path="email"></input>
+            </div>										
+            
+            <br></br>
 
-                <input id="connect-wallet" type="submit" value="Connect Wallet Two"/>
-            </form>
+              <input id="connect-wallet" type="submit" value="Connect Wallet Two"/>
+          </section>
           <p id="wallet-connected">
             Wallet Two Connected
           </p>
