@@ -10,39 +10,39 @@
 		
 <!-- Below information for social media sharing and search-engine/browser optimization -->		
 		<meta name="title" content="Ecare">
-		<meta name="description" content="Ethereum Combinatorial Auction Rate Exchange">
+		<meta name="description" content="Ethereum Combinatorial Auction Rate Exchange Prototype">
 		<meta name="google" content="nositelinkssearchbox">
 		<meta name="keywords" content="Ecare, Ethereum">
 		<meta name="author" content="Ecare">
 		<meta name="viewport" id="viewport" content="width=device-width,user-scalable=yes,initial-scale=1" >
 		
 		<link rel="icon" type="image/x-icon" href="/icons&images/Iconic.ico" sizes="156x156">
-		<link rel="canonical" href="https://ecare.exchange">
+		<link rel="canonical" href="https://ecare.exchange/prototype">
 		
 		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">	
 		<meta property="og:site_name" content="Ecare">	
 		<meta property="og:type" content="object">				
 		<meta property="og:title" content="Ecare">
-		<meta propety="og:url" content="https://ecare.exchange">
-		<meta property="og:description" content="Ethereum Combinatorial Auction Rate Exchange">
+		<meta propety="og:url" content="https://ecare.exchange/prototype">
+		<meta property="og:description" content="Ethereum Combinatorial Auction Rate Exchange Prototype">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="700">
 		<meta property="og:image:height" content="400">
 		
 		<meta name="twitter:title" content="Ecare">
 		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">
-		<meta name="twitter:url" content="https://ecare.exchange">
+		<meta name="twitter:url" content="https://ecare.exchange/prototype">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:description" content="Ethereum Combinatorial Auction Rate Exchange">
-		<meta name="description" content="Ethereum Combinatorial Auction Rate Exchange">
+		<meta name="twitter:description" content="Ethereum Combinatorial Auction Rate Exchange Prototype">
+		<meta name="description" content="Ethereum Combinatorial Auction Rate Exchange Prototype">
 <!-- Above information for social media sharing and search-engine/browser optimization -->	
 
-		<title>Ecare Exchange Prototype</title>
+		<title>Ecare Prototype</title>
 	
 </head>
 	<body>
 	
-      <a class="icon">
+      <a href="/" class="icon">
         <img id="img" src="/icons&images/Icon.png"/>
       </a>
 
@@ -134,11 +134,12 @@
       <hr></hr>
 
       <h3 id="name">
-        <p id="names">ethereum</p>
-        <p id="names">combinatorial</p>
-        <p id="names">auction</p>
-        <p id="names">rate</p>
-        <p id="names">exchange</p>
+        <p>ethereum</p>
+        <p>combinatorial</p>
+        <p>auction</p>
+        <p>rate</p>
+        <p>exchange</p>
+        <p id="proto-name">prototype</p>
       </h3>
 	
 	</body>
