@@ -4,7 +4,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/prototype.css">	
+		<link rel="stylesheet" type="text/css" href="css/prototype.css">
+		
+		<script src="JSmodal.min.js"></script>
+		<link rel="stylesheet" href="JSmodalani.css" />	
 			
 		<meta charset="UTF-8">
 		
