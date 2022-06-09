@@ -23,39 +23,60 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 45vh;
 }
 
-.icon {
-  width: 80px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#title {
-  font-size: 40pt;
-  font-weight: 700;
-  color: gray;   
-  margin-top: 30px;   
+	.icon {
+	  width: 80px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	#title {
+	  font-size: 40pt;
+	  font-weight: 700;
+	  color: gray;   
+	  margin-top: 30px;   
+	  letter-spacing: 2px;
+	  opacity: .8;
+	}
+	
+	#name {
+	  display: flex;
+	  font-size: 12pt;
+	  color: gray;
+	  font-weight: 700;
+	  margin-top: -35px; 
+	  letter-spacing: 0px;
+	  margin-bottom: 25px;
+	  opacity: .8;
+	}
+	
+	#names {
+	  margin-right: 10px;
+	  margin-left: 10px;
+	}
+	
+#prototype {
+  background: white;
+  color: rgb(169, 166, 211);
+  font-weight:600;
+  font-size: 14px;
+  padding: 20px;
+  border: none;
   letter-spacing: 2px;
-  opacity: .8;
+  border-radius: 15px;
+  width: 350px;
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 10px 1px rgb(169, 166, 211);
 }
-
-#name {
-  display: flex;
-  font-size: 12pt;
-  color: gray;
-  font-weight: 700;
-  margin-top: -35px; 
-  letter-spacing: 0px;
-  margin-bottom: 25px;
-  opacity: .8;
-}
-
-p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
+#prototype:hover {
+  background: rgb(18, 18, 18);
+  color: white;
+  transition: 1s;
+  box-shadow: 0px 2px 15px 1px white;
+}	
+	
 
 a {
 	text-decoration: none;
@@ -89,8 +110,16 @@ a:hover {
       letter-spacing: 0px;
 	}
 	
-	p {
+	#names {
 		line-height: 15px;
+	}
+	
+	#prototype {
+	  font-weight:600;
+	  font-size: 11px;
+	  width: 250px;
+	  margin-bottom: 50px;
+	  margin-top: 30px;
 	}
 	
 	#github {

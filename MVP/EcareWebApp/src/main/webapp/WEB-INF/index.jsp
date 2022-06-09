@@ -46,18 +46,24 @@
 	  <img class="icon" src="/icons&images/Icon.png"/>
 	  <h1 id="title">ecare</h1>
  	  <div id="name">
-	   	  <p>ethereum</p> 
-	   	  <p>combinatorial</p> 
-	   	  <p>auction</p> 
-	   	  <p>rate</p> 
-	   	  <p>exchange</p>
+	   	  <p id="names">ethereum</p> 
+	   	  <p id="names">combinatorial</p> 
+	   	  <p id="names">auction</p> 
+	   	  <p id="names">rate</p> 
+	   	  <p id="names">exchange</p>
 	  </div>
+	</section>
+	
+	<button type="button" id="prototype">
+       Launch Prototype
+    </button>
+	
+	<footer>
 	  <a href="https://github.com/jeyakatsa/monalisa"
 	      target="_blank"
 	      class="btn contact-details">
 	      <img id="github" src="/icons&images/Github.png">
-	  </a>  
-	</section>
-	
+	  </a>  	
+	</footer>
 	</body>
 </html>
