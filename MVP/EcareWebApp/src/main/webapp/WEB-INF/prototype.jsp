@@ -47,7 +47,7 @@
 	<body>
 	
       <a href="/" >
-        <img id="img" src="/icons&images/Icon.png"/>
+        <img id="img" src="/icons&images/appIcon.png"/>
       </a>
 
       <section class="exchange-grid">
@@ -83,7 +83,8 @@
 
             <br></br>
 
-              <input id="connect-wallet" type="submit" value="Connect Wallet One"/>
+            <input onclick="JSmodal.open(1, 'IN DEVELOPMENT')"
+            id="connect-wallet" type="submit" value="Connect Wallet One"/>
           
           </section>
           <p id="wallet-connected">
@@ -122,7 +123,8 @@
             
             <br></br>
 
-              <input id="connect-wallet" type="submit" value="Connect Wallet Two"/>
+            <input onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+              id="connect-wallet" type="submit" value="Connect Wallet Two"/>
           </section>
           <p id="wallet-connected">
             Wallet Two Connected
@@ -131,7 +133,7 @@
 
       </section>
 
-      <button onclick="JSmodal.open(1, 'Hello World')" type="button" id="exchange">
+      <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" type="button" id="exchange">
           EXCHANGE
       </button>
 

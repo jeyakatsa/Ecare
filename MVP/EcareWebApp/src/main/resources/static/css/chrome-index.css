@@ -85,7 +85,7 @@ body {
 	
 
 footer {
-	margin-top: 45px;
+	margin-top: 25px;
 	text-decoration: none;
 }
 #contact:hover {
@@ -129,9 +129,6 @@ footer {
 	  margin-top: 30px;
 	}
 	
-	footer {
-	margin-top: 5px;
-}
 	
 	#github {
 		width: 30px;

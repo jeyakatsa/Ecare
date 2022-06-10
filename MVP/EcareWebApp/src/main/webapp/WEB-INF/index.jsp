@@ -56,9 +56,9 @@
 	   	  <p id="names">exchange</p>
 	  </div>
 	  
-	  <a href="/prototype" id="prototype">
+<!-- 	  <a href="/prototype" id="prototype">
       	Launch Prototype
-      </a>
+      </a> -->
       
       <footer>
 		  <a href="https://github.com/jeyakatsa/monalisa"
