@@ -6,8 +6,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/prototype.css">
 		
-		<script src="JSmodal.min.js"></script>
-		<link rel="stylesheet" href="JSmodalani.css" />	
+		<script src="javascript/JSmodal.min.js"></script>
+		<link rel="stylesheet" href="css/JSmodalani.css" />	
 			
 		<meta charset="UTF-8">
 		
@@ -44,6 +44,7 @@
 	
 </head>
 	<body>
+	
 	
       <a href="/" class="icon">
         <img id="img" src="/icons&images/Icon.png"/>
@@ -130,7 +131,7 @@
 
       </section>
 
-      <button type="button" id="exchange">
+      <button onclick="JSmodal()" type="button" id="exchange">
           EXCHANGE
       </button>
 
