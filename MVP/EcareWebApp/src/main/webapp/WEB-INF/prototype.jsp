@@ -4,9 +4,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/prototype.css">
+		<link rel="stylesheet" type="text/css" href="css/prototype.css">	
+		<script src="javascript/JSmodal.min.js">
 		
-		<script src="javascript/JSmodal.min.js"></script>
+		</script>
 		<link rel="stylesheet" href="css/JSmodalani.css" />	
 			
 		<meta charset="UTF-8">
@@ -45,8 +46,7 @@
 </head>
 	<body>
 	
-	
-      <a href="/" class="icon">
+      <a href="/" >
         <img id="img" src="/icons&images/Icon.png"/>
       </a>
 
@@ -131,7 +131,7 @@
 
       </section>
 
-      <button onclick="JSmodal()" type="button" id="exchange">
+      <button onclick="JSmodal.open(1, 'Hello World')" type="button" id="exchange">
           EXCHANGE
       </button>
 
