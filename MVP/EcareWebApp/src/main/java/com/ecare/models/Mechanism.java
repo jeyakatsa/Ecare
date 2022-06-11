@@ -3,37 +3,89 @@ package com.ecare.models;
 import javax.validation.constraints.NotBlank;
 
 public class Mechanism {
-	private Double balance;
-	private Double totalTokens;
+	private Double balanceOne;
+	private Double balanceTwo;
+	private Double totalTokensOne;
+	private Double totalTokensTwo;
 	@NotBlank (message="Required")
-	private Double exchangeTokens;
+	private Double exchangeTokensOne;
+	@NotBlank (message="Required")
+	private Double exchangeTokensTwo;
+	
 	
 	public Mechanism() {
 	}
 
-	public Double getBalance() {
-		return balance;
+
+	public Double getBalanceOne() {
+		return balanceOne;
 	}
 
-	public void setBalance(Double balance) {
-		this.balance = balance;
+
+	public void setBalanceOne(Double balanceOne) {
+		this.balanceOne = balanceOne;
 	}
 
-	public Double getTotalTokens() {
-		return totalTokens;
+
+	public Double getBalanceTwo() {
+		return balanceTwo;
 	}
 
-	public void setTotalTokens(Double totalTokens) {
-		this.totalTokens = totalTokens;
+
+	public void setBalanceTwo(Double balanceTwo) {
+		this.balanceTwo = balanceTwo;
 	}
 
-	public Double getExchangeTokens() {
-		return exchangeTokens;
+
+	public Double getTotalTokensOne() {
+		return totalTokensOne;
 	}
 
-	public void setExchangeTokens(Double exchangeTokens) {
-		this.exchangeTokens = exchangeTokens;
+
+	public void setTotalTokensOne(Double totalTokensOne) {
+		this.totalTokensOne = totalTokensOne;
 	}
+
+
+	public Double getTotalTokensTwo() {
+		return totalTokensTwo;
+	}
+
+
+	public void setTotalTokensTwo(Double totalTokensTwo) {
+		this.totalTokensTwo = totalTokensTwo;
+	}
+
+
+	public Double getExchangeTokensOne() {
+		return exchangeTokensOne;
+	}
+
+
+	public void setExchangeTokensOne(Double exchangeTokensOne) {
+		this.exchangeTokensOne = exchangeTokensOne;
+	}
+
+
+	public Double getExchangeTokensTwo() {
+		return exchangeTokensTwo;
+	}
+
+
+	public void setExchangeTokensTwo(Double exchangeTokensTwo) {
+		this.exchangeTokensTwo = exchangeTokensTwo;
+	}
+	
+	
+
+
+
+	
+	
+	
+	
+
+	
 	
 	
 }
