@@ -43,7 +43,7 @@
 
 		<title>Ecare Prototype</title>
 	
-</head>
+	</head>
 	<body>
 	
       <a href="/" >
@@ -83,8 +83,10 @@
 
             <br></br>
 
-            <input onclick="JSmodal.open(1, 'IN DEVELOPMENT')"
-            id="connect-wallet" type="submit" value="Connect Wallet One"/>
+            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+              id="connect-wallet" type="button">
+              Connect Wallet One
+            </button>
           
           </section>
           <p id="wallet-connected">
@@ -123,8 +125,10 @@
             
             <br></br>
 
-            <input onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
-              id="connect-wallet" type="submit" value="Connect Wallet Two"/>
+            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+              id="connect-wallet" type="button">
+              Connect Wallet Two
+            </button>
           </section>
           <p id="wallet-connected">
             Wallet Two Connected
@@ -133,18 +137,19 @@
 
       </section>
 
-      <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" type="button" id="exchange">
+      <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+      type="button" id="exchange">
           EXCHANGE
       </button>
 
       <hr></hr>
 
       <h3 id="name">
-        <p>ethereum</p>
-        <p>combinatorial</p>
-        <p>auction</p>
-        <p>rate</p>
-        <p>exchange</p>
+        <p id="names">ethereum</p>
+        <p id="names">combinatorial</p>
+        <p id="names">auction</p>
+        <p id="names">rate</p>
+        <p id="names">exchange</p>
         <p id="proto-name">prototype</p>
       </h3>
 	

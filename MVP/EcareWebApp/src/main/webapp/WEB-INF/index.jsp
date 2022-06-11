@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/chrome-index.css">	
+		<link rel="stylesheet" type="text/css" href="css/index.css">	
 			
 		<meta charset="UTF-8">
 		
@@ -56,9 +57,9 @@
 	   	  <p id="names">exchange</p>
 	  </div>
 	  
-<!-- 	  <a href="/prototype" id="prototype">
+ 	  <a href="/prototype" id="prototype">
       	Launch Prototype
-      </a> -->
+      </a>
       
       <footer>
 		  <a href="https://github.com/jeyakatsa/monalisa"
