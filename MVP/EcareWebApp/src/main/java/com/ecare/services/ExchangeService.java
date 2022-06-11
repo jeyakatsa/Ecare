@@ -20,6 +20,13 @@ public class ExchangeService {
 	@Autowired
 	private WalletTwoRepository wTwoRepo;	
 	
+	public ExchangeService(
+			WalletOneRepository wOneRepo,
+			WalletTwoRepository wTwoRepo) {
+		this.wOneRepo = wOneRepo;
+		this.wTwoRepo = wTwoRepo;
+	}
+	
 	public WalletOne newBalanceOne (
 			WalletOne balanceOne,
 			WalletTwo balanceTwo) {
