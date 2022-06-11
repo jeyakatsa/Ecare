@@ -10,7 +10,7 @@
   - [X] Official website for updates/blog-posts/etc *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
 
 **Month 1**
-  - [X] Prototype Front-End *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
+  - [X] Prototype Front-End *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*---------***https://ecare.exchange/prototype***
   - [ ] Prototype Back-End *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
 
 **Month 2 - Year 2023/2024**
