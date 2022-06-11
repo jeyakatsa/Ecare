@@ -3,15 +3,15 @@ package com.ecare.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ecare.models.Mechanism;
+import com.ecare.models.Exchange;
 import com.ecare.models.WalletOne;
 import com.ecare.models.WalletTwo;
-import com.ecare.repositories.MechanismRepository;
+import com.ecare.repositories.ExchangeRepository;
 import com.ecare.repositories.WalletOneRepository;
 import com.ecare.repositories.WalletTwoRepository;
 
 @Service
-public class MechanismService {
+public class ExchangeService {
 	
 //	@Autowired
 //	private MechanismRepository mRepo;

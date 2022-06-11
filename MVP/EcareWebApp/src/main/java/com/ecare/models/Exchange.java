@@ -2,7 +2,7 @@ package com.ecare.models;
 
 import javax.validation.constraints.NotBlank;
 
-public class Mechanism  {
+public class Exchange  {
 	
 
 	@NotBlank (message="Required")
@@ -11,7 +11,7 @@ public class Mechanism  {
 	private Double exchangeTokensTwo;
 	
 	
-	public Mechanism() {
+	public Exchange() {
 	}
 
 
