@@ -136,6 +136,12 @@
         </div>
 
       </section>
+      
+      <a onclick="JSmodal.open(1, 'IN DEVELOPMENT')">
+        <img id="refresh" src="/icons&images/refreshIcon.png"/>
+      </a>      
+      
+      <br>
 
       <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
       type="button" id="exchange">

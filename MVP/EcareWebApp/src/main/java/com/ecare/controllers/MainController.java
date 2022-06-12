@@ -20,13 +20,13 @@ public class MainController {
 	
 	
 	//Comment out bottom getters after successful tests
-//	@GetMapping("/test")
-//	public String Test() {
-//		return "test/index-test.jsp";
-//	}
-//	
-//	@GetMapping("/prototype-test")
-//	public String PrototypeTest() {
-//		return "test/prototype-test.jsp";
-//	}
+	@GetMapping("/test")
+	public String Test() {
+		return "test/index-test.jsp";
+	}
+	
+	@GetMapping("/prototype-test")
+	public String PrototypeTest() {
+		return "test/prototype-test.jsp";
+	}
 }
