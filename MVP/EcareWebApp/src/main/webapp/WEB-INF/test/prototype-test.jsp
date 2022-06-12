@@ -102,6 +102,11 @@
 						<a id="numbers" href="/${walletOne}">
 						${walletOne.totalTokensOne}</a>
 					</td>
+					<div class="form-group" id="enter-content">
+		              <label id="label">Exchange Tokens</label>						
+		              <br>
+		              <input id="input" class="form-control"></input>
+		            </div>
 				</tr>
 			</c:forEach>
 			</tbody>

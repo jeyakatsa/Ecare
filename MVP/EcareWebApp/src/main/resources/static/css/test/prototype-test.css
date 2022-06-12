@@ -131,7 +131,8 @@ body {
     box-shadow: none !important;
   }
   #errors{
-    color: #383838;
+  	font-size: 12px;
+    color: rgb(169, 166, 211);
     font-style: bold;
     font-weight: 800;
   }
