@@ -36,6 +36,11 @@ public class MainController {
 		return "test/index-test.jsp";
 	}
 	
+	@GetMapping("/prototype-test")
+	public String PrototypeTest() {
+		return "test/prototype-test.jsp";
+	}
+	
 	@GetMapping("/walletOne")
 	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
 		List<WalletOne> walletOneNumbers = this.exchangeService.getWalletOne();

@@ -5,8 +5,12 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/test/prototype-test.css">	
-		<script src="javascript/JSmodal.min.js">
-		
+		<script src="javascript/JSmodal.min.js"></script>
+		<script>
+			function walletConnected() {
+				   document.getElementById('wallet-connected').style.display = "block";
+				   document.getElementById('wallet-not-connected').style.display = "none";
+			}
 		</script>
 		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
 			
@@ -54,7 +58,7 @@
 
         <div id="left-top-wallet">
         
-          <section id="wallet-not-connected">
+          <section id="wallet-not-connected" style="display:block">
             <button class="eth" id="choose-token">
               <img id="ethicon" src="/icons&images/eth-icon.png"/>
               <p id="eth-name">ETH</p>
@@ -80,40 +84,49 @@
 
             <br></br>
 
-            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+            <button onclick="walletConnected()" 
               id="connect-wallet" type="button">
               Connect Wallet One
             </button>  
           </section>
           
-          <table id="wallet-connected">
-			<tbody>
-			<c:forEach items="${walletOne}" var="walletOne">
-				<tr id="tr">
-					<td>
-					    <label id="label">Balance</label>
-              			<br>
-						<a id="numbers" href="/${walletOne}">
-						${walletOne.balanceOne}</a>
-					</td>
-					<td>
-					    <label id="label">Total Tokens</label>					
-              			<br>
-						<a id="numbers" href="/${walletOne}">
-						${walletOne.totalTokensOne}</a>
-					</td>
+          <section id="wallet-connected" style="display:none">
+	          <button class="eth" id="choose-token">
+	              <img id="ethicon" src="/icons&images/eth-icon.png"/>
+	              <p id="eth-name">ETH</p>
+	          </button>
+ 	          <table>
+				<tbody>
+				<c:forEach items="${walletOne}" var="walletOne">
+					<tr id="tr">
+						<td>
+						    <label id="label">Balance</label>
+	              			<br>
+							<a id="numbers" href="/${walletOne}">
+							${walletOne.balanceOne}</a>
+						</td>
+						<td>
+						    <label id="label">Total Tokens</label>					
+	              			<br>
+							<a id="numbers" href="/${walletOne}">
+							${walletOne.totalTokensOne}</a>
+						</td>
+					</tr>
+				</c:forEach>
+				</tbody>
+			  </table>
+				<form:form action="/exchange-tokens" method="post" modelAttribute="walletOne">
 					<div class="form-group" id="enter-content">
-		              <label id="label">Exchange Tokens</label>						
+		              <form:label id="label" path="exchange-tokens">Exchange Tokens</form:label>						
 		              <br>
-		              <input id="input" class="form-control"></input>
+		              <form:errors id="errors" path="currency"></form:errors>
+		              <form:input id="input" class="form-control" path="exchange-tokens"></form:input>
 		            </div>
-				</tr>
-			</c:forEach>
-			</tbody>
-			<p id="wallet-connected">
-            	Wallet One Connected
-       		</p>
-		</table>
+				</form:form>
+				<p>
+		           	Wallet One Connected
+		    	</p>          
+          </section>
           
         </div>
 
@@ -150,9 +163,6 @@
               Connect Wallet Two
             </button>
           </section>
-          <p id="wallet-connected">
-            Wallet Two Connected
-          </p>
         </div>
 
       </section>
