@@ -1,5 +1,7 @@
 package com.ecare.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,14 @@ public class ExchangeService {
 			WalletTwoRepository wTwoRepo) {
 		this.wOneRepo = wOneRepo;
 		this.wTwoRepo = wTwoRepo;
+	}
+	
+	public List<WalletOne> getWalletOne(){
+		return wOneRepo.findAll();
+	}
+	
+	public List<WalletTwo> getWalletTwo(){
+		return wTwoRepo.findAll();
 	}
 	
 	public WalletOne newBalanceOne (

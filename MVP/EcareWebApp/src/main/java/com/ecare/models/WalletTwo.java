@@ -2,8 +2,8 @@ package com.ecare.models;
 
 public class WalletTwo {
 	
-	public Double balanceTwo = 10000.000;
-	public Double totalTokensTwo = 10.000;
+	public Double balanceTwo = 5000.000;
+	public Double totalTokensTwo = 5.000;
 	
 	public WalletTwo() {
 	}

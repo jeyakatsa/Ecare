@@ -151,23 +151,32 @@ body {
   #wallet-connected {
     display: none;
   }
+  
 
-  #exchange {
-    background: rgb(18, 18, 18);
-    color: white;
-    font-weight:700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    padding: 20px;
-    border: none;
-    border-radius: 20px;
-    width: 250px;
-  }
-  #exchange:hover {
-    background: gray;
-    color: white;
-    transition: 1s;
-  }
+#refresh {
+  width: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#exchange {
+  background: rgb(18, 18, 18);
+  color: white;
+  font-weight:700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+}
+#exchange:hover {
+  background: gray;
+  color: white;
+  transition: 1s;
+}
 
 hr {
   margin-top: 25px;
