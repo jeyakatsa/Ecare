@@ -53,32 +53,29 @@
       <section class="exchange-grid">
 
         <div id="left-top-wallet">
-          <section>
-
+        
+          <section id="wallet-not-connected">
             <button class="eth" id="choose-token">
               <img id="ethicon" src="/icons&images/eth-icon.png"/>
               <p id="eth-name">ETH</p>
             </button>
             
-            <div class="form-group" id="enter-content">
-              <label id="label" path="name">Balance</label>
+            <div class="form-group">
+              <label id="label">Balance</label>
               <br>
-              <errors id="errors" path="name"></errors>
-              <label id="numbers" path="name">$0.00</label>
+              <label id="numbers">$0.00</label>
             </div>
             
             <div class="form-group" id="enter-content">
-              <label id="label" path="website">Total Tokens</label>					
+              <label id="label">Total Tokens</label>					
               <br>
-              <errors id="errors" path="website"></errors>
-              <label id="numbers" path="name">0.00</label>
+              <label id="numbers">0.00</label>
             </div>
             
             <div class="form-group" id="enter-content">
-              <label id="label" path="email">Exchange Tokens</label>						
+              <label id="label">Exchange Tokens</label>						
               <br>
-              <errors id="errors" path="email"></errors>
-              <input id="input" class="form-control" path="email"></input>
+              <input id="input" class="form-control"></input>
             </div>
 
             <br></br>
@@ -86,12 +83,33 @@
             <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
               id="connect-wallet" type="button">
               Connect Wallet One
-            </button>
-          
+            </button>  
           </section>
-          <p id="wallet-connected">
-            Wallet One Connected
-          </p>
+          
+          <table id="wallet-connected">
+			<tbody>
+			<c:forEach items="${walletOne}" var="walletOne">
+				<tr id="tr">
+					<td>
+					    <label id="label">Balance</label>
+              			<br>
+						<a id="numbers" href="/${walletOne}">
+						${walletOne.balanceOne}</a>
+					</td>
+					<td>
+					    <label id="label">Total Tokens</label>					
+              			<br>
+						<a id="numbers" href="/${walletOne}">
+						${walletOne.totalTokensOne}</a>
+					</td>
+				</tr>
+			</c:forEach>
+			</tbody>
+			<p id="wallet-connected">
+            	Wallet One Connected
+       		</p>
+		</table>
+          
         </div>
 
         <div id="right-bottom-wallet">
@@ -102,25 +120,22 @@
               <p id="weth-name">WETH</p>
             </button>
 
-            <div class="form-group" id="enter-content">
-              <label id="label" path="name">Balance</label>
+            <div class="form-group">
+              <label id="label">Balance</label>
               <br>
-              <errors id="errors" path="name"></errors>
-              <label id="numbers" path="name">$0.00</label>
+              <label id="numbers">$0.00</label>
             </div>
             
             <div class="form-group" id="enter-content">
-              <label id="label" path="website">Total Tokens</label>					
+              <label id="label">Total Tokens</label>					
               <br>
-              <errors id="errors" path="website"></errors>
-              <label id="numbers" path="name">0.00</label>
+              <label id="numbers">0.00</label>
             </div>
             
             <div class="form-group" id="enter-content">
-              <label id="label" path="email">Exchange Tokens</label>						
+              <label id="label">Exchange Tokens</label>						
               <br>
-              <errors id="errors" path="email"></errors>
-              <input id="input" class="form-control" path="email"></input>
+              <input id="input" class="form-control"></input>
             </div>										
             
             <br></br>

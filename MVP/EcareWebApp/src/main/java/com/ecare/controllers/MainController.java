@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ecare.models.WalletOne;
+import com.ecare.models.WalletTwo;
 import com.ecare.services.ExchangeService;
 
 @Controller
@@ -21,13 +22,6 @@ public class MainController {
 	
 	public MainController(ExchangeService exchangeService) {
 		this.exchangeService = exchangeService;
-	}
-	
-	@GetMapping("")
-	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
-		List<WalletOne> walletOneNumbers = this.exchangeService.getWalletOne();
-		model.addAttribute("walletOne", walletOneNumbers);
-		return "index.jsp";
 	}
 	
 	@GetMapping("/prototype")
@@ -42,8 +36,17 @@ public class MainController {
 		return "test/index-test.jsp";
 	}
 	
-	@GetMapping("/prototype-test")
-	public String PrototypeTest() {
+	@GetMapping("/walletOne")
+	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
+		List<WalletOne> walletOneNumbers = this.exchangeService.getWalletOne();
+		model.addAttribute("walletOne", walletOneNumbers);
+		return "test/prototype-test.jsp";
+	}
+	
+	@GetMapping("/walletTwo")
+	public String getWalletTwo(@ModelAttribute("walletTwo") WalletTwo walletTwo, Model model) {
+		List<WalletTwo> walletTwoNumbers = this.exchangeService.getWalletTwo();
+		model.addAttribute("walletTwo", walletTwoNumbers);
 		return "test/prototype-test.jsp";
 	}
 }
