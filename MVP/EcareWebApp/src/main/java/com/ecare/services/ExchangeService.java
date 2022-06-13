@@ -8,34 +8,10 @@ import org.springframework.stereotype.Service;
 import com.ecare.models.Exchange;
 import com.ecare.models.WalletOne;
 import com.ecare.models.WalletTwo;
-import com.ecare.repositories.ExchangeRepository;
-import com.ecare.repositories.WalletOneRepository;
-import com.ecare.repositories.WalletTwoRepository;
 
 @Service
 public class ExchangeService {
 	
-//	@Autowired
-//	private MechanismRepository mRepo;
-	@Autowired
-	private WalletOneRepository wOneRepo;
-	@Autowired
-	private WalletTwoRepository wTwoRepo;	
-	
-	public ExchangeService(
-			WalletOneRepository wOneRepo,
-			WalletTwoRepository wTwoRepo) {
-		this.wOneRepo = wOneRepo;
-		this.wTwoRepo = wTwoRepo;
-	}
-	
-	public List<WalletOne> getWalletOne(){
-		return wOneRepo.findAll();
-	}
-	
-	public List<WalletTwo> getWalletTwo(){
-		return wTwoRepo.findAll();
-	}
 	
 	public WalletOne newBalanceOne (
 			WalletOne balanceOne,
@@ -48,10 +24,7 @@ public class ExchangeService {
 			return null;
 		}
 		//Math to be added
-		else {
-			return this.wOneRepo.save(balanceOne);
-			
-		}
+		return null;
 	}
 	
 	public WalletTwo newBalanceTwo (
@@ -65,10 +38,7 @@ public class ExchangeService {
 			return null;
 		}
 		//Math to be added
-		else {
-			return this.wTwoRepo.save(balanceTwo);
-			
-		}
+		return null;
 	}
 	
 	public WalletOne newTotalTokensOne (
@@ -82,10 +52,7 @@ public class ExchangeService {
 			return null;
 		}
 		//Math to be added
-		else {
-			return this.wOneRepo.save(totalTokensOne);
-			
-		}
+		return null;
 	}
 	
 	public WalletTwo newTotalTokensTwo (
@@ -99,10 +66,7 @@ public class ExchangeService {
 			return null;
 		}
 		//Math to be added
-		else {
-			return this.wTwoRepo.save(totalTokensTwo);
-			
-		}
+		return null;
 	}
 	
 

@@ -38,16 +38,7 @@ public class MainController {
 	
 	
 	@GetMapping("/prototype-test")
-	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
-		List<WalletOne> walletOneNumbers = this.exchangeService.getWalletOne();
-		model.addAttribute("walletOne", walletOneNumbers);
+	public String getWalletOne() {
 		return "test/prototype-test.jsp";
 	}
-	
-//	@GetMapping("/prototype-test")
-//	public String getWalletTwo(@ModelAttribute("walletTwo") WalletTwo walletTwo, Model model) {
-//		List<WalletTwo> walletTwoNumbers = this.exchangeService.getWalletTwo();
-//		model.addAttribute("walletTwo", walletTwoNumbers);
-//		return "test/prototype-test.jsp";
-//	}
 }
