@@ -115,14 +115,14 @@
 				</c:forEach>
 				</tbody>
 			  </table>
-				<form:form action="/exchange-tokens" method="post" modelAttribute="walletOne">
+<!-- 				<form:form action="/exchange-tokens" method="post" modelAttribute="walletOne">
 					<div class="form-group" id="enter-content">
 		              <form:label id="label" path="exchange-tokens">Exchange Tokens</form:label>						
 		              <br>
-		              <form:errors id="errors" path="currency"></form:errors>
-		              <form:input id="input" class="form-control" path="exchange-tokens"></form:input>
+		              <form:errors id="errors" path="exchange-tokens"></form:errors>
+		              <form:input id="input" path="exchange-tokens"></form:input>
 		            </div>
-				</form:form>
+				</form:form> -->
 				<p>
 		           	Wallet One Connected
 		    	</p>          

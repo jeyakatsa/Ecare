@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.ecare.models.Exchange;
 
 @Repository
-public interface ExchangeRepository extends CrudRepository<Exchange, Double> {
+public interface ExchangeRepository extends CrudRepository<Exchange, Long> {
 
 }

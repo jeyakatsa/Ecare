@@ -8,6 +8,6 @@ import java.util.List;
 import com.ecare.models.WalletTwo;
 
 @Repository
-public interface WalletTwoRepository extends CrudRepository<WalletTwo, Double>{
+public interface WalletTwoRepository extends CrudRepository<WalletTwo, Long>{
 	List<WalletTwo>findAll();
 }
