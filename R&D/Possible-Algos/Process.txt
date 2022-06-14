@@ -1,0 +1,6 @@
+Attempt: Arrays: 75 [5]
+Attempt: HashTables/Map: 45 [2]
+Attempt: Dynamic Programming: 30 [0]
+Attempt: Trees: 25 [0]
+Attempt: Linked List: 15 [0]
+Attempt: Recursion: 10 [0]
