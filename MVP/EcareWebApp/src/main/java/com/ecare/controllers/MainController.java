@@ -38,7 +38,8 @@ public class MainController {
 	
 	
 	@GetMapping("/prototype-test")
-	public String getWalletOne() {
+	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
+		model.addAttribute("walletOne", this.exchangeService.getWalletOne());
 		return "test/prototype-test.jsp";
 	}
 }

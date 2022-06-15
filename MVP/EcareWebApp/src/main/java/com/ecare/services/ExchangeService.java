@@ -1,16 +1,28 @@
 package com.ecare.services;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ecare.models.Exchange;
 import com.ecare.models.WalletOne;
 import com.ecare.models.WalletTwo;
 
 @Service
 public class ExchangeService {
+	
+	private WalletOne walletOne;
+	
+	public Double getWalletOne() {
+		if(walletOne.getBalanceOne() != null) {
+			return walletOne.getTotalTokensOne();
+		}
+		if (walletOne.getTotalTokensOne() != null) {
+			return walletOne.getTotalTokensOne();
+		}
+		return null;
+	}
+	
+	
 	
 	
 	public WalletOne newBalanceOne (
