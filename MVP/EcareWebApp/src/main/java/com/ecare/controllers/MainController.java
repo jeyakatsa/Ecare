@@ -24,6 +24,11 @@ public class MainController {
 		this.exchangeService = exchangeService;
 	}
 	
+	@GetMapping("")
+	public String Index() {
+		return "index.jsp";
+	}	
+	
 	@GetMapping("/prototype")
 	public String Prototype() {
 		return "prototype.jsp";
@@ -39,7 +44,8 @@ public class MainController {
 	
 	@GetMapping("/prototype-test")
 	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
-		model.addAttribute("walletOne", this.exchangeService.getWalletOne());
+		Double numbers = this.exchangeService.getWalletOne();
+		model.addAttribute("walletOne", numbers);
 		return "test/prototype-test.jsp";
 	}
 }

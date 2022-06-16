@@ -67,13 +67,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <label id="numbers">$0.00</label>
+              <p id="numbers">$0.00</p>
             </div>
             
             <div class="form-group" id="enter-content">
               <label id="label">Total Tokens</label>					
               <br>
-              <label id="numbers">0.00</label>
+              <p id="numbers">0.00</p>
             </div>
             
             <div class="form-group" id="enter-content">
@@ -102,14 +102,14 @@
 						<td>
 						    <label id="label">Balance</label>
 	              			<br>
-							<a id="numbers" href="/${walletOne}">
-							${walletOne.balanceOne}</a>
+							<p id="numbers">
+							${walletOne.balanceOne}</p>
 						</td>
 						<td>
 						    <label id="label">Total Tokens</label>					
 	              			<br>
-							<a id="numbers" href="/${walletOne}">
-							${walletOne.totalTokensOne}</a>
+							<p id="numbers">
+							${walletOne.totalTokensOne}</p>
 						</td>
 					</tr>
 				</c:forEach>
