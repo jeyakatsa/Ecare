@@ -25,25 +25,30 @@ public class MainController {
 	}
 	
 	@GetMapping("")
-	public String Index() {
+	public String index() {
 		return "index.jsp";
 	}	
 	
 	@GetMapping("/prototype")
-	public String Prototype() {
+	public String prototype() {
 		return "prototype.jsp";
 	}
 	
 	
 	//Comment out bottom getters after successful tests
 	@GetMapping("/test")
-	public String Test() {
+	public String test() {
 		return "test/index-test.jsp";
 	}
 	
+//	@GetMapping("/prototype-test")
+//	public String prototypeTest() {
+//		return "test/prototype-test.jsp";
+//	}
+//	
 	
 	@GetMapping("/prototype-test")
-	public String getWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
+	public String GetWalletOne(@ModelAttribute("walletOne") WalletOne walletOne, Model model) {
 		Double numbers = this.exchangeService.getWalletOne();
 		model.addAttribute("walletOne", numbers);
 		return "test/prototype-test.jsp";

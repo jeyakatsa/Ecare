@@ -10,16 +10,21 @@ import com.ecare.models.WalletTwo;
 @Service
 public class ExchangeService {
 	
+	@Autowired
 	private WalletOne walletOne;
 	
+	public ExchangeService(WalletOne walletOne) {
+		this.walletOne = walletOne;
+	}
+	
 	public Double getWalletOne() {
-		if(walletOne.getBalanceOne() != null) {
+		if(walletOne.getBalanceOne() != 0.00) {
+			return walletOne.getBalanceOne();
+		}
+		if (walletOne.getTotalTokensOne() != 0.00) {
 			return walletOne.getTotalTokensOne();
 		}
-		if (walletOne.getTotalTokensOne() != null) {
-			return walletOne.getTotalTokensOne();
-		}
-		return null;
+		return 0.00;
 	}
 	
 	
