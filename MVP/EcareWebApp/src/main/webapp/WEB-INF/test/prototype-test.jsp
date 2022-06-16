@@ -97,22 +97,26 @@
 	          </button>
  	          <table>
 				<tbody>
-				<c:forEach items="${walletOne}" var="walletOne">
+				<c:if test = "${numbers != null}" var="walletOne">
 					<tr id="tr">
 						<td>
 						    <label id="label">Balance</label>
 	              			<br>
 							<p id="numbers">
-							${walletOne.balanceOne}</p>
+								<c:out value="${walletOne.balanceOne}">
+								</c:out>
+							</p>
 						</td>
 						<td>
 						    <label id="label">Total Tokens</label>					
 	              			<br>
-							<p id="numbers">
-							${walletOne.totalTokensOne}</p>
+	              			<p id="numbers">
+	              				<c:out value="${walletOne.totalTokensOne}">
+								</c:out>
+	              			</p>
 						</td>
 					</tr>
-				</c:forEach>
+				</c:if>
 				</tbody>
 			  </table>
 <!-- 				<form:form action="/exchange-tokens" method="post" modelAttribute="walletOne">
