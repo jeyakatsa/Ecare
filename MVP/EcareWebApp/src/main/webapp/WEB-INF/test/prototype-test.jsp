@@ -95,6 +95,13 @@
 	              <img id="ethicon" src="/icons&images/eth-icon.png"/>
 	              <p id="eth-name">ETH</p>
 	          </button>
+	          <form action="prototype-test.jsp" method="POST">
+	          	   <table>
+	          	   		<tbody>
+	          	   		
+	          	   		</tbody>
+	          	   </table>
+	          </form>
  	          <table>
 				<tbody>
 				<c:if test = "${numbers != null}" var="walletOne">
