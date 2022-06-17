@@ -82,7 +82,7 @@
               <p id="tokens">0.00</p>
             </div>
             
-            <div class="form-group">
+            <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
@@ -114,7 +114,7 @@
               <p id="tokens">10.00</p>
             </div>
             
-            <div class="form-group">
+            <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
@@ -150,7 +150,7 @@
               <p id="tokens">0.00</p>
             </div>
             
-            <div class="form-group">
+            <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
@@ -183,7 +183,7 @@
               <p id="tokens">5.00</p>
             </div>
             
-            <div class="form-group">
+            <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
