@@ -7,9 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="css/test/prototype-test.css">	
 		<script src="javascript/JSmodal.min.js"></script>
 		<script>
-			function walletConnected() {
-				   document.getElementById('wallet-connected').style.display = "block";
-				   document.getElementById('wallet-not-connected').style.display = "none";
+			function connectWalletOne() {
+				   document.getElementById('wallet-one-connected').style.display = "block";
+				   document.getElementById('wallet-one-not-connected').style.display = "none";
+			}
+			function connectWalletTwo() {
+				   document.getElementById('wallet-two-connected').style.display = "block";
+				   document.getElementById('wallet-two-not-connected').style.display = "none";
 			}
 		</script>
 		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
@@ -53,12 +57,14 @@
       <a href="/test" >
         <img id="img" src="/icons&images/appIcon.png"/>
       </a>
-
+      
+      <form action="prototype-test.jsp" method="POST">
+      
       <section class="exchange-grid">
 
         <div id="left-top-wallet">
         
-          <section id="wallet-not-connected" style="display:block">
+          <section id="wallet-one-not-connected" style="display:block">
             <button class="eth" id="choose-token">
               <img id="ethicon" src="/icons&images/eth-icon.png"/>
               <p id="eth-name">ETH</p>
@@ -70,79 +76,62 @@
               <p id="numbers">$0.00</p>
             </div>
             
-            <div class="form-group" id="enter-content">
+            <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
               <p id="numbers">0.00</p>
             </div>
             
-            <div class="form-group" id="enter-content">
+            <div class="form-group">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
-            </div>
+            </div>	
 
             <br></br>
 
-            <button onclick="walletConnected()" 
+            <button onclick="connectWalletOne()" 
               id="connect-wallet" type="button">
               Connect Wallet One
             </button>  
           </section>
           
-          <section id="wallet-connected" style="display:none">
+          <section id="wallet-one-connected" style="display:none">
 	          <button class="eth" id="choose-token">
 	              <img id="ethicon" src="/icons&images/eth-icon.png"/>
 	              <p id="eth-name">ETH</p>
 	          </button>
-	          <form action="prototype-test.jsp" method="POST">
-	          	   <table>
-	          	   		<tbody>
-	          	   		
-	          	   		</tbody>
-	          	   </table>
-	          </form>
- 	          <table>
-				<tbody>
-				<c:if test = "${numbers != null}" var="walletOne">
-					<tr id="tr">
-						<td>
-						    <label id="label">Balance</label>
-	              			<br>
-							<p id="numbers">
-								<c:out value="${walletOne.balanceOne}">
-								</c:out>
-							</p>
-						</td>
-						<td>
-						    <label id="label">Total Tokens</label>					
-	              			<br>
-	              			<p id="numbers">
-	              				<c:out value="${walletOne.totalTokensOne}">
-								</c:out>
-	              			</p>
-						</td>
-					</tr>
-				</c:if>
-				</tbody>
-			  </table>
-<!-- 				<form:form action="/exchange-tokens" method="post" modelAttribute="walletOne">
-					<div class="form-group" id="enter-content">
-		              <form:label id="label" path="exchange-tokens">Exchange Tokens</form:label>						
-		              <br>
-		              <form:errors id="errors" path="exchange-tokens"></form:errors>
-		              <form:input id="input" path="exchange-tokens"></form:input>
-		            </div>
-				</form:form> -->
-				<p>
-		           	Wallet One Connected
-		    	</p>          
+	          
+            <div class="form-group">
+              <label id="label">Balance</label>
+              <br>
+              <p id="numbers">$10000.00</p>
+            </div>
+            
+            <div class="form-group">
+              <label id="label">Total Tokens</label>					
+              <br>
+              <p id="numbers">10.00</p>
+            </div>
+            
+            <div class="form-group">
+              <label id="label">Exchange Tokens</label>						
+              <br>
+              <input id="input" class="form-control"></input>
+            </div>	
+	
+	            <br></br>
+	
+	            <button id="connected-wallet">
+	              Connected
+	            </button>  
+     
           </section>
           
         </div>
 
         <div id="right-bottom-wallet">
-          <section>
+          <section id="wallet-two-not-connected" style="display:block">
 
             <button class="weth" id="choose-token">
               <img id="ethicon" src="/icons&images/weth-icon.png"/>
@@ -152,16 +141,16 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <label id="numbers">$0.00</label>
+              <p id="numbers">$0.00</p>
             </div>
             
-            <div class="form-group" id="enter-content">
+            <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <label id="numbers">0.00</label>
+              <p id="numbers">0.00</p>
             </div>
             
-            <div class="form-group" id="enter-content">
+            <div class="form-group">
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input" class="form-control"></input>
@@ -169,14 +158,49 @@
             
             <br></br>
 
-            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+            <button onclick="connectWalletTwo()" 
               id="connect-wallet" type="button">
               Connect Wallet Two
             </button>
           </section>
+          
+          <section id="wallet-two-connected" style="display:none">
+
+            <button class="weth" id="choose-token">
+              <img id="ethicon" src="/icons&images/weth-icon.png"/>
+              <p id="weth-name">WETH</p>
+            </button>
+
+            <div class="form-group">
+              <label id="label">Balance</label>
+              <br>
+              <p id="numbers">$5000.00</p>
+            </div>
+            
+            <div class="form-group">
+              <label id="label">Total Tokens</label>					
+              <br>
+              <p id="numbers">5.00</p>
+            </div>
+            
+            <div class="form-group">
+              <label id="label">Exchange Tokens</label>						
+              <br>
+              <input id="input" class="form-control"></input>
+            </div>										
+            
+            <br></br>
+
+	            <button id="connected-wallet">
+	              Connected
+	            </button>
+          </section>
+          
         </div>
 
       </section>
+      
+      
       
       <a onclick="JSmodal.open(1, 'IN DEVELOPMENT')">
         <img id="refresh" src="/icons&images/refreshIcon.png"/>
@@ -188,6 +212,10 @@
       type="button" id="exchange">
           EXCHANGE
       </button>
+      
+      </form>
+
+      
 
       <hr></hr>
 

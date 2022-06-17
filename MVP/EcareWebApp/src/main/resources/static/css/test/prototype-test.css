@@ -99,11 +99,14 @@ body {
   }
 
   #numbers{
+    margin-top: 2px;
+    margin-bottom: 10px;
     color: gray;
     font-family: Arial;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
   }
+  
 
   #input {
     text-align: center;
@@ -116,7 +119,7 @@ body {
     border-width: 2px;
     font-weight: 700;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 20px;
     height: 15px;
     margin-bottom: -40px;
   }
@@ -153,6 +156,18 @@ body {
     transition: 2s;
     box-shadow: 0px 5px 8px 1px white;
   }
+  
+   #connected-wallet{
+    background: #ececec;
+    color: gray;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+	opacity: .7;
+	box-shadow: 0px 5px 12px 0px white;
+	}
   
 
 #refresh {
