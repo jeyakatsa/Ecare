@@ -97,8 +97,20 @@ body {
     font-weight: 500;
     font-size: 15px;
   }
+  
+  #dllr{
+    margin-top: 2px;
+    margin-bottom: 10px;
+  	color: silver;
+    font-size: 20px;
+  }
+  #balance{
+    color: gray;
+    font-family: Arial;
+    font-weight: 700;
+  }
 
-  #numbers{
+  #tokens{
     margin-top: 2px;
     margin-bottom: 10px;
     color: gray;

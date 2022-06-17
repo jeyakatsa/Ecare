@@ -73,13 +73,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="numbers">$0.00</p>
+              <p id="dllr">$<span id="balance">0.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="numbers">0.00</p>
+              <p id="tokens">0.00</p>
             </div>
             
             <div class="form-group">
@@ -105,13 +105,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="numbers">$10000.00</p>
+              <p id="dllr">$<span id="balance">10000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="numbers">10.00</p>
+              <p id="tokens">10.00</p>
             </div>
             
             <div class="form-group">
@@ -141,13 +141,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="numbers">$0.00</p>
+              <p id="dllr">$<span id="balance">0.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="numbers">0.00</p>
+              <p id="tokens">0.00</p>
             </div>
             
             <div class="form-group">
@@ -174,13 +174,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="numbers">$5000.00</p>
+              <p id="dllr">$<span id="balance">5000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="numbers">5.00</p>
+              <p id="tokens">5.00</p>
             </div>
             
             <div class="form-group">
