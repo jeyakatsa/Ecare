@@ -157,7 +157,8 @@ body {
     font-weight: 800;
   }
 
-  #connect-wallet {
+  #connect-wallet-one, 
+  #connect-wallet-two {
     background:white;
     color: rgb(98, 98, 98);
     padding: 15px;
@@ -167,7 +168,8 @@ body {
     border-radius: 20px;
     box-shadow: 0px 5px 12px 0px silver;
   }
-  #connect-wallet:hover {
+  #connect-wallet-one:hover,
+  #connect-wallet-two:hover {
     background: rgb(44, 44, 44);
     color: white;
     transition: 2s;

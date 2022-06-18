@@ -7,40 +7,28 @@
 		<link rel="stylesheet" type="text/css" href="css/test/prototype-test.css">	
 		<script src="javascript/JSmodal.min.js"></script>
 		<script>
+			var connectedWalletOne = false;
 			function connectWalletOne() {
 				   document.getElementById('wallet-one-connected').style.display = "block";
 				   document.getElementById('wallet-one-not-connected').style.display = "none";
+				   connectedWalletOne = true;
 			}
+			var connectedWalletTwo = false;
 			function connectWalletTwo() {
 				   document.getElementById('wallet-two-connected').style.display = "block";
 				   document.getElementById('wallet-two-not-connected').style.display = "none";
+				   connectedWalletTwo = true;
 			}
 			function resetWallets(){
-				if((document.getElementById('wallet-two-connected').style.display = "none"
-					&& document.getElementById('wallet-one-connected').style.display = "none")
-					||
-					(document.getElementById('wallet-two-connected').style.display = "block"
-					&& document.getElementById('wallet-one-connected').style.display = "none")
-					||
-					(document.getElementById('wallet-two-connected').style.display = "none"
-					&& document.getElementById('wallet-one-connected').style.display = "block"))
-					{
-					alert("Both wallets must be connected.");
-				} 
-			}
-			function exchange(){
-				if((document.getElementById('wallet-two-connected').style.display = "none"
-					&& document.getElementById('wallet-one-connected').style.display = "none")
-					||
-					(document.getElementById('wallet-two-connected').style.display = "block"
-					&& document.getElementById('wallet-one-connected').style.display = "none")
-					||
-					(document.getElementById('wallet-two-connected').style.display = "none"
-					&& document.getElementById('wallet-one-connected').style.display = "block"))
-					{
-					alert("Both wallets must be connected.");
-				} 
-			}
+				if (connectedWalletOne == false || connectedWalletTwo == false){
+					alert("Connect both wallets");
+					}
+				else if (connectedWalletOne == true && connectedWalletTwo == true){
+					connectWalletOne();
+					connectWalletTwo();
+					}
+				}
+
 		</script>
 		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
 			
@@ -117,7 +105,7 @@
             <br></br>
 
             <button onclick="connectWalletOne()" 
-              id="connect-wallet" type="button">
+              id="connect-wallet-one" type="button">
               Connect Wallet One
             </button>  
           </section>
@@ -185,7 +173,7 @@
             <br></br>
 
             <button onclick="connectWalletTwo()" 
-              id="connect-wallet" type="button">
+              id="connect-wallet-two" type="button">
               Connect Wallet Two
             </button>
           </section>
@@ -228,7 +216,7 @@
       
       
       
-      <a onclick="resetWallets()">
+      <a id="resetWallets" onclick="resetWallets()">
         <img id="refresh" src="/icons&images/refreshIcon.png"/>
       </a>      
       
