@@ -15,6 +15,32 @@
 				   document.getElementById('wallet-two-connected').style.display = "block";
 				   document.getElementById('wallet-two-not-connected').style.display = "none";
 			}
+			function resetWallets(){
+				if((document.getElementById('wallet-two-connected').style.display = "none"
+					&& document.getElementById('wallet-one-connected').style.display = "none")
+					||
+					(document.getElementById('wallet-two-connected').style.display = "block"
+					&& document.getElementById('wallet-one-connected').style.display = "none")
+					||
+					(document.getElementById('wallet-two-connected').style.display = "none"
+					&& document.getElementById('wallet-one-connected').style.display = "block"))
+					{
+					alert("Both wallets must be connected.");
+				} 
+			}
+			function exchange(){
+				if((document.getElementById('wallet-two-connected').style.display = "none"
+					&& document.getElementById('wallet-one-connected').style.display = "none")
+					||
+					(document.getElementById('wallet-two-connected').style.display = "block"
+					&& document.getElementById('wallet-one-connected').style.display = "none")
+					||
+					(document.getElementById('wallet-two-connected').style.display = "none"
+					&& document.getElementById('wallet-one-connected').style.display = "block"))
+					{
+					alert("Both wallets must be connected.");
+				} 
+			}
 		</script>
 		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
 			
@@ -202,14 +228,14 @@
       
       
       
-      <a onclick="JSmodal.open(1, 'IN DEVELOPMENT')">
+      <a onclick="resetWallets()">
         <img id="refresh" src="/icons&images/refreshIcon.png"/>
       </a>      
       
       <br>
 
       <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
-      type="button" id="exchange">
+      type="submit" id="exchange">
           EXCHANGE
       </button>
       
