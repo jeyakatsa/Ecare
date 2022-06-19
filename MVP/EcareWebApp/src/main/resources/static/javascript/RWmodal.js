@@ -8,7 +8,7 @@ const RWmodal = {
     document.getElementsByTagName("body")[0].innerHTML += `
       <div id="RWmodal" class="RWmodal">
         <div class="RWmodal-content">
-          <span class="RWclose" onclick="RWmodal.close();">&#65336;</span>
+          <p class="RWclose" onclick="RWmodal.close();">Ok</p>
           <p></p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const RWmodal = {
     document.getElementById('RWmodal').style.display = "block";
   },
 
-  // When the user clicks on <span> (x), close the modal
+  // When the user clicks on <p> (Ok), close the modal
   close : function() {
     document.getElementById('RWmodal').style.display = "none";
   },

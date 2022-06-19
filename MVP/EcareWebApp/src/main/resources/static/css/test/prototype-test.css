@@ -22,6 +22,7 @@ body {
   margin-bottom: 15px;
 }
 #img:hover {
+	cursor: pointer;
 	opacity: .2;
 	transition: 1s;
 }
@@ -98,25 +99,76 @@ body {
     font-size: 15px;
   }
   
-  #dllr{
+  #dllr-disconnected{
     margin-top: 0px;
     margin-bottom: 15px;
   	color: #cfcfcf;
     font-size: 25px;
   }
-  #balance{
+  #balance-not-connected{
     color: gray;
     font-family: Arial;
     font-weight: 700;
   }
 
-  #tokens{
+  #tokens-not-connected{
     margin-top: 0px;
     margin-bottom: 15px;
     color: gray;
     font-family: Arial;
     font-weight: 700;
     font-size: 25px;
+  }
+  
+  #dllr-connected{
+    margin-top: 0px;
+    margin-bottom: 15px;
+  	color: #cfcfcf;
+    font-size: 25px;
+    -webkit-animation-name: dllr;
+	-webkit-animation-duration: 1.00s;
+	animation-name: dllr;
+	animation-duration: 1.00s;        
+  }
+   @-webkit-keyframes dllr {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: #cfcfcf}
+	}
+	
+	@keyframes dllr {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: #cfcfcf}
+	}  
+  #balance-connected {
+    color: gray;
+    font-family: Arial;
+    font-weight: 700;
+    -webkit-animation-name: numbers;
+	-webkit-animation-duration: 1.00s;
+	animation-name: numbers;
+	animation-duration: 1.00s;    
+  }
+  #tokens-connected{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: gray;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 25px;
+    -webkit-animation-name: numbers;
+	-webkit-animation-duration: 1.00s;
+	animation-name: numbers;
+	animation-duration: 1.00s;       
+  }
+  	@-webkit-keyframes numbers {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: gray}
+	}
+	
+	@keyframes numbers {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: gray}
+	}  
   }
   
 .form-group-exchange{
@@ -138,23 +190,21 @@ body {
     border-radius: 20px;
     font-size: 25px;
     height: 15px;
-    margin-bottom: -40px;
+    margin-bottom: -40px;    
   }
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}  
   #input:focus {
+    cursor: pointer;
     outline: none;
-    background-color: #cecece;
+    background-color: #c8c6e3;
     transition: 1s;
-  }
-  .form-control:focus{
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  #errors{
-  	font-size: 12px;
-    color: rgb(169, 166, 211);
-    font-style: bold;
-    font-weight: 800;
   }
 
   #connect-wallet-one, 
@@ -170,6 +220,7 @@ body {
   }
   #connect-wallet-one:hover,
   #connect-wallet-two:hover {
+    cursor: pointer;
     background: rgb(44, 44, 44);
     color: white;
     transition: 2s;
@@ -184,8 +235,23 @@ body {
     width: 200px;
     margin-bottom: 15px;
     border-radius: 20px;
-	opacity: .7;
 	box-shadow: 0px 5px 12px 0px white;
+	  -webkit-animation-name: connected-wallet;
+	  -webkit-animation-duration: 1.00s;
+	  animation-name: connected-wallet;
+	  animation-duration: 1.00s;
+	  opacity: .7;
+	}
+	
+	/* Add Animation */
+	@-webkit-keyframes connected-wallet {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
+	}
+	
+	@keyframes connected-wallet {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
 	}
   
 
@@ -200,10 +266,10 @@ body {
 #refresh:hover {
   opacity: .2;
   transition: 1s;
+  cursor: pointer;
 }
 
-#exchange-not-connected,
-#exchange-connected {
+#exchange {
   margin: auto;
   background: rgb(18, 18, 18);
   color: white;
@@ -215,11 +281,11 @@ body {
   border-radius: 20px;
   width: 200px;
 }
-#exchange-not-connected:hover,
-#exchange-connected:hover {
+#exchange:hover {
   background: gray;
   color: white;
   transition: 1s;
+  cursor: pointer;
 }
 
 hr {

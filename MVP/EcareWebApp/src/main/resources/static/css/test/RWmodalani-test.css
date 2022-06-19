@@ -11,7 +11,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(169,166,211); /* Fallback color */
   background-color: rgba(169, 166, 211,0.9); /* Black w/ opacity */
 }
 
@@ -22,8 +22,8 @@
   position: relative;
   color: white;
   font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 1px;
   margin: auto;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 1.00s;
@@ -34,7 +34,7 @@
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {center:0; opacity:0}
-  to {top:0; opacity:1}
+  to {center:0; opacity:1}
 }
 
 @keyframes animatetop {
@@ -44,15 +44,21 @@
 
 /* The Close Button */
 .RWclose {
- display:none;
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  background:white;
+  color: rgba(169, 166, 211,1);
+  margin: auto;
+  border: none;
+  font-weight: 600;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 15px;
+  letter-spacing: 1px;
+  width: 40px;
 }
 .RWclose:hover,
 .RWclose:focus {
-  color: #000;
-  text-decoration: none;
   cursor: pointer;
+  opacity: .4;
+  transition: 1s;
+  
 }

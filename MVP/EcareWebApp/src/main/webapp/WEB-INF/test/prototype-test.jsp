@@ -5,7 +5,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/test/prototype-test.css">	
-		<script src="javascript/JSmodal.min.js"></script>
 		<script src="javascript/RWmodal.min.js"></script>
 		<script>
 			var connectedWalletOne = false;
@@ -25,26 +24,19 @@
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-					connectWalletOne();
-					connectWalletTwo();
+					RWmodal.open(1, 'In Development');	
 					}
 			}
-			function exchangeNotConnected(){
+			function exchange(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-					document.getElementById('exchange-connected').style.display= "block";
-					document.getElementById('exchange-not-connected').style.display= "none";
+					RWmodal.open(1, 'In Development');	
 					}
-			}
-			function exchangeConnected(){
-					JSmodal.open(1, 'IN DEVELOPMENT');
-					
 			}
 
 		</script>
-		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
 		<link rel="stylesheet" href="css/test/RWmodalani-test.css" />
 			
 		<meta charset="UTF-8">
@@ -102,19 +94,19 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr">$<span id="balance">0.00</span></p>
+              <p id="dllr-disconnected">$<span id="balance-not-connected">0.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens">0.00</p>
+              <p id="tokens-not-connected">0.00</p>
             </div>
             
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" class="form-control"></input>
+              <input id="input" type="number"></input>
             </div>	
 
             <br></br>
@@ -134,19 +126,19 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr">$<span id="balance">10000.00</span></p>
+              <p id="dllr-connected">$<span id="balance-connected">10000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens">10.00</p>
+              <p id="tokens-connected">10.00</p>
             </div>
             
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" class="form-control"></input>
+              <input id="input" type="number"></input>
             </div>	
 	
 	            <br></br>
@@ -170,19 +162,19 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr">$<span id="balance">0.00</span></p>
+              <p id="dllr-disconnected">$<span id="balance-not-connected">0.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens">0.00</p>
+              <p id="tokens-not-connected">0.00</p>
             </div>
             
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" class="form-control"></input>
+              <input id="input" type="number"></input>
             </div>										
             
             <br></br>
@@ -203,19 +195,19 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr">$<span id="balance">5000.00</span></p>
+              <p id="dllr-connected">$<span id="balance-connected">5000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens">5.00</p>
+              <p id="tokens-connected">5.00</p>
             </div>
             
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" class="form-control"></input>
+              <input id="input" type="number"></input>
             </div>										
             
             <br></br>
@@ -237,15 +229,14 @@
       
       <br>
       
-      <a onclick="exchangeNotConnected()" 
-      type="submit" id="exchange-not-connected" style="display:block">
+      <a onclick="exchange()" id="exchange" style="display:block">
           EXCHANGE
       </a>
       
-      <a onclick="exchangeConnected()" 
-      type="submit" id="exchange-connected" style="display:none">
+<!--       <button onclick="exchange()" 
+      type="submit" id="exchange">
           EXCHANGE
-      </a>
+      </button> -->
       
       </form>
 
