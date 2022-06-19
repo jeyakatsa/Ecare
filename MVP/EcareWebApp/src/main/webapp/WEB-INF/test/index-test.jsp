@@ -45,52 +45,51 @@
 	
 </head>
 	<body>
-	
-	<section id="about">
-	
-		  <img class="icon" src="/icons&images/Icon.png"/>
 		  
-		  <div id="above">
-		  
-			  <h1 id="title">ecare</h1>
-			  
-		 	  <div id="name">
-			   	  <p id="names">ethereum</p> 
-			   	  <p id="names">combinatorial</p> 
-			   	  <p id="names">auction</p> 
-			   	  <p id="names">rate</p> 
-			   	  <p id="names">exchange</p>
-			  </div>
-			  
-			  		<!-- Change below link after test -->
-		 	  <a href="/prototype-test" id="prototype">
-		      	Launch Prototype
-		      </a>
-		      
-		      		<!-- Change below link after test -->
-		      <a href="/guide-test" id="guide">
-		      	Step-By-Step Guide
-		      </a>
-		  
-		  </div>
-	
-	      
-		 <footer>
-		 	  	      		<!-- Change below link after test -->
-		      <a href="/roadmap-test" id="roadmap">
-		      	Roadmap
-		      </a>
-		      
-			  <a href="https://github.com/jeyakatsa/monalisa"
-			      target="_blank"
-			      id="contact">
-			      <img id="github" src="/icons&images/Github.png">
-			  </a>  	
-			  
-		</footer>
-      
+	  <div id="above">
 	  
-	</section>
+	  	 <img class="icon" src="/icons&images/Icon.png"/>
+	  
+		  <h1 id="title">ecare</h1>
+		  
+	 	  <div id="name">
+		   	  <p id="names">ethereum</p> 
+		   	  <p id="names">combinatorial</p> 
+		   	  <p id="names">auction</p> 
+		   	  <p id="names">rate</p> 
+		   	  <p id="names">exchange</p>
+		  </div>
+		  
+		  		<!-- Change below link after test -->
+	 	  <a href="/prototype-test" id="prototype">
+	      	Prototype
+	      </a>
+	      
+	      <br>
+	      
+	      		<!-- Change below link after test -->
+	      <a href="/guide-test" id="guide">
+	      	Guide
+	      </a>
+	  
+	  </div>
+
+      
+	 <footer>
+	 	  	      		<!-- Change below link after test -->
+	      <a href="/roadmap-test" id="roadmap">
+	      	Roadmap
+	      </a>
+	      
+	      <br>
+	      
+		  <a href="https://github.com/jeyakatsa/monalisa"
+		      target="_blank"
+		      id="contact">
+		      <img id="github" src="/icons&images/Github.png">
+		  </a>  	
+		  
+	</footer>
 	
 	</body>
 </html>
