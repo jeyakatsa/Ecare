@@ -24,6 +24,8 @@ public class MainController {
 		return "prototype.jsp";
 	}
 	
+	//Create Guide & Roadmap Getters after test
+	
 	
 	//Comment out bottom getters after successful tests
 	@GetMapping("/test")
@@ -34,6 +36,16 @@ public class MainController {
 	@GetMapping("/prototype-test")
 	public String prototypeTest() {
 		return "test/prototype-test.jsp";
+	}
+	
+	@GetMapping("/guide-test")
+	public String guideTest() {
+		return "test/guide-test.jsp";
+	}
+	
+	@GetMapping("/roadmap-test")
+	public String roadmapTest() {
+		return "test/roadmap-test.jsp";
 	}
 	
 

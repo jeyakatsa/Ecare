@@ -54,49 +54,102 @@ body {
 	  margin-left: 10px;
 	}
 	
-#prototype {
-  background: white;
-  margin-top: 20px;
-  text-decoration: none;
-  color: rgb(169, 166, 211);
-  font-weight:600;
-  font-size: 13px;
-  padding: 20px;
-  border: none;
-  letter-spacing: 1px;
-  border-radius: 17px;
-  width: 200px;
-  box-shadow: 0px 3px 7px 1px rgb(169, 166, 211);
-}
-#prototype:hover {
-  background: rgb(18, 18, 18);
-  color: white;
-  transition: 1s;
-  box-shadow: 0px 2px 15px 1px white;
-  opacity: .6;
-}	
-#prototype:focus {
-  background: rgb(18, 18, 18);
-  color: white;
-  transition: 1s;
-  box-shadow: 0px 2px 15px 1px white;
-  opacity: .6;
-}	
+	#prototype {
+	  background: white;
+	  margin-top: 20px;
+	  text-decoration: none;
+	  color: rgb(169, 166, 211);
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 17px;
+	  width: 200px;
+	  box-shadow: 0px 3px 7px 1px rgb(169, 166, 211);
+	}
+	#prototype:hover,
+	#prototype:focus {
+	  background: rgb(18, 18, 18);
+	  color: white;
+	  transition: 2s;
+	  box-shadow: 0px 2px 15px 1px white;
+	  opacity: .6;
+	  cursor: pointer;
+	}	
 	
-
+	#guide {
+	  background: white;
+	  margin-top: 20px;
+	  text-decoration: none;
+	  color: rgb(169, 166, 211);
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 17px;
+	  width: 200px;
+	  box-shadow: 0px 3px 7px 1px rgb(169, 166, 211);
+	}
+	#guide:hover,
+	#guide:focus {
+	  background: rgb(18, 18, 18);
+	  color: white;
+	  transition: 2s;
+	  box-shadow: 0px 2px 15px 1px white;
+	  opacity: .6;
+	  cursor: pointer;
+	}	
+		
+#above {
+	padding-bottom: 20px;
+	background-color: white;
+	z-index: 1;
+	box-shadow: 0px 3px 7px 1px #ffffff;
+}
+	
 footer {
-	margin-top: 55px;
 	text-decoration: none;
-}
-#contact:hover {
-	opacity: .6;
-	transition: 1s;
-}
-#github {
-    opacity: .5;
-	width: 40px;
+	margin-top: 55px;
+	padding: 10px;
+	background-color: rgb(169, 166, 211);
+	z-index: 2;
 	margin-bottom: 50px;
 }
+
+	#roadmap {
+	  background: rgb(169, 166, 211);
+	  margin-top: 20px;
+	  text-decoration: none;
+	  color: white;
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 17px;
+	  width: 200px;
+	  box-shadow: 0px 3px 7px 1px white;
+	}
+	#roadmap:hover,
+	#roadmap:focus {
+	  transition: 2s;
+	  opacity: .6;
+	  cursor: pointer;
+	}	
+
+	#contact:hover {
+		opacity: .6;
+		transition: 1s;
+	}
+	#github {
+	    opacity: .5;
+		width: 40px;
+		margin-bottom: 50px;
+	}
+
+
 
 
 @media screen and (max-width: 650px){
@@ -127,10 +180,6 @@ footer {
 	  width: 150px;
 	  margin-bottom: 50px;
 	  margin-top: 20px;
-	}
-	
-	footer {
-		margin-top: -5px;
 	}
 	
 	
