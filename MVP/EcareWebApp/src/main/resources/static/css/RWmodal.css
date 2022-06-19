@@ -1,6 +1,6 @@
 /* The Modal (background) */
 
-.JSmodal {
+.RWmodal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -16,7 +16,7 @@
 
 /* Modal Content */
 
-.JSmodal-content {
+.RWmodal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -27,15 +27,15 @@
 
 /* The Close Button */
 
-.JSclose {
+.RWclose {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.JSclose:hover,
-.JSclose:focus {
+.RWclose:hover,
+.RWclose:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

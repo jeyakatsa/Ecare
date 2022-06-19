@@ -202,7 +202,9 @@ body {
   transition: 1s;
 }
 
-#exchange {
+#exchange-not-connected,
+#exchange-connected {
+  margin: auto;
   background: rgb(18, 18, 18);
   color: white;
   font-weight:700;
@@ -211,9 +213,10 @@ body {
   padding: 20px;
   border: none;
   border-radius: 20px;
-  width: 250px;
+  width: 200px;
 }
-#exchange:hover {
+#exchange-not-connected:hover,
+#exchange-connected:hover {
   background: gray;
   color: white;
   transition: 1s;

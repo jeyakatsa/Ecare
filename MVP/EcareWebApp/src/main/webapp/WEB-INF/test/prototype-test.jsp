@@ -6,6 +6,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/test/prototype-test.css">	
 		<script src="javascript/JSmodal.min.js"></script>
+		<script src="javascript/RWmodal.min.js"></script>
 		<script>
 			var connectedWalletOne = false;
 			function connectWalletOne() {
@@ -21,16 +22,30 @@
 			}
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
-					alert("Connect both wallets");
+					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
 					connectWalletOne();
 					connectWalletTwo();
 					}
-				}
+			}
+			function exchangeNotConnected(){
+				if (connectedWalletOne == false || connectedWalletTwo == false){
+					RWmodal.open(1, 'Connect Both Wallets');
+					}
+				else if (connectedWalletOne == true && connectedWalletTwo == true){
+					document.getElementById('exchange-connected').style.display= "block";
+					document.getElementById('exchange-not-connected').style.display= "none";
+					}
+			}
+			function exchangeConnected(){
+					JSmodal.open(1, 'IN DEVELOPMENT');
+					
+			}
 
 		</script>
 		<link rel="stylesheet" href="css/test/JSmodalani-test.css" />	
+		<link rel="stylesheet" href="css/test/RWmodalani-test.css" />
 			
 		<meta charset="UTF-8">
 		
@@ -72,7 +87,7 @@
         <img id="img" src="/icons&images/appIcon.png"/>
       </a>
       
-      <form action="prototype-test.jsp" method="POST">
+      <form action="/prototype-test" method="GET">
       
       <section class="exchange-grid">
 
@@ -216,16 +231,21 @@
       
       
       
-      <a id="resetWallets" onclick="resetWallets()">
+      <a onclick="resetWallets()">
         <img id="refresh" src="/icons&images/refreshIcon.png"/>
       </a>      
       
       <br>
-
-      <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
-      type="submit" id="exchange">
+      
+      <a onclick="exchangeNotConnected()" 
+      type="submit" id="exchange-not-connected" style="display:block">
           EXCHANGE
-      </button>
+      </a>
+      
+      <a onclick="exchangeConnected()" 
+      type="submit" id="exchange-connected" style="display:none">
+          EXCHANGE
+      </a>
       
       </form>
 
