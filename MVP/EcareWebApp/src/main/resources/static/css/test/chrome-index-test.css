@@ -145,16 +145,17 @@ footer {
 	
 #above {
 	padding-top: 50px;
-	padding-bottom: 10px;
+	height: 480px;
 }	
 
 	.icon {
-	  width: 50px;
+	  width: 40px;
 	}
 	
 	#title {
 	  font-size: 25pt;
 	  letter-spacing: 1px;
+	  margin-top: 15px;
 	}
 	
 	#name {
@@ -165,14 +166,14 @@ footer {
 	}
 	
 	#names {
-	  line-height: 7px;
+	  line-height: 10px;
 	}
 	
 	#prototype {
 	  font-size: 11px;
 	  width: 120px;
 	  padding: 17px;
-	  margin-top: 15px;
+	  margin-top: 20px;
 	  border-radius: 17px;
 	}
 	
@@ -183,7 +184,7 @@ footer {
 	  border-radius: 17px;
 	  padding: 17px;
 	  margin-bottom: 20px;
-	  margin-top: 6px;
+	  margin-top: 10px;
 	}
 	
 footer {

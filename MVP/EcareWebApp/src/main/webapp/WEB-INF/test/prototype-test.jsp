@@ -246,7 +246,6 @@
       
       </form>
 
-      
 
       <hr></hr>
 
@@ -258,6 +257,12 @@
         <p id="names">exchange</p>
         <p id="proto-name">prototype</p>
       </h3>
+      
+      <br>
+     	    <!-- Change below link after test -->
+      <a href="/guide-test" id="guide">
+      	Guide
+      </a>
 	
 	</body>
 </html>

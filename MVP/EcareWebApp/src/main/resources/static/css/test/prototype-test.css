@@ -7,6 +7,7 @@ body {
   margin-bottom: 0%;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 650px) {
   body {
@@ -305,6 +306,7 @@ hr {
   font-weight: 700;
   margin-top: -10px; 
   opacity: .8;
+  margin-bottom: 20px;
 }
 
 #proto-name {
@@ -316,6 +318,27 @@ p {
   margin-left: 10px;
 }
 
+#guide {
+  background: rgb(169, 166, 211);
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight:600;
+  font-size: 13px;
+  padding: 20px;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
+}
+#guide:hover,
+#guide:focus {
+  opacity: .7;
+  transition: 1s;
+  cursor: pointer;
+}	
+
 @media screen and (max-width: 650px){
   .exchange-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -323,7 +346,6 @@ p {
   #name {
     display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   #names {

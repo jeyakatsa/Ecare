@@ -46,6 +46,20 @@
 </head>
 	<body>
 	
+	<header>
+	
+		<!-- Change below link after test -->
+      <a href="/test" >
+        <img id="img" src="/icons&images/guideIcon.png"/>
+      </a>
+      
+      <span id="logo">
+      	ecare
+      </span>
+	
+	</header>
+
+	
 	
 	</body>
 </html>
