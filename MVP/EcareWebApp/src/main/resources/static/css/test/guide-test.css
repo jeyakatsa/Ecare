@@ -3,11 +3,10 @@ body {
   font-family: Arial;
   margin-left: 0%;
   margin-right: 0%;
-  background-color: white;
+  margin-top: 0%;
   margin-bottom: 0%;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 50px;
+  background-color: white;
+
 }
 @media screen and (max-width: 650px) {
   body {
@@ -16,20 +15,74 @@ body {
 }
 
 header {
-	height: 300px;
-	padding: 20px;
+	height: 100px;
 	width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+	background-color: black;
 }
 
 	#img {
-		width: 40px;
-		margin-right: 5px;
+	  width: 20px;
+	  margin-top: 25px;
+	  margin-left: auto;
+	  margin-right: auto;		
 	}
-	#logo {
-	  font-size: 15pt;
-	  font-weight: 600;
-	  color: white;
-	  letter-spacing: 1px;  		
+	#img:hover {
+		cursor: pointer;
+		opacity: .3;
+		transition: 1s;
+	}
+	
+section {
+	width: 100%;
+	height: 400px;
+	padding-top: 5px;
+	background-color: white;
+    box-shadow: 0px -20px 0px 0px rgb(169, 166, 211);
+}	
+
+	#about {
+		height: 70px;
+		margin-top: -6px;
+		width: 650px;
+		color: rgb(169, 166, 211);
+	    margin-left: auto;
+	    margin-right: auto;	
+	    
+	}
+		#about-heading{
+			font-size: 24.5px;	
+			font-weight: 600;
+		}
+		#about-paragraph {
+		color: silver;
+			font-size: 15px;
+		    margin-top: -20px;
+		    font-weight: 600;
+		}
+	
+	@media screen and (max-width: 650px){
+	  #about {
+	  padding-top: 10px;
+	    width: 350px;
+	    height: 130px;
+	  }
+	  	#about-heading{
+			font-size: 21px;	
+		}
+		#about-paragraph {
+			font-size: 15px
+		}
+	}
+	
+	hr {
+	  background-color: silver;
+	  border: none;
+	  height: 10px;
+	  border-radius: 30px;
+	  width: 100%;
+	  opacity: .4;
+	}
+	
+	#guide{
+	height: 50px;
 	}
