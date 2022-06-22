@@ -55,17 +55,9 @@
       
       <hr>
 	
-	  <div id="about">
-		
-			<p id="about-heading">
-			Ethereum Combinatorial Auction Rate Exchange
-			</p>
-			<p id="about-paragraph">
-			An Ethereum exchange rate
-			system created to be immune to bear-markets.
-			</p>
-		
-		</div>
+	  <p id="about">
+	  An exchange system immune to bear-markets
+	  </p>
 	
 	</section>
 
