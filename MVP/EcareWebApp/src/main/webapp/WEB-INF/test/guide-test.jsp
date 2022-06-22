@@ -46,18 +46,16 @@
 </head>
 	<body>
 	
-	<header>
+	<section id="wrapper">
 	
-		<!-- Change below link after test -->
-      <a href="/test" >
-        <img id="img" src="/icons&images/guideIcon.png"/>
-      </a>
+	  <a id="homelink" href="/test">
+      	<img id="img" src="/icons&images/appIcon.png"/>	  
+	  </a>	
+      <span>Guide</span>
+      
+      <hr>
 	
-	</header>
-	
-	<section>
-	
-		<div id="about">
+	  <div id="about">
 		
 			<p id="about-heading">
 			Ethereum Combinatorial Auction Rate Exchange
@@ -66,12 +64,6 @@
 			An Ethereum exchange rate
 			system created to be immune to bear-markets.
 			</p>
-		
-		</div>
-		
-		<hr>
-		
-		<div id="guide">
 		
 		</div>
 	
