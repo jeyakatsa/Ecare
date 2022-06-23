@@ -16,14 +16,14 @@ body {
 }
 
 #above {
-	padding-top: 20px;
+	padding-top: 60px;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-	height: 500px;
+	height: 425px;
 	z-index: 1;
 }
 
@@ -80,7 +80,7 @@ body {
 	
 	#guide {
 	  background: white;
-	  margin-top: 7px;
+	  margin-top: 10px;
 	  text-decoration: none;
 	  color: rgb(169, 166, 211);
 	  font-weight:600;
@@ -88,7 +88,7 @@ body {
 	  padding: 20px;
 	  border: none;
 	  letter-spacing: 1px;
-	  border-radius: 20px;
+	  border-radius: 5px;
 	  width: 100px;
 	  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
 	}
@@ -103,7 +103,7 @@ body {
 	
 footer {
 	text-decoration: none;
-	padding-top: 75px;
+	padding-top: 40px;
 	width: 100%;
 	height: 130px;
 	margin-bottom: 0%;
@@ -116,11 +116,11 @@ footer {
 	  color: white;
 	  font-weight:600;
 	  font-size: 12px;
-	  padding: 20px;
+	  padding: 15px;
 	  border: solid;
-	  border-width: 3px;
+	  border-width: 2px;
 	  letter-spacing: 1px;
-	  border-radius: 17px;
+	  border-radius: 0px;
 	}
 	#roadmap:hover,
 	#roadmap:focus {
@@ -144,8 +144,8 @@ footer {
 @media screen and (max-width: 650px){
 	
 #above {
-	padding-top: 50px;
-	height: 480px;
+	padding-top: 80px;
+	height: 410px;
 }	
 
 	.icon {
@@ -173,7 +173,7 @@ footer {
 	  font-size: 11px;
 	  width: 120px;
 	  padding: 17px;
-	  margin-top: 20px;
+	  margin-top: 10px;
 	  border-radius: 17px;
 	}
 	
@@ -181,27 +181,25 @@ footer {
 	  font-weight:600;
 	  font-size: 11px;
 	  width: 80px;
-	  border-radius: 17px;
 	  padding: 17px;
 	  margin-bottom: 20px;
 	  margin-top: 10px;
 	}
 	
 footer {
-	padding-top: 65px;
+	padding-top: 35px;
 		height: 120px;
 }
 	
 	#roadmap {
 	  font-size: 11px;
-	  padding: 15px;
+	  padding: 12px;
 	  font-weight:500;
-	  border: solid;
-	  border-width: 2px;
-	  border-radius: 15px;
+	  
 	}	
 	
 	#github {
+		margin-top: 35px;
 		width: 25px;
 	}
 	
