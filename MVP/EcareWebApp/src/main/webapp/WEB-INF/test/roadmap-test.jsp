@@ -46,6 +46,26 @@
 </head>
 	<body>
 	
+  	<a id="homelink" href="/test">
+     	<img id="img" src="/icons&images/guideIcon.png"/>	  
+  	</a>	
+    <span>Roadmap</span>
+	
+	<section id="wrapper">
+	
+	
+	</section>
+	
+		 <footer>
+	      
+		  <a href="https://github.com/jeyakatsa/monalisa"
+		      target="_blank"
+		      id="contact">
+		      <img id="github" src="/icons&images/Github.png">
+		  </a>  	
+		  
+	</footer>
+	
 	
 	</body>
 </html>
