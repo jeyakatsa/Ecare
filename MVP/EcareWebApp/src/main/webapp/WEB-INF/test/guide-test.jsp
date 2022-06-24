@@ -49,8 +49,9 @@
 	<section id="wrapper">
 	
 	  <a id="homelink" href="/test">
-      	<img id="img" src="/icons&images/appIcon.png"/>	  
+      	 <img id="img" src="/icons&images/appIcon.png"/>	  
 	  </a>	
+	  
       <span>Guide</span>
       
       <hr>
@@ -58,6 +59,55 @@
 	  <p id="about">
 	  An exchange system immune to bear-markets
 	  </p>
+	  
+	  <div id="step-one">
+		  <h1 id="step-title">Step 1</h1>
+		  <p>Launch the Prototype:</p>
+  		  		<!-- Change below link after test -->
+	 	  <a href="/prototype-test" target="_blank" id="prototype">
+	      	Prototype
+	      </a>
+	  </div>
+	  
+	  <div id="step-two">
+		  <h1 id="step-title">Step 2</h1>
+		  <p id="describe">
+		  Connect Wallet One & Wallet Two:</p> 
+      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
+	  </div>
+	  
+	  <div id="step-three">
+		  <h1 id="step-title">Step 3</h1>
+		  <p id="describe">
+		  Enter Number of Tokens you wish to exchange 
+		  between Wallet One & Wallet Two within the "exchange tokens"
+		  input boxes:</p>
+      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
+	  </div>
+	  
+	  <div id="step-four">
+		  <h1 id="step-title">Step 4</h1>
+		  <p id="describe">
+		  Press the Exchange button to exchange the tokens:</p>
+      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	
+      	  <h3 id="note">
+      	  Watch Ecare's consensus mechanism in work:
+      	  </h3>
+      	  <p id="describe">
+		  Notice how wallet balances never decrease in 
+		  value no matter how many tokens
+		  exchanged fostering a self-sustaining token exchange
+		  system immune to bear-market uncertainty.</p>  
+	  </div>
+	  
+	  <div id="step-five">
+		  <h1 id="step-title">Step 5</h1>
+		  <p id="describe">
+		  This is an optional Step. Nevertheless, 
+		  reset wallet balances then repeat Steps 2 to 4 until 
+		  desired balances reached between both wallets.</p>
+      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>
+	  </div>
 	
 	</section>
 
