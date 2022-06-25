@@ -8,14 +8,14 @@ body {
   background-color: #e7e6f2;
 
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 815px) {
   body {
     -webkit-text-size-adjust: none;
   }
 }
 		
 #wrapper {
-	width: 550px;
+	width: 600px;
 	height: 1780px;
 	padding: 30px;
 	margin-top: 30px;
@@ -129,7 +129,7 @@ body {
 		#describe-notice{
 			font-size: 14px;
 			color: gray;
-			padding-top: 20px;
+			padding-top: 15px;
 			padding-left: 20px;
 			padding-right: 20px;
 			padding-bottom: 20px;
@@ -147,11 +147,11 @@ body {
 			border-color: #d7d7d7;		
 		}
 	
-@media screen and (max-width: 650px){
+@media screen and (max-width: 815px){
 	
 #wrapper {
 	width: 350px;
-	height: 1390px;
+	height: 1340px;
 }	
 	#img {
 	  margin-top: 20px;
