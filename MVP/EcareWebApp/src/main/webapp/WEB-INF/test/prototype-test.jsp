@@ -260,7 +260,7 @@
       
       <br>
      	    <!-- Change below link after test -->
-      <a href="/guide-test" id="guide">
+      <a href="/guide-test" target="_blank" id="guide">
       	Guide
       </a>
 	
