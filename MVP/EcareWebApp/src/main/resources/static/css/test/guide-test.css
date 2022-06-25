@@ -73,18 +73,41 @@ body {
 	
 	
 	#step-one {
-		margin-top: -10px;
-		padding: 20px;	
-		margin-bottom: 20px;
+		padding-top: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 80px;	
 	}
 	
 	#step-two, #step-three,
 	#step-four, #step-five {
-		padding: 20px;	
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;	
 	}
+		#step-one-title {
+			font-size: 25px;
+			color: #6c6c6c;
+			margin-top: 0px;
+			margin-bottom: -15px;
+			letter-spacing: -1px;
+		}	
+		#describe-prototype{
+			font-size: 14px;
+			color: black;
+			padding: 20px;
+			line-height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+		    margin-bottom: 10px;
+			font-weight: 600;	
+			opacity: .5;
+			width: 400px;
+		}	
 		#prototype {
 		  background: rgb(169, 166, 211);
-		  margin-top: 20px;
 		  text-decoration: none;
 		  color: white;
 		  font-weight:600;
@@ -115,7 +138,7 @@ body {
 			margin-top: 20px;
 			margin-bottom: -10px;
 			font-weight: 600;	
-		}		
+		}				
 		#describe{
 			font-size: 14px;
 			color: black;
@@ -173,12 +196,28 @@ body {
 		width: 200px;
 	    font-size: 13px;	
 	}
+	#step-one {
+		padding-top: 30px;	
+		padding-bottom: 50px;
+	}	
+	#step-two, #step-three,
+	#step-four, #step-five {
+		padding-bottom: 10px;	
+	}	
 	
+	#step-one-title {
+		font-size: 20px;
+		margin-bottom: -17px;		
+	}
+	#describe-prototype{
+		font-size: 11px;
+		width: 260px;
+		margin-bottom: 0px;
+	}		
 	#prototype {
 	  font-size: 11px;
 	  width: 120px;
 	  padding: 17px;
-	  margin-top: 40px;
 	  border-radius: 5px;
 	}
 	#step-title {
