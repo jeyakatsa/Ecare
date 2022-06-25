@@ -57,12 +57,12 @@
       <hr>
 	
 	  <p id="about">
-	  An exchange system immune to bear-markets
+	  	An exchange system immune to bear-markets
 	  </p>
 	  
 	  <div id="step-one">
-		  <h1 id="step-title">Step 1</h1>
-		  <p>Launch the Prototype:</p>
+		  <h1 id="step-title">Step One</h1>
+		  <p id="describe">Launch the Prototype</p>
   		  		<!-- Change below link after test -->
 	 	  <a href="/prototype-test" target="_blank" id="prototype">
 	      	Prototype
@@ -70,42 +70,42 @@
 	  </div>
 	  
 	  <div id="step-two">
-		  <h1 id="step-title">Step 2</h1>
+		  <h1 id="step-title">Step Two</h1>
 		  <p id="describe">
 		  Connect Wallet One & Wallet Two:</p> 
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
 	  </div>
 	  
 	  <div id="step-three">
-		  <h1 id="step-title">Step 3</h1>
+		  <h1 id="step-title">Step Three</h1>
 		  <p id="describe">
 		  Enter Number of Tokens you wish to exchange 
-		  between Wallet One & Wallet Two within the "exchange tokens"
+		  between Wallet One & Wallet Two within the "Exchange Tokens"
 		  input boxes:</p>
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
 	  </div>
 	  
 	  <div id="step-four">
-		  <h1 id="step-title">Step 4</h1>
+		  <h1 id="step-title">Step Four</h1>
 		  <p id="describe">
-		  Press the Exchange button to exchange the tokens:</p>
+		  Press the Exchange button to exchange the tokens
+		  thenwatch Ecare's consensus mechanism work:</p>
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	
-      	  <h3 id="note">
-      	  Watch Ecare's consensus mechanism in work:
-      	  </h3>
       	  <p id="describe">
-		  Notice how wallet balances never decrease in 
+		  You'll notice wallet balances never decrease in 
 		  value no matter how many tokens
-		  exchanged fostering a self-sustaining token exchange
-		  system immune to bear-market uncertainty.</p>  
+		  exchanged thus, fostering a self-sustaining token exchange
+		  system immune to bear-market volatility.</p>  
 	  </div>
 	  
 	  <div id="step-five">
-		  <h1 id="step-title">Step 5</h1>
+		  <h1 id="step-title">Step Five</h1>
+		  <p id="optional">
+		  ~ Optional ~</p>
 		  <p id="describe">
-		  This is an optional Step. Nevertheless, 
-		  reset wallet balances then repeat Steps 2 to 4 until 
-		  desired balances reached between both wallets.</p>
+		  Reset wallet balances & total tokens, then repeat 
+		  Steps One to Four until desired balances between both 
+		  wallets is reached:</p>
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>
 	  </div>
 	

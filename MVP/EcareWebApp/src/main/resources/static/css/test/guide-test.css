@@ -16,7 +16,7 @@ body {
 		
 #wrapper {
 	width: 550px;
-	height: 600px;
+	height: 1750px;
 	padding: 30px;
 	margin-top: 30px;
 	border-radius: 5px;
@@ -31,10 +31,11 @@ body {
       text-decoration: none;	
 	}
 	#img {
+	  margin-top: 20px;
 	  width: 17px;
 	  margin-left: auto;
 	  margin-right: auto;	
-	  margin-bottom: -7px;
+	  margin-bottom: -9px;
 	}
 	#img:hover {
 	  opacity: .4;
@@ -50,17 +51,16 @@ body {
 	}	
 	hr {
 	  background-color: gray;
-	  margin-top: 25px;
+	  margin-top: -2px;
 	  border: none;
 	  border-radius: 3px;
-	  height: 15px;
-	  width: 380px;
-	  opacity: .1;
+	  height: 4px;
+	  width: 250px;
+	  opacity: .2;
 	}	
-	
 	#about {
-		height: 70px;
-		margin-top: 25px;
+		height: 40px;
+		margin-top: -5px;
 		width: 350px;
 	    margin-left: auto;
 	    margin-right: auto;	
@@ -68,8 +68,68 @@ body {
 	    font-size: 13.5px;	
 	    font-weight: 600;
 	    line-height: 15px;	  
-	    opacity: .6; 
+	    opacity: .7; 
 	}
+	
+	
+	#step-one {
+		margin-top: -10px;
+		padding: 20px;	
+		margin-bottom: 20px;
+	}
+	
+	#step-two, #step-three,
+	#step-four, #step-five {
+		padding: 20px;	
+	}
+		#prototype {
+		  background: rgb(169, 166, 211);
+		  margin-top: 20px;
+		  text-decoration: none;
+		  color: white;
+		  font-weight:600;
+		  font-size: 13px;
+		  padding: 20px;
+		  border: none;
+		  letter-spacing: 1px;
+		  border-radius: 5px;
+		  width: 150px;
+		  box-shadow: 0px 5px 15px 0px rgb(169, 166, 211);
+		}
+		#prototype:hover,
+		#prototype:focus {
+		  opacity: .7;
+		  transition: 1s;
+		  cursor: pointer;
+		}		
+		#step-title {
+			font-size: 25px;
+			color: silver;
+			margin-top: 0px;
+			margin-bottom: -10px;
+		}
+		#optional{
+			font-size: 15px;
+			color: black;
+			margin-top: 5px;
+			margin-bottom: -10px;
+			font-weight: 600;	
+			opacity: .6;
+		}		
+		#describe{
+			font-size: 15px;
+			color: black;
+			padding: 20px;
+			margin: auto;
+			font-weight: 600;	
+			opacity: .6;
+			width: 400px;
+		}
+		#connect-wallets {
+			border-radius: 5px;
+			width: 500px;
+    		box-shadow: 0px 3px 10px 0px silver;			
+		}
 	
 @media screen and (max-width: 650px){
 	
@@ -79,7 +139,19 @@ body {
   #about {
     width: 200px;
   }
-	hr {
-	  width: 220px;
+	
+	#prototype {
+	  font-size: 11px;
+	  width: 120px;
+	  padding: 17px;
+	  margin-top: 40px;
+	  border-radius: 5px;
+	}
+	#describe{
+		font-size: 12px;
+		width: 280px;
 	}	
+	#connect-wallets {
+		width: 300px;
+	}
 }
