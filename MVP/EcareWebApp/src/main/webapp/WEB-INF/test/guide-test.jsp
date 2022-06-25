@@ -89,9 +89,9 @@
 		  <h1 id="step-title">Step Four</h1>
 		  <p id="describe">
 		  Press the Exchange button to exchange the tokens
-		  thenwatch Ecare's consensus mechanism work:</p>
+		  then watch Ecare's consensus mechanism work:</p>
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	
-      	  <p id="describe">
+      	  <p id="describe-notice">
 		  You'll notice wallet balances never decrease in 
 		  value no matter how many tokens
 		  exchanged thus, fostering a self-sustaining token exchange
@@ -101,11 +101,11 @@
 	  <div id="step-five">
 		  <h1 id="step-title">Step Five</h1>
 		  <p id="optional">
-		  ~ Optional ~</p>
+		  optional</p>
 		  <p id="describe">
-		  Reset wallet balances & total tokens, then repeat 
+		  Reset wallet balances & total tokens. Then, repeat 
 		  Steps One to Four until desired balances between both 
-		  wallets is reached:</p>
+		  wallets are reached:</p>
       	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>
 	  </div>
 	
