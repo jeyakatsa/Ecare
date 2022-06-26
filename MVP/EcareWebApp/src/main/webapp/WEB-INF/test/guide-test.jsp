@@ -88,13 +88,12 @@
 	  <div id="step-four">
 		  <h1 id="step-title">Step Four</h1>
 		  <p id="describe">
-		  Exchange the tokens to witness Ecare's consensus mechanism 
-		  in work:</p>
+		  Exchange the tokens to witness Ecare's consensus mechanism work:</p>
       	  <img id="connect-wallets" src="/icons&images/stepfour.jpg"/>	
       	  <p id="describe-notice">
 		  You'll notice wallet balances never decrease in 
 		  value no matter how many tokens
-		  exchanged, thus fostering a self-sustaining token exchange
+		  exchanged. This fosters a self-sustaining token exchange
 		  system immune to bear-market volatility.</p>  
 	  </div>
 	  
@@ -103,8 +102,8 @@
 		  <p id="optional">
 		  optional</p>
 		  <p id="describe">
-		  Reset wallet balances & total tokens. Then, repeat 
-		  Steps One to Four until desired balances between both 
+		  Reset Wallet Balances & Total Tokens. Then, repeat 
+		  Steps Three & Four until desired balances between both 
 		  wallets are reached:</p>
       	  <img id="connect-wallets" src="/icons&images/stepfive.jpg"/>
 	  </div>
