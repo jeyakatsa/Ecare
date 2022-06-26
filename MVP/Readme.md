@@ -1,19 +1,23 @@
 ## ECARE MVP (Roadmap) 
 
-### 
-
-- Overall: 
-  - [X] Ecare Fundamentals Process *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/ecare)*
-  - [ ] Ecare Publishing *[In Development]*
-
-**Month 0**
-  - [X] Official website for updates/blog-posts/etc *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
-
-**Month 1-3**
-  - [X] Prototype Front-End *[[Complete]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange/prototype***
-  - [ ] Prototype Back-End *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
-  - [ ] Prototype About/How-To-Use-Guide/Roadmap-Guide *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
-
-**Month 3 - Year 2023/2024**
+- Ongoing: 
   - [X] Research & Development *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
-  - [ ] MVP/Full-Product *[announced]*
+
+- **Jun 2022**
+  - [X] Official website for updates/blog-posts/etc *[[Completed & Launched]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
+
+- **Jun 2022 - Jul 2022**
+  - [X] Prototype Front-End *[[Completed & Launched]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange/prototype***
+  - [ ] Prototype Back-End *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
+  - [X] Prototype Guide *[[Completed]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
+  - [ ] Roadmap *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
+
+- **Aug 2022 - Jan 2023**
+  - [ ] Base dApp *[announced]*
+
+- **Feb 2023 - Jul 2023**
+  - [ ] Internalized Market API *[announced]*
+
+- **Aug 2023 - Jan 2025**
+  - [ ] Full MVP *[announced]*
+
