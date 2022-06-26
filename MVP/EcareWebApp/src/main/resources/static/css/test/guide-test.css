@@ -173,7 +173,7 @@ body {
 	
 #wrapper {
 	width: 350px;
-	height: 1240px;
+	height: 1200px;
 }	
 	#img {
 	  margin-top: 20px;
@@ -236,7 +236,7 @@ body {
 		font-size: 11px;
 		padding-top: 10px;		
 		width: 260px;
-		padding-bottom: 10px;
+		padding-bottom: 0px;
 	}	
 	
 	#connect-wallets {
