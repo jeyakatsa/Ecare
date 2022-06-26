@@ -79,7 +79,7 @@
 	  <div id="step-three">
 		  <h1 id="step-title">Step Three</h1>
 		  <p id="describe">
-		  Enter Number of Tokens you wish to exchange 
+		  Enter number of tokens you wish to exchange 
 		  between Wallet One & Wallet Two within the "Exchange Tokens"
 		  input boxes:</p>
       	  <img id="connect-wallets" src="/icons&images/stepthree.jpg"/>	  
@@ -88,13 +88,13 @@
 	  <div id="step-four">
 		  <h1 id="step-title">Step Four</h1>
 		  <p id="describe">
-		  Press the Exchange button to exchange the tokens
-		  then watch Ecare's consensus mechanism work:</p>
+		  Exchange the tokens to witness Ecare's consensus mechanism 
+		  in work:</p>
       	  <img id="connect-wallets" src="/icons&images/stepfour.jpg"/>	
       	  <p id="describe-notice">
 		  You'll notice wallet balances never decrease in 
 		  value no matter how many tokens
-		  exchanged thus, fostering a self-sustaining token exchange
+		  exchanged, thus fostering a self-sustaining token exchange
 		  system immune to bear-market volatility.</p>  
 	  </div>
 	  
