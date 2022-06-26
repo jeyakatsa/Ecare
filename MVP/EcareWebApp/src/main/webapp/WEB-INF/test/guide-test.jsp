@@ -73,7 +73,7 @@
 		  <h1 id="step-title">Step Two</h1>
 		  <p id="describe">
 		  Connect Wallet One & Wallet Two:</p> 
-      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
+      	  <img id="connect-wallets" src="/icons&images/steptwo.jpg"/>	  
 	  </div>
 	  
 	  <div id="step-three">
@@ -82,7 +82,7 @@
 		  Enter Number of Tokens you wish to exchange 
 		  between Wallet One & Wallet Two within the "Exchange Tokens"
 		  input boxes:</p>
-      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	  
+      	  <img id="connect-wallets" src="/icons&images/stepthree.jpg"/>	  
 	  </div>
 	  
 	  <div id="step-four">
@@ -90,7 +90,7 @@
 		  <p id="describe">
 		  Press the Exchange button to exchange the tokens
 		  then watch Ecare's consensus mechanism work:</p>
-      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>	
+      	  <img id="connect-wallets" src="/icons&images/stepfour.jpg"/>	
       	  <p id="describe-notice">
 		  You'll notice wallet balances never decrease in 
 		  value no matter how many tokens
@@ -106,7 +106,7 @@
 		  Reset wallet balances & total tokens. Then, repeat 
 		  Steps One to Four until desired balances between both 
 		  wallets are reached:</p>
-      	  <img id="connect-wallets" src="/icons&images/filler.jpg"/>
+      	  <img id="connect-wallets" src="/icons&images/stepfive.jpg"/>
 	  </div>
 	
 	</section>
