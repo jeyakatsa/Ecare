@@ -53,7 +53,7 @@ span {
 	width: 500px;
 	height: 370px;
 	padding: 10px;
-	margin-top: 30px;
+	margin-top: 20px;
 	background-color: #2d2d2d;
 	border-width: 2px;
 	border-radius: 5px;
@@ -65,12 +65,11 @@ span {
 h3 {
 	color: white;
 	font-size: 12px;
-	padding-top: 30px;
+	padding-top: 35px;
 	padding-bottom: 20px;
 	margin: auto;
-	letter-spacing: 8px;
+	letter-spacing: 5px;
 	font-weight: 600;
-	opacity: .9;
 }	
 
 	#wrapper-content {
@@ -121,8 +120,7 @@ span {
 }	
 
 	h3 {
-		font-size: 10px;
-		letter-spacing: 5px;
+		font-size: 9px;	
 	}	
 
 	#wrapper-content {

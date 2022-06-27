@@ -56,18 +56,37 @@
 		<h3>Jun 2022 - Jul 2022</h3>
 	
 		<div id="wrapper-content">
-	
+			<p id="milestone">Prototype Front-End
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">Completed & Launched
+			</p>
 		</div>
 		
 		<div id="wrapper-content">
-	
+			<p id="milestone">Prototype Guide
+			</p>
+			<p id="status-title">Status:
+			</p>	
+			<p id="status">Completed & Launched
+			</p>				
+		</div>
+		
+		<div id="wrapper-content">
+			<p id="milestone">Prototype Back-End
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">In Development
+			</p>	
 		</div>
 	
 	 </section>
 	 
 	<section id="wrapper-date">
 	
-		<h3>Jun 2022 - Jul 2022</h3>
+		<h3>Aug 2022 - Jan 2023</h3>
 	
 		<div id="wrapper-content">
 	
