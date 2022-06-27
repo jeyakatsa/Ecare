@@ -51,13 +51,37 @@
   	</a>	
     <span>Roadmap</span>
 	
-	<section id="wrapper">
+	<section id="wrapper-date-top">
 	
+		<h3>Jun 2022 - Jul 2022</h3>
 	
-	</section>
+		<div id="wrapper-content">
+	
+		</div>
+		
+		<div id="wrapper-content">
+	
+		</div>
+	
+	 </section>
+	 
+	<section id="wrapper-date">
+	
+		<h3>Jun 2022 - Jul 2022</h3>
+	
+		<div id="wrapper-content">
+	
+		</div>
+		
+		<div id="wrapper-content">
+	
+		</div>
+	
+	 </section>	 
 	
 		 <footer>
 	      
+	      <!-- Change below link after prototype completion -->
 		  <a href="https://github.com/jeyakatsa/monalisa"
 		      target="_blank"
 		      id="contact">
