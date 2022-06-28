@@ -91,10 +91,6 @@
 		<div id="wrapper-content">
 	
 		</div>
-		
-		<div id="wrapper-content">
-	
-		</div>
 	
 	 </section>	 
 	

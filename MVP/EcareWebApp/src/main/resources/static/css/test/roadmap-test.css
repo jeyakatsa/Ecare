@@ -39,7 +39,7 @@ span {
 
 #wrapper-date-top {
 	width: 500px;
-	height: 370px;
+	height: 750px;
 	padding: 10px;
 	margin-top: 40px;
 	background-color: #2d2d2d;
@@ -51,9 +51,9 @@ span {
 }	
 #wrapper-date {
 	width: 500px;
-	height: 370px;
+	height: 500px;
 	padding: 10px;
-	margin-top: 20px;
+	margin-top: 50px;
 	background-color: #2d2d2d;
 	border-width: 2px;
 	border-radius: 5px;
@@ -70,11 +70,13 @@ h3 {
 	margin: auto;
 	letter-spacing: 5px;
 	font-weight: 600;
+	opacity: .8;
 }	
 
 	#wrapper-content {
 		width: 300px;
-		height: 40px;
+		height: 120px;
+		color: white;
 		padding: 30px;
 		margin-top: 20px;
 		border-radius: 5px;
@@ -82,7 +84,26 @@ h3 {
 		margin-right: auto;
 		background-color: #3d3d3d;
 	    box-shadow: 0px 5px 25px -5px black;
-	}	
+	}
+		#milestone {
+			opacity: .9;
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: -5px;
+			letter-spacing: 1px;
+			
+		}	
+		#status-title {
+			opacity: .5;
+			font-size: 15px;
+			margin-bottom: -5px;
+			letter-spacing: 1px;			
+		}	
+		#status {
+			opacity: .8;
+			font-size: 15px;
+			letter-spacing: 1px;
+		}			
 
 footer {
 	text-decoration: none;
@@ -114,18 +135,34 @@ span {
 	letter-spacing: 7px;
 }	
 
-#wrapper-date-top,
-#wrapper-date {
+#wrapper-date-top {
 	width: 400px;
+    height: 650px;
+}	
+
+#wrapper-date {
+	width: 400px;	
+    height: 320px;
 }	
 
 	h3 {
 		font-size: 9px;	
 	}	
-
+	
 	#wrapper-content {
 		width: 220px;
+		height: 90px;
 	}	
+		#milestone {
+			font-size: 15px;
+			
+		}	
+		#status-title {
+			font-size: 12px;			
+		}	
+		#status {
+			font-size: 12px;
+		}
 	
 footer {
 	height: 40px;
