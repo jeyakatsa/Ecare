@@ -50,37 +50,64 @@
      	<img id="img" src="/icons&images/guideIcon.png"/>	  
   	</a>	
     <span>Roadmap</span>
+    
+	<section id="wrapper-ongoing">
+	
+		<h3>Present</h3>
+	
+	<!-- change link below after test -->
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/R%26D">
+		<button id="wrapper-content">
+			<p id="milestone">R&D Work 
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">Ongoing
+			</p>
+		</button>
+		</form>	
+	
+	 </section>	     
 	
 	<section id="wrapper-date-top">
 	
 		<h3>Jun 2022 - Jul 2022</h3>
 	
-		<div id="wrapper-content">
+	<!-- change link below after test -->
+		<form method="get" target="_blank" action="/prototype-test">
+		<button id="wrapper-content">
 			<p id="milestone">Prototype Front-End
 			</p>
 			<p id="status-title">Status:
 			</p>			
 			<p id="status">Completed & Launched
 			</p>
-		</div>
+		</button>
+		</form>	
 		
-		<div id="wrapper-content">
+	<!-- change link below after test -->
+		<form method="get" target="_blank" action="/guide-test">		
+		<button id="wrapper-content">
 			<p id="milestone">Prototype Guide
 			</p>
 			<p id="status-title">Status:
 			</p>	
 			<p id="status">Completed & Launched
 			</p>				
-		</div>
+		</button>
+		</form>
 		
-		<div id="wrapper-content">
+	<!-- change link below after test -->
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP#readme">
+		<button id="wrapper-content">
 			<p id="milestone">Prototype Back-End
 			</p>
 			<p id="status-title">Status:
 			</p>			
 			<p id="status">In Development
 			</p>	
-		</div>
+		</button>
+		</form>
 	
 	 </section>
 	 
@@ -88,9 +115,9 @@
 	
 		<h3>Aug 2022 - Jan 2023</h3>
 	
-		<div id="wrapper-content">
+		<button id="wrapper-content">
 	
-		</div>
+		</button>
 	
 	 </section>	 
 	

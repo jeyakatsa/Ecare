@@ -34,24 +34,12 @@ span {
 	margin-left: 15px;
 	letter-spacing: 10px;
 	font-weight: 600;
-	opacity: .9;
+	opacity: .8;
 }	
 
-#wrapper-date-top {
-	width: 500px;
-	height: 750px;
-	padding: 10px;
-	margin-top: 40px;
-	background-color: #2d2d2d;
-	border-width: 2px;
-	border-radius: 5px;
-	margin-left: auto;
-	margin-right: auto;
-    box-shadow: 0px 5px 25px -5px black;
-}	
-#wrapper-date {
-	width: 500px;
-	height: 500px;
+#wrapper-ongoing {
+	width: 550px;
+	height: 360px;
 	padding: 10px;
 	margin-top: 50px;
 	background-color: #2d2d2d;
@@ -59,7 +47,32 @@ span {
 	border-radius: 5px;
 	margin-left: auto;
 	margin-right: auto;
-    box-shadow: 0px 5px 25px -5px black;
+    box-shadow: 0px 5px 25px -5px #161616;
+}
+
+#wrapper-date-top {
+	width: 550px;
+	height: 750px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: #2d2d2d;
+	border-width: 2px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 0px 5px 25px -5px #161616;
+}	
+#wrapper-date {
+	width: 550px;
+	height: 360px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: #2d2d2d;
+	border-width: 2px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 0px 5px 25px -5px #161616;
 }	
 
 h3 {
@@ -74,35 +87,43 @@ h3 {
 }	
 
 	#wrapper-content {
-		width: 300px;
-		height: 120px;
+		width: 350px;
+		height: 170px;
 		color: white;
 		padding: 30px;
+		border: none;
 		margin-top: 20px;
 		border-radius: 5px;
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #3d3d3d;
-	    box-shadow: 0px 5px 25px -5px black;
+	    box-shadow: 0px 5px 25px -5px #161616;
+	}
+	#wrapper-content:hover,
+	#wrapper-content:focus{
+		opacity: .3;
+		transition: 1s;
+	    cursor: pointer;		
 	}
 		#milestone {
-			opacity: .9;
-			font-size: 20px;
+			opacity: .8;
+			font-size: 18px;
 			font-weight: 600;
-			margin-bottom: -5px;
+			margin-bottom: -10px;
 			letter-spacing: 1px;
 			
 		}	
 		#status-title {
 			opacity: .5;
 			font-size: 15px;
-			margin-bottom: -5px;
+			margin-bottom: -10px;
 			letter-spacing: 1px;			
 		}	
 		#status {
-			opacity: .8;
-			font-size: 15px;
+			opacity: .65;
+			font-size: 14px;
 			letter-spacing: 1px;
+			padding-bottom: 10px;
 		}			
 
 footer {
@@ -135,14 +156,19 @@ span {
 	letter-spacing: 7px;
 }	
 
+#wrapper-ongoing {
+	width: 400px;
+    height: 310px;
+}	
+
 #wrapper-date-top {
 	width: 400px;
-    height: 650px;
+    height: 620px;
 }	
 
 #wrapper-date {
 	width: 400px;	
-    height: 320px;
+    height: 310px;
 }	
 
 	h3 {
@@ -150,18 +176,20 @@ span {
 	}	
 	
 	#wrapper-content {
-		width: 220px;
-		height: 90px;
+		width: 260px;
+		height: 140px;
 	}	
 		#milestone {
-			font-size: 15px;
+			font-size: 14px;
+			margin-bottom: -8px;
 			
 		}	
 		#status-title {
-			font-size: 12px;			
+			font-size: 12px;
+			margin-bottom: -5px;						
 		}	
 		#status {
-			font-size: 12px;
+			font-size: 11px;
 		}
 	
 footer {
