@@ -13,11 +13,11 @@
   - [ ] Roadmap *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
 
 - **Sep 2022 - Feb 2023**
-  - [ ] Base AMM dApp *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
+  - [ ] Base AMM-dApp (Automated Market Maker decentralized App) *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
 
 - **March 2023 - Aug 2023**
   - [ ] Internalized Market API *[announced]*
 
 - **Sep 2023 - Jan 2025**
-  - [ ] Full MVP *[announced]*
+  - [ ] Full AMM-dApp (Automated Market Maker decentralized App) *[announced]*
 
