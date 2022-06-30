@@ -71,12 +71,12 @@
 	
 	<section id="wrapper-date-top">
 	
-		<h3>Jun 2022 - Jul 2022</h3>
+		<h3>Jun 2022 - Aug 2022</h3>
 	
 	<!-- change link below after test -->
 		<form method="get" target="_blank" action="/prototype-test">
 		<button id="wrapper-content">
-			<p id="milestone">Prototype Front-End
+			<p id="milestone">Prototype
 			</p>
 			<p id="status-title">Status:
 			</p>			
@@ -96,30 +96,62 @@
 			</p>				
 		</button>
 		</form>
-		
-	<!-- change link below after test -->
-		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP#readme">
-		<button id="wrapper-content">
-			<p id="milestone">Prototype Back-End
-			</p>
-			<p id="status-title">Status:
-			</p>			
-			<p id="status">In Development
-			</p>	
-		</button>
-		</form>
 	
-	 </section>
+	</section>
 	 
 	<section id="wrapper-date">
 	
-		<h3>Aug 2022 - Jan 2023</h3>
+		<h3>Sep 2022 - Feb 2023</h3>
 	
+	<!-- change link below after test -->
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/R%26D">
 		<button id="wrapper-content">
-	
+			<p id="milestone">Base dApp
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">Research & Development
+			</p>
 		</button>
+		</form>	
 	
 	 </section>	 
+	 
+	 <section id="wrapper-date">
+	
+		<h3>March 2023 - Aug 2023</h3>
+	
+	 <!-- change link below after test -->
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
+		<button id="wrapper-content">
+			<p id="milestone">Internal Market API
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">Announced
+			</p>
+		</button>
+		</form>	
+	
+	 </section>	 
+	 
+	 <section id="wrapper-date">
+	
+		<h3>Sep 2023 - Jan 2025</h3>
+	
+	 <!-- change link below after test -->
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
+		<button id="wrapper-content">
+			<p id="milestone">Full dApp
+			</p>
+			<p id="status-title">Status:
+			</p>			
+			<p id="status">Announced
+			</p>
+		</button>
+		</form>	
+	
+	 </section>		 	 
 	
 		 <footer>
 	      
