@@ -1,7 +1,7 @@
 ## ECARE MVP (Roadmap) 
 
 - Ongoing: 
-  - [X] Research & Development *[[In-Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
+  - [X] Research & Development *[[Ongoing]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
 
 - **Jun 2022**
   - [X] Official website for updates/blog-posts/etc *[[Completed & Launched]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*---------***https://ecare.exchange***
@@ -13,7 +13,7 @@
   - [ ] Roadmap *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/MVP/EcareWebApp)*
 
 - **Sep 2022 - Feb 2023**
-  - [ ] Base dApp *[announced]*
+  - [ ] Base AMM dApp *[[In Development]](https://github.com/jeyakatsa/monalisa/tree/main/R%26D)*
 
 - **March 2023 - Aug 2023**
   - [ ] Internalized Market API *[announced]*
