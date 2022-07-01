@@ -30,7 +30,7 @@ Wallet 2 Balance / Wallet 2 Tokens
 Wallet 1 Token Value * Wallet 1 Tokens Exchanged 
   returns Wallet 1 Value To-Be-Added to Wallet 2 Balance
   
-Wallet 2 Balance * Wallet 2 Tokens Exchanged
+Wallet 2 Token Value * Wallet 2 Tokens Exchanged
   returns Wallet 2 Value To-Be-Added to Wallet 1 Balance
 ```
 
@@ -64,14 +64,30 @@ Wallet 2 Tokens >= Wallet 2 Tokens Exchanged
 
 #### Step 4: Update Balances
 
-...More Algorithms to be Added
+...More Algorithms to be Adde
 
 ```
+New Wallet 2 Balance == Wallet 2 Balance - Wallet 2 Value To-Be-Added to Wallet 1 Balance + Wallet 1 Value To-Be-Added to Wallet 2 Balance
+New Wallet 1 Balance == Wallet 1 Balance - Wallet 1 Value To-Be-Added to Wallet 2 Balance + Wallet 2 Value To-Be-Added to Wallet 1 Balance
+
 If 
 New Wallet 1 Balance > 999,999,999.99
   and/or
 New Wallet 2 Balance > 999,999,999.99
   return error  
+  break
+  
+Else If
+New Wallet 1 Balance < Wallet 1 Balance
+  return Wallet 1 Balance
+  or
+New Wallet 2 Balance < Wallet 2 Balance
+  return Wallet 2 Balance
+  
+Else
+Wallet 1 Balance == New Wallet 1 Balance
+Wallet 2 Balance == New Wallet 2 Balance
+
 
 ```
 
