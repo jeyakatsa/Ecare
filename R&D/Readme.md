@@ -1,147 +1,118 @@
 # Base Framework Research & Development
 
 ## Contents:
-- [JSON Example](#json-example)
+- [Mechanics Algorithm Calculations](#mechanics-calculations)
 - [Basic Smart-Contract Framework](#basic-smart-contract-framework)
 - [Exchange Launching](#exchange-launching)
 
-## JSON Example:
-It can be represented in JSON like this:
 
-```javascript
-{
-  "to": "0xalice",
-  "from": "0xbob",
-  "amount": "30BLC"
-}
+
+## Mechanics Algorithm Calculations
+
+### Calculation Algorithm Guide:
+
+
+
+
+#### Step 1: Divide Balances by Tokens (Total)
+```
+Wallet 1 Balance / Wallet 1 Tokens 
+  returns Wallet 1 Token Value
+  
+Wallet 2 Balance / Wallet 2 Tokens 
+  returns Wallet 2 Token Value
 ```
 
-This is a simple record or transaction. It tells us that bob transferred 30BLC to Alice.
 
-Now, this transaction is recorded inside a block. Let’s represent a transaction inside a block in JSON, like this:
 
-```javascript
-[
-  {
-    "to": "0xalice",
-    "from": "0xbob",
-    "amount": "30BLC"
-  }
-]
+#### Step 2: Multiply Token Values by Tokens Exchanged
+```
+Wallet 1 Token Value * Wallet 1 Tokens Exchanged 
+  returns Wallet 1 Value To-Be-Added to Wallet 2 Balance
+  
+Wallet 2 Balance * Wallet 2 Tokens Exchanged
+  returns Wallet 2 Value To-Be-Added to Wallet 1 Balance
 ```
 
-A block is like an array that contains objects of transactions. So this block can contain many transactions:
 
-```javascript
-[
-  {
-    "to": "0xalice",
-    "from": "0xbob",
-    "amount": "30BLC"
-  },
-  {
-    "to": "0xtheresa",
-    "from": "0xarinze",
-    "amount": "5BLC"
-  }
-]
+
+#### Step 3: Compare/Contrast Wallet Tokens, then Exchange Tokens
 ```
-When a block is verified by the nodes and set to be added to the network, this block has a pointer that points to the hash of the last block in the network.
-
-```javascript
-[
-  {
-    "hash": "0x0",
-    "prevHash": "",
-    "txns": [
-      {
-        "to": "0xalice",
-        "from": "0xbob",
-        "amount": "30BLC"
-      },
-      {
-        "hash": "0x1",
-        "prevHash": "0x0",
-        "to": "0xtheresa",
-        "from": "0xarinze",
-        "amount": "5BLC"
-      }
-    ]
-  },
-  {
-    "hash": "0x1",
-    "prevHash": "0x0",
-    "txns": [
-      {
-        "to": "0xalice",
-        "from": "0xbob",
-        "amount": "30BLC"
-      },
-      {
-        "to": "0xtheresa",
-        "from": "0xarinze",
-        "amount": "5BLC"
-      }
-    ]
-  }
-]
+If 
+Wallet 1 Tokens < Wallet 1 Tokens Exchanged 
+  and/or
+Wallet 2 Tokens < Wallet 2 Tokens Exchanged
+  return error  
+  
+Else If 
+Wallet 1 Tokens Exchanged == null
+  and/or
+Wallet 2 Tokens Exchanged == null  
+  return error
+  
+Else 
+Wallet 1 Tokens >= Wallet 1 Tokens Exchanged 
+  and
+Wallet 2 Tokens >= Wallet 2 Tokens Exchanged   
+  New Wallet 1 Tokens == Wallet 1 Tokens - Wallet 1 Tokens Exchanged + Wallet 2 Tokens Exchanged
+  New Wallet 2 Tokens == Wallet 2 Tokens - Wallet 2 Tokens Exchanged + Wallet 1 Tokens Exchanged
+  Wallet 1 Tokens == New Wallet 1 Tokens
+  Wallet 2 Tokens == New Wallet 2 Tokens
 ```
 
-The first block with hash `0x0` is the genesis block. The next block with hash `0x1` has a `prevHash` that points to `0x0`. This points to the first block in the network.
 
-### The ERC-20 body
-The body of an ERC-20 token contains the methods and events an ERC-20 token must have.
 
-An ERC-20 token must be able to:
+#### Step 4: Update Balances
 
-- Transfer tokens from one account to another
-- Return the balance of an account
-- Return the total tokens available in the token
-- Transfer tokens to an account
-- In practice, an ERC-20 would look something like this in Solidity:
+...More Algorithms to be Added
 
-```solidity
-function name() public view returns (string)
+```
+If 
+New Wallet 1 Balance > 999,999,999.99
+  and/or
+New Wallet 2 Balance > 999,999,999.99
+  return error  
 
-function symbol() public view returns (string)
-
-function decimals() public view returns (uint8)
-
-function totalSupply() public view returns (uint256)
-
-function balanceOf(address _owner) public view returns (uint256 balance)
-
-function transfer(address _to, uint256 _value) public returns (bool success)
-
-function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
-
-function approve(address _spender, uint256 _value) public returns (bool success)
-
-function allowance(address _owner, address _spender) public view returns (uint256 remaining)
 ```
 
-The following methods can be available in an ERC-20 token:
 
-- `name` returns the name of the token (e.g., Binance Coin)
-- `symbol` returns the symbol of the token (e.g., BNB)
-- `decimals` returns the number of decimals the token uses
-- `totalSupply` returns the total number initially supplied to the token
-- `balanceOf` returns the balance of an account
-- `transfer` transfers a certain amount of tokens to an address
-- `transferFrom` transfers a certain amount of tokens from a beneficiary address to a recipient address
-- `approve` withdraws tokens from the owner’s address up to a certain amount of tokens
-- `allowance` returns the number of tokens withdrawable from the owner’s account
+### Mechanic Scenarios:
+**Scenario 1:** *Wallet 1 exchanges 1 of their Tokens for 1 Token from Wallet 2.*
 
-Events can also be registered on our token to capture certain events when they are emitted.
+> ***Before Exchange***
+> 
+> | Wallet 1                      | Wallet 2                      |
+> | ----------------------------- | ----------------------------- |
+> | Balance = 2,000 USD           | Balance = 1,000 USD           |
+> | Tokens = 1,000                | Tokens = 1,000                |
+> | 1 Token = 2 USD               | 1 Token = 1 USD               |
+> 
+> ***After Exchange***
+> 
+> | Wallet 1                      | Wallet 2                      |
+> | ----------------------------  | ----------------------------- |
+> | Balance = 2,000 USD           | Balance = 1,002 USD           |
+> | Tokens = 1,000                | Tokens = 1,000                |
+> | 1 Token = 2 USD               | 1 Token = 1.002 USD           |
 
-```solidity
-event Transfer(address indexed _from, address indexed _to, uint256 _value)
+**Scenario 2:** *Wallet 1 exchanges 50 of their Tokens for 1 Token from Wallet 2.*
 
-event Approval(address indexed _owner, address indexed _spender, uint256 _value)
-```
+> ***Before Exchange***
+> 
+> | Wallet 1                      | Wallet 2                      |
+> | ----------------------------- | ----------------------------- |
+> | Balance = 2,000 USD           | Balance = 1,000 USD           |
+> | Tokens = 1,000                | Tokens = 1,000                |
+> | 1 Token = 2 USD               | 1 Token = 1 USD               |
+> 
+> ***After Exchange***
+> 
+> | Wallet 1                      | Wallet 2                       |
+> | ----------------------------- | ------------------------------ |
+> | Balance = 2,000 USD           | Balance = 1,099 USD            |
+> | Tokens = 951                  | Tokens = 1,049                 |
+> | 1 Token = 2.103 USD           | 1 Token = 1.048 USD            |
 
-- `Transfer`, which must be triggered when tokens are transferred
-- `Approval`, which must be triggered when an account is approved to collect a certain amount of tokens
 
 ## Basic Smart-Contract Framework:
 
