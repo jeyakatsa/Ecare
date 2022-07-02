@@ -7,9 +7,9 @@
 
 
 
-## Mechanics Algorithm Calculations
+## Combinatorial Mechanics Algorithms
 
-### Calculation Algorithm Guide:
+### Combinatorial Algorithm Guide:
 
 
 
