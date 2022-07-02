@@ -22,35 +22,66 @@
 			}
 
 			
-			// Ecare Combinatorial Mechanism (Below):
+// Ecare Combinatorial Mechanism (Below):
 			
-			const numFormatter = new Intl.NumberFormat('en-US', {
-			  style: "decimal",
-			  maximumFractionDigits: 2
-			})
-			var walletOneTokenValue = 0.00;
+			//Wallet One Balance/Tokens
+			var walletOneBalance = 10000.00;
+			var walletOneTokens = 10.00;
+			//Wallet Two Balance/Tokens
+			var walletTwoBalance = 5000.00;
+			var walletTwoTokens = 5.00;			
+
+			//Step 1
 			function divideBalanceOneByTotalTokens() {
-				document.getElementById('balance-one-connected-value').style.display = "inline";
-				document.getElementById('balance-one-connected').style.display = "none";					
+
+			//Wallet One:					
 				//Get 'balance-one-connected' value
-				document.getElementById('balance-one-connected-value').innerHTML = 
-					walletOneTokenValue.toFixed(2);
-				
+				document.getElementById('balance-one-connected-value').style.display = "inline";
+				document.getElementById('balance-one-connected').style.display = "none";
+					//This code is for testing purposes
+/* 					document.getElementById('balance-one-connected-value').innerHTML = 
+						walletOneBalance.toFixed(2);	 */				
 				//Get 'tokens-one-connected' value
+				document.getElementById('tokens-one-connected-value').style.display = "inline";
+				document.getElementById('tokens-one-connected').style.display = "none";	
+					//This code is for testing purposes
+/* 					document.getElementById('tokens-one-connected-value').innerHTML = 
+						walletOneTokens.toFixed(2); */
+				//Get walletOneTokenValue == divide walletOneBalance with walletOneTokens
+				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
+					//This code is for testing purposes
+/* 					document.getElementById('balance-one-connected-value').innerHTML = 
+						walletOneTokenValue.toFixed(2);	 */
+
+			//Wallet Two:
+				//Get 'balance-two-connected' value
+				document.getElementById('balance-two-connected-value').style.display = "inline";
+				document.getElementById('balance-two-connected').style.display = "none";
+					//This code is for testing purposes
+/* 					document.getElementById('balance-two-connected-value').innerHTML = 
+						walletTwoBalance.toFixed(2);	 */					
+				//Get 'tokens-one-connected' value
+				document.getElementById('tokens-two-connected-value').style.display = "inline";
+				document.getElementById('tokens-two-connected').style.display = "none";	
+					//This code is for testing purposes
+/* 					document.getElementById('tokens-two-connected-value').innerHTML = 
+						walletTwoTokens.toFixed(2);	 */
+				//Get walletOneTokenValue == divide walletOneBalance with walletOneTokens
+				var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
+					//This codeis for testing purposes	
+/* 					document.getElementById('balance-two-connected-value').innerHTML = 
+						walletTwoTokenValue.toFixed(2);		 */		
 				
-				
-/* 				var tokensOne = document.getElementById('tokens-one-connected');
-				//walletOneTokenValue == divide balance-one-connected with tokensOne
-				walletOneTokenValue == balanceOne.value / tokensOne.value;
-				//Display walletOneTokenValue  */
-				RWmodal.open(1, 'New Balances Reached');	
 			}
 
 
-			//Might need this for rounding completed values: 
-			//(Math.round(walletOneTokenValue * 100) / 100)
+			//Might need this for rounding exchanged Balanced & Tokens:
+			//numberFormat = new Intl.NumberFormat('en-US', 
+			//{ minimumFractionDigits: 2 }).format(walletOneBalance);
+			//Display new balances
+			//RWmodal.open(1, 'New Balance Reached');	
 
-			// Ecare Combinatorial Mechanism (Above)
+// Ecare Combinatorial Mechanism (Above)
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
@@ -67,7 +98,13 @@
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-					divideBalanceOneByTotalTokens();	
+
+					RWmodal.open(1, 'In Development');	
+					
+						//This code is for testing purposes
+/* 						divideBalanceOneByTotalTokens();	 */		
+
+					
 					}
 			}
 
@@ -178,7 +215,8 @@
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens-one-connected">10.00</p>
+              <p id="tokens-one-connected" style="display:block">10.00</p>
+              <p id="tokens-one-connected-value" style="display:none"></p>
             </div>
             
             <div class="form-group-exchange">
@@ -250,7 +288,8 @@
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens-two-connected">5.00</p>
+              <p id="tokens-two-connected" style="display:block">5.00</p>
+              <p id="tokens-two-connected-value" style="display:none"></p>              
             </div>
             
             <div class="form-group-exchange">

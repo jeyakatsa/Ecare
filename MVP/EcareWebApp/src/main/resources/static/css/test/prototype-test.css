@@ -155,7 +155,9 @@ body {
 	animation-duration: 1.00s;    
   }
   #tokens-one-connected,
-  #tokens-two-connected{
+  #tokens-two-connected,
+  #tokens-one-connected-value,
+  #tokens-two-connected-value {
     margin-top: 0px;
     margin-bottom: 15px;
     color: gray;
