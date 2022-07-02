@@ -141,7 +141,8 @@ body {
 	  from {center:0; color: rgb(169, 166, 211)}
 	  to {center:0; color: #cfcfcf}
 	}  
-  #balance-connected {
+  #balance-one-connected,
+  #balance-two-connected {
     color: gray;
     font-family: Arial;
     font-weight: 700;
@@ -150,7 +151,8 @@ body {
 	animation-name: numbers;
 	animation-duration: 1.00s;    
   }
-  #tokens-connected{
+  #tokens-one-connected,
+  #tokens-two-connected{
     margin-top: 0px;
     margin-bottom: 15px;
     color: gray;

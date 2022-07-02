@@ -6,6 +6,8 @@
 	<head>
 		<script src="javascript/RWmodal.min.js"></script>
 		<script>
+		
+			//Connect Wallet Functions
 			var connectedWalletOne = false;
 			function connectWalletOne() {
 				   document.getElementById('wallet-one-connected').style.display = "block";
@@ -18,6 +20,28 @@
 				   document.getElementById('wallet-two-not-connected').style.display = "none";
 				   connectedWalletTwo = true;
 			}
+
+			
+			// Ecare Consensus Mechanism:
+			const numFormatter = new Intl.NumberFormat('en-US', {
+			  style: "decimal",
+			  maximumFractionDigits: 2
+			})
+			var walletOneTokenValue = 0.00;
+			function divideBalanceOneByTotalTokens() {
+				//Get 'balance-one-connected' double
+				var balanceOne = document.getElementById('balance-one-connected');
+				//Extrapolate "," from balance
+				var balanceOneNoComma = numFormatter(balanceOne.replace(/,/g, ''));
+				console.log(balanceOneNoComma);
+				//Get 'tokens-one-connected' double
+				var tokensOne = document.getElementById('tokens-one-connected');
+				//walletOneTokenValue == divide balance-one-connected with tokensOne
+				walletOneTokenValue == balanceOne.value / tokensOne.value;
+				//Display walletOneTokenValue 
+				}
+
+			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
 					RWmodal.open(1, 'Connect Both Wallets');
@@ -132,13 +156,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr-connected">$<span id="balance-connected">10000.00</span></p>
+              <p id="dllr-connected">$<span id="balance-one-connected">10,000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens-connected">10.00</p>
+              <p id="tokens-one-connected">10.00</p>
             </div>
             
             <div class="form-group-exchange">
@@ -201,13 +225,13 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr-connected">$<span id="balance-connected">5000.00</span></p>
+              <p id="dllr-connected">$<span id="balance-two-connected">5,000.00</span></p>
             </div>
             
             <div class="form-group">
               <label id="label">Total Tokens</label>					
               <br>
-              <p id="tokens-connected">5.00</p>
+              <p id="tokens-two-connected">5.00</p>
             </div>
             
             <div class="form-group-exchange">
