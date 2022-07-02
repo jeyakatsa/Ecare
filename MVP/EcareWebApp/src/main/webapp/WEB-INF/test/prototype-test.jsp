@@ -22,7 +22,7 @@
 			}
 
 			
-			// Ecare Consensus Mechanism (Below):
+			// Ecare Combinatorial Mechanism (Below):
 			
 			const numFormatter = new Intl.NumberFormat('en-US', {
 			  style: "decimal",
@@ -33,11 +33,11 @@
 				document.getElementById('balance-one-connected-value').style.display = "inline";
 				document.getElementById('balance-one-connected').style.display = "none";					
 				//Get 'balance-one-connected' value
-				var balanceOneDecimalValue = numFormatter(walletOneTokenValue.replace(/,/g, ''));	
-				var newBalanceOne = document.getElementById('balance-one-connected-value');
-				newBalanceOne.innerHTML = balanceOneDecimalValue;
+				document.getElementById('balance-one-connected-value').innerHTML = 
+					walletOneTokenValue.toFixed(2);
 				
 				//Get 'tokens-one-connected' value
+				
 				
 /* 				var tokensOne = document.getElementById('tokens-one-connected');
 				//walletOneTokenValue == divide balance-one-connected with tokensOne
@@ -46,7 +46,11 @@
 				RWmodal.open(1, 'New Balances Reached');	
 			}
 
-			// Ecare Consensus Mechanism (Above)
+
+			//Might need this for rounding completed values: 
+			//(Math.round(walletOneTokenValue * 100) / 100)
+
+			// Ecare Combinatorial Mechanism (Above)
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
