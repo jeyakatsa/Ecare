@@ -22,25 +22,31 @@
 			}
 
 			
-			// Ecare Consensus Mechanism:
+			// Ecare Consensus Mechanism (Below):
+			
 			const numFormatter = new Intl.NumberFormat('en-US', {
 			  style: "decimal",
 			  maximumFractionDigits: 2
 			})
 			var walletOneTokenValue = 0.00;
 			function divideBalanceOneByTotalTokens() {
-				//Get 'balance-one-connected' double
-				var balanceOne = document.getElementById('balance-one-connected');
-				//Extrapolate "," from balance
-				var balanceOneNoComma = numFormatter(balanceOne.replace(/,/g, ''));
-				console.log(balanceOneNoComma);
-				//Get 'tokens-one-connected' double
-				var tokensOne = document.getElementById('tokens-one-connected');
+				document.getElementById('balance-one-connected-value').style.display = "inline";
+				document.getElementById('balance-one-connected').style.display = "none";					
+				//Get 'balance-one-connected' value
+				var balanceOneDecimalValue = numFormatter(walletOneTokenValue.replace(/,/g, ''));	
+				var newBalanceOne = document.getElementById('balance-one-connected-value');
+				newBalanceOne.innerHTML = balanceOneDecimalValue;
+				
+				//Get 'tokens-one-connected' value
+				
+/* 				var tokensOne = document.getElementById('tokens-one-connected');
 				//walletOneTokenValue == divide balance-one-connected with tokensOne
 				walletOneTokenValue == balanceOne.value / tokensOne.value;
-				//Display walletOneTokenValue 
-				}
+				//Display walletOneTokenValue  */
+				RWmodal.open(1, 'New Balances Reached');	
+			}
 
+			// Ecare Consensus Mechanism (Above)
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
@@ -50,12 +56,14 @@
 					RWmodal.open(1, 'In Development');	
 					}
 			}
+
+			
 			function exchange(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-					RWmodal.open(1, 'In Development');	
+					divideBalanceOneByTotalTokens();	
 					}
 			}
 
@@ -156,7 +164,11 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr-connected">$<span id="balance-one-connected">10,000.00</span></p>
+              <p id="dllr-connected">$
+              	<span id="balance-one-connected" style="display:inline">10,000.00
+              	</span>
+              	<span id="balance-one-connected-value" style="display:none"></span>
+              </p>
             </div>
             
             <div class="form-group">
@@ -225,7 +237,10 @@
             <div class="form-group">
               <label id="label">Balance</label>
               <br>
-              <p id="dllr-connected">$<span id="balance-two-connected">5,000.00</span></p>
+              <p id="dllr-connected">$
+              	<span id="balance-two-connected" style="display:inline">5,000.00
+              	</span>
+              	<span id="balance-two-connected-value" style="display:none"></span>
             </div>
             
             <div class="form-group">
