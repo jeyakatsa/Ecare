@@ -62,9 +62,7 @@ Wallet 2 Tokens >= Wallet 2 Tokens Exchanged
 
 
 
-#### Step 4: Update Balances
-
-...More Algorithms to be Adde
+#### Step 4: Update Balances (EXCHANGE)
 
 ```
 New Wallet 2 Balance == Wallet 2 Balance - Wallet 2 Value To-Be-Added to Wallet 1 Balance + Wallet 1 Value To-Be-Added to Wallet 2 Balance
