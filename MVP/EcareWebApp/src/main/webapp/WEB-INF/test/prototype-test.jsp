@@ -28,13 +28,21 @@
 			var walletOneBalance = 10000.00;
 			var walletOneTokens = 10.00;
 			var walletOneTokenValue = 0.00;
-			const walletOneInput = document.getElementById("input-one").value;
+			var walletOneInput = document.getElementById("input-one")[0].value;
 			
 			//Wallet Two Balance/Tokens/Inputs
 			var walletTwoBalance = 5000.00;
 			var walletTwoTokens = 5.00;	
 			var walletTwoTokenValue = 0.00;
-			const walletTwoInput = document.getElementById("input-two").value;					
+			var walletTwoInput = document.getElementById("input-two").valueAsNumber;
+
+			//inputTest		
+	        function getInputValue(){
+	            // Selecting the input element and get its value 
+	            
+	            // Displaying the value
+	            alert(walletOneInput);
+	        }			
 
 			//Step 1
 			function divideBalancesByTotalTokens() {
@@ -349,7 +357,7 @@
       
       <br>
       
-      <a onclick="exchange()" id="exchange" style="display:block">
+      <a onclick="getInputValue()" id="exchange" style="display:block">
           EXCHANGE
       </a>
       
