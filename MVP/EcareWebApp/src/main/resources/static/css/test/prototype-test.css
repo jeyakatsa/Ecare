@@ -186,7 +186,8 @@ body {
 }  
   
 
-  #input {
+  #input-one,
+  #input-two {
     text-align: center;
     margin-top: 5px;
     padding: 20px;
@@ -201,15 +202,21 @@ body {
     height: 15px;
     margin-bottom: -40px;    
   }
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
+	#input-one::-webkit-outer-spin-button,
+	#input-one::-webkit-inner-spin-button,
+	#input-two::-webkit-outer-spin-button,
+	#input-two::-webkit-inner-spin-button	
+	 {
 	  -webkit-appearance: none;
 	  margin: 0;
 	}
-	input[type=number] {
+	#input-one[type=number],
+	#input-two[type=number]
+	 {
 	  -moz-appearance: textfield;
 	}  
-  #input:focus {
+  #input-one:focus,
+  #input-two:focus {
     cursor: pointer;
     outline: none;
     background-color: #c8c6e3;

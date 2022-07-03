@@ -22,66 +22,99 @@
 			}
 
 			
-// Ecare Combinatorial Mechanism (Below):
+// Combinatorial Mechanism (Below):
 			
-			//Wallet One Balance/Tokens
+			//Wallet One Balance/Tokens/Inputs
 			var walletOneBalance = 10000.00;
 			var walletOneTokens = 10.00;
-			//Wallet Two Balance/Tokens
+			var walletOneTokenValue = 0.00;
+			const walletOneInput = document.getElementById("input-one").value;
+			
+			//Wallet Two Balance/Tokens/Inputs
 			var walletTwoBalance = 5000.00;
-			var walletTwoTokens = 5.00;			
+			var walletTwoTokens = 5.00;	
+			var walletTwoTokenValue = 0.00;
+			const walletTwoInput = document.getElementById("input-two").value;					
 
 			//Step 1
-			function divideBalanceOneByTotalTokens() {
+			function divideBalancesByTotalTokens() {
 
 			//Wallet One:					
 				//Get 'balance-one-connected' value
-				document.getElementById('balance-one-connected-value').style.display = "inline";
+					//This code is for testing purposes
+/* 				document.getElementById('balance-one-connected-value').style.display = "inline";
 				document.getElementById('balance-one-connected').style.display = "none";
-					//This code is for testing purposes
-/* 					document.getElementById('balance-one-connected-value').innerHTML = 
-						walletOneBalance.toFixed(2);	 */				
+				document.getElementById('balance-one-connected-value').innerHTML = 
+					walletOneBalance.toFixed(2); */
 				//Get 'tokens-one-connected' value
-				document.getElementById('tokens-one-connected-value').style.display = "inline";
-				document.getElementById('tokens-one-connected').style.display = "none";	
 					//This code is for testing purposes
-/* 					document.getElementById('tokens-one-connected-value').innerHTML = 
+/* 				document.getElementById('tokens-one-connected-value').style.display = "inline";
+				document.getElementById('tokens-one-connected').style.display = "none";				
+				document.getElementById('tokens-one-connected-value').innerHTML = 
 						walletOneTokens.toFixed(2); */
 				//Get walletOneTokenValue == divide walletOneBalance with walletOneTokens
-				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
-					//This code is for testing purposes
-/* 					document.getElementById('balance-one-connected-value').innerHTML = 
-						walletOneTokenValue.toFixed(2);	 */
+ 				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
+		 			//This code is for testing purposes	
+/* 				document.getElementById('balance-one-connected-value').innerHTML = 
+						walletOneTokenValue.toFixed(2); */
 
 			//Wallet Two:
 				//Get 'balance-two-connected' value
-				document.getElementById('balance-two-connected-value').style.display = "inline";
+					//This code is for testing purposes
+/* 				document.getElementById('balance-two-connected-value').style.display = "inline";
 				document.getElementById('balance-two-connected').style.display = "none";
-					//This code is for testing purposes
-/* 					document.getElementById('balance-two-connected-value').innerHTML = 
-						walletTwoBalance.toFixed(2);	 */					
+				document.getElementById('balance-two-connected-value').innerHTML = 
+						walletTwoBalance.toFixed(2); */				
 				//Get 'tokens-one-connected' value
-				document.getElementById('tokens-two-connected-value').style.display = "inline";
+					//This code is for testing purposes				
+/* 				document.getElementById('tokens-two-connected-value').style.display = "inline";
 				document.getElementById('tokens-two-connected').style.display = "none";	
-					//This code is for testing purposes
-/* 					document.getElementById('tokens-two-connected-value').innerHTML = 
-						walletTwoTokens.toFixed(2);	 */
+				document.getElementById('tokens-two-connected-value').innerHTML = 
+						walletTwoTokens.toFixed(2); */
 				//Get walletOneTokenValue == divide walletOneBalance with walletOneTokens
 				var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
-					//This codeis for testing purposes	
-/* 					document.getElementById('balance-two-connected-value').innerHTML = 
-						walletTwoTokenValue.toFixed(2);		 */		
+					//This code is for testing purposes	
+/* 				document.getElementById('balance-two-connected-value').innerHTML = 
+						walletTwoTokenValue.toFixed(2); */	
 				
 			}
 
+			//Step 2
+			function multiplyTokenValuesByTokensExchanged() {
+
+				//Base Case
+				if (walletOneTokens < walletOneInput || walletTwoTokens < walletTwoInput){
+					RWmodal.open(1, 'Not Enough Total Tokens');	
+					}
+				else if (walletOneInput == null || walletTwoInput == null) {
+					RWmodal.open(1, 'Exchange Tokens Empty');					
+					}
+				else {
+					//Wallet One
+	 				var walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
+		 			//This code is for testing purposes	
+	 				document.getElementById('balance-one-connected-value').innerHTML = 
+						walletOneToTwoBalanceAdd;
+
+					//Wallet Two	
+					var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
+					//This code is for testing purposes	
+	 				document.getElementById('balance-two-connected-value').innerHTML = 
+						walletOneToTwoBalanceAdd;	
+
+					RWmodal.open(1, 'Exchange Successful');							
+					
+					}				
+				
+			}			
 
 			//Might need this for rounding exchanged Balanced & Tokens:
 			//numberFormat = new Intl.NumberFormat('en-US', 
 			//{ minimumFractionDigits: 2 }).format(walletOneBalance);
 			//Display new balances
-			//RWmodal.open(1, 'New Balance Reached');	
+			//RWmodal.open(1, 'Exchange Successful');	
 
-// Ecare Combinatorial Mechanism (Above)
+// Combinatorial Mechanism (Above)
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
@@ -98,13 +131,12 @@
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-
-					RWmodal.open(1, 'In Development');	
+					//RWmodal.open(1, 'In Development');	
 					
 						//This code is for testing purposes
-/* 						divideBalanceOneByTotalTokens();	 */		
-
-					
+/* 						divideBalancesByTotalTokens();	 */	
+						//This code is for testing purposes
+						multiplyTokenValuesByTokensExchanged();
 					}
 			}
 
@@ -185,7 +217,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" type="number"></input>
+              <input id="input-one" type="number"></input>
             </div>	
 
             <br></br>
@@ -222,7 +254,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" type="number"></input>
+              <input id="input-one" type="number"></input>
             </div>	
 	
 	            <br></br>
@@ -258,7 +290,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" type="number"></input>
+              <input id="input-two" type="number"></input>
             </div>										
             
             <br></br>
@@ -295,7 +327,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input" type="number"></input>
+              <input id="input-two" type="number"></input>
             </div>										
             
             <br></br>
