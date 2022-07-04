@@ -42,14 +42,66 @@ body {
   margin-bottom: 30px;
 }
 
-  #left-top-wallet, #right-bottom-wallet {
+  #wallet-one-not-connected,
+   #wallet-two-not-connected {
     width: 300px;
+    height: 85px;
     background: white;
     border-radius: 50px;
     padding: 30px;
     box-shadow: 0px 10px 25px -5px gray;
   }
+ 
 
+	  #connect-wallet-one, 
+	  #connect-wallet-two {
+	    background:rgb(169, 166, 211);
+	    color: white;
+	    padding: 15px;
+	    font-size: 14px;
+	    border: none;
+	    height: 60px;
+	    letter-spacing: 1px;
+	    font-weight: 500;
+	    margin-top: 10px;
+	    width: 250px;
+	    margin-bottom: 20px;
+	    border-radius: 25px;
+	    box-shadow: 0px 5px 12px 0px rgb(169, 166, 211);
+	    opacity: .9;
+	  }
+	  #connect-wallet-one:hover,
+	  #connect-wallet-two:hover {
+	    cursor: pointer;
+	    background: rgb(44, 44, 44);
+	    color: white;
+	    transition: 2s;
+	    box-shadow: 0px 5px 12px -5px white;
+	    opacity: 1;
+	  }
+
+  #wallet-one-connected,
+  #wallet-two-connected {
+    width: 300px;
+    background: white;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 0px 10px 25px -5px gray;
+    -webkit-animation-name: connected;
+	-webkit-animation-duration: 2.00s;
+	animation-name: connected;
+	animation-duration: 2.00s;        
+  }
+   @-webkit-keyframes connected {
+  from {center:0; opacity:0}
+  to {center:0; opacity:1}
+	}
+	
+	@keyframes connected {
+  from {center:0; opacity:0}
+  to {center:0; opacity:1}
+	}  
+	
   .form-group{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -203,45 +255,24 @@ body {
     margin-bottom: -40px;    
   }
 	#input-one::-webkit-outer-spin-button,
-	#input-one::-webkit-inner-spin-button,
-	#input-two::-webkit-outer-spin-button,
-	#input-two::-webkit-inner-spin-button	
+    #input-two::-webkit-outer-spin-button
 	 {
 	  -webkit-appearance: none;
 	  margin: 0;
 	}
+	
 	#input-one[type=number],
 	#input-two[type=number]
 	 {
 	  -moz-appearance: textfield;
 	}  
-  #input-one:focus,
-  #input-two:focus {
-    cursor: pointer;
-    outline: none;
-    background-color: #c8c6e3;
-    transition: 1s;
-  }
-
-  #connect-wallet-one, 
-  #connect-wallet-two {
-    background:white;
-    color: rgb(98, 98, 98);
-    padding: 15px;
-    border: none;
-    width: 200px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 12px 0px silver;
-  }
-  #connect-wallet-one:hover,
-  #connect-wallet-two:hover {
-    cursor: pointer;
-    background: rgb(44, 44, 44);
-    color: white;
-    transition: 2s;
-    box-shadow: 0px 5px 8px 1px white;
-  }
+	 #input-one:focus,
+	 #input-two:focus {
+	    cursor: pointer;
+	    outline: none;
+	    background-color: #c8c6e3;
+	    transition: 1s;
+	  }
   
    #connected-wallet{
     background: #ececec;

@@ -36,12 +36,13 @@
 
 			//inputTest		
 	        function getInputValue(){
-				var walletOneInput = document.getElementById("input-one").valueAsNumber|0;	
-				var walletTwoInput = document.getElementById("input-two").value;	        
+				var walletOneInput = parseFloat(document.getElementById("input-one").valueAsNumber|0);	
+				var walletTwoInput = parseFloat(document.getElementById("input-two").valueAsNumber|0);	        
 	            // Selecting the input element and get its value 
 	            
 	            // Displaying the value
 	            alert(walletOneInput);
+	            console.log(walletOneInput);
 	        }			
 
 			//Step 1
@@ -205,30 +206,6 @@
         <div id="left-top-wallet">
         
           <section id="wallet-one-not-connected" style="display:block">
-            <button class="eth" id="choose-token">
-              <img id="ethicon" src="/icons&images/eth-icon.png"/>
-              <p id="eth-name">ETH</p>
-            </button>
-            
-            <div class="form-group">
-              <label id="label">Balance</label>
-              <br>
-              <p id="dllr-disconnected">$<span id="balance-not-connected">0.00</span></p>
-            </div>
-            
-            <div class="form-group">
-              <label id="label">Total Tokens</label>					
-              <br>
-              <p id="tokens-not-connected">0.00</p>
-            </div>
-            
-            <div class="form-group-exchange">
-              <label id="label">Exchange Tokens</label>						
-              <br>
-              <input id="input-one" type="number"></input>
-            </div>	
-
-            <br></br>
 
             <button onclick="connectWalletOne()" 
               id="connect-wallet-one" type="button">
@@ -277,31 +254,6 @@
 
         <div id="right-bottom-wallet">
           <section id="wallet-two-not-connected" style="display:block">
-
-            <button class="weth" id="choose-token">
-              <img id="ethicon" src="/icons&images/weth-icon.png"/>
-              <p id="weth-name">WETH</p>
-            </button>
-
-            <div class="form-group">
-              <label id="label">Balance</label>
-              <br>
-              <p id="dllr-disconnected">$<span id="balance-not-connected">0.00</span></p>
-            </div>
-            
-            <div class="form-group">
-              <label id="label">Total Tokens</label>					
-              <br>
-              <p id="tokens-not-connected">0.00</p>
-            </div>
-            
-            <div class="form-group-exchange">
-              <label id="label">Exchange Tokens</label>						
-              <br>
-              <input id="input-two" type="number"></input>
-            </div>										
-            
-            <br></br>
 
             <button onclick="connectWalletTwo()" 
               id="connect-wallet-two" type="button">
