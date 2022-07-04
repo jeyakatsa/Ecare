@@ -36,7 +36,7 @@
 
 			//inputTest		
 	        function getInputValue(){
-				var walletOneInput = parseFloat(document.getElementById("input-one").valueAsNumber|0);	
+				var walletOneInput = document.getElementById("input-one").valueAsNumber|0;	
 				var walletTwoInput = parseFloat(document.getElementById("input-two").valueAsNumber|0);	        
 	            // Selecting the input element and get its value 
 	            
