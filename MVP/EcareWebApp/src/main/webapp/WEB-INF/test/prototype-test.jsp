@@ -42,7 +42,6 @@
 	            
 	            // Displaying the value
 	            alert(walletOneInput);
-	            console.log(walletOneInput);
 	        }			
 
 			//Step 1
@@ -206,7 +205,6 @@
         <div id="left-top-wallet">
         
           <section id="wallet-one-not-connected" style="display:block">
-
             <button onclick="connectWalletOne()" 
               id="connect-wallet-one" type="button">
               Connect Wallet One
@@ -247,22 +245,20 @@
 	            <button id="connected-wallet">
 	              Connected
 	            </button>  
-     
           </section>
           
         </div>
 
         <div id="right-bottom-wallet">
+        
           <section id="wallet-two-not-connected" style="display:block">
-
-            <button onclick="connectWalletTwo()" 
+           <button onclick="connectWalletTwo()" 
               id="connect-wallet-two" type="button">
               Connect Wallet Two
             </button>
           </section>
           
           <section id="wallet-two-connected" style="display:none">
-
             <button class="weth" id="choose-token">
               <img id="ethicon" src="/icons&images/weth-icon.png"/>
               <p id="weth-name">WETH</p>

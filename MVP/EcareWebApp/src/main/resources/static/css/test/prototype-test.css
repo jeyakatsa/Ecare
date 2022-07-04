@@ -180,9 +180,9 @@ body {
   	color: #cfcfcf;
     font-size: 25px;
     -webkit-animation-name: dllr;
-	-webkit-animation-duration: 1.00s;
+	-webkit-animation-duration: 2.00s;
 	animation-name: dllr;
-	animation-duration: 1.00s;        
+	animation-duration: 2.00s;        
   }
    @-webkit-keyframes dllr {
 	  from {center:0; color: rgb(169, 166, 211)}
@@ -202,9 +202,9 @@ body {
     font-family: Arial;
     font-weight: 700;
     -webkit-animation-name: numbers;
-	-webkit-animation-duration: 1.00s;
+	-webkit-animation-duration: 2.00s;
 	animation-name: numbers;
-	animation-duration: 1.00s;    
+	animation-duration: 2.00s;    
   }
   #tokens-one-connected,
   #tokens-two-connected,
@@ -217,9 +217,9 @@ body {
     font-weight: 700;
     font-size: 25px;
     -webkit-animation-name: numbers;
-	-webkit-animation-duration: 1.00s;
+	-webkit-animation-duration: 2.00s;
 	animation-name: numbers;
-	animation-duration: 1.00s;       
+	animation-duration: 2.00s;       
   }
   	@-webkit-keyframes numbers {
 	  from {center:0; color: rgb(169, 166, 211)}
@@ -238,8 +238,7 @@ body {
 }  
   
 
-  #input-one,
-  #input-two {
+  input {
     text-align: center;
     margin-top: 5px;
     padding: 20px;
@@ -254,20 +253,22 @@ body {
     height: 15px;
     margin-bottom: -40px;    
   }
-	#input-one::-webkit-outer-spin-button,
-    #input-two::-webkit-outer-spin-button
+	input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button
 	 {
+	   opacity:0;
+      pointer-events:none;
 	  -webkit-appearance: none;
 	  margin: 0;
 	}
-	
-	#input-one[type=number],
-	#input-two[type=number]
+	noindex:-o-prefocus,
+	input[type=number]
 	 {
 	  -moz-appearance: textfield;
+	  padding-right: 1.2em;
 	}  
-	 #input-one:focus,
-	 #input-two:focus {
+	 input:focus
+	  {
 	    cursor: pointer;
 	    outline: none;
 	    background-color: #c8c6e3;
@@ -302,88 +303,88 @@ body {
 	}
   
 
-#refresh {
-  width: 25px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: .7;
-}
-
-#refresh:hover {
-  opacity: .2;
-  transition: 1s;
-  cursor: pointer;
-}
-
-#exchange {
-  margin: auto;
-  background: rgb(18, 18, 18);
-  color: white;
-  font-weight:700;
-  font-size: 12px;
-  letter-spacing: 2px;
-  padding: 20px;
-  border: none;
-  border-radius: 20px;
-  width: 200px;
-}
-#exchange:hover {
-  background: gray;
-  color: white;
-  transition: 1s;
-  cursor: pointer;
-}
-
-hr {
-  margin-top: 15px;
-  background-color: silver;
-  border: none;
-  height: 6px;
-  border-radius: 30px;
-  width: 90%;
-  opacity: .4;
-}
-
-#name {
-  display: inline-flex;
-  font-size: 10pt;
-  color: gray;
-  font-weight: 700;
-  margin-top: -10px; 
-  opacity: .8;
-  margin-bottom: 20px;
-}
-
-#proto-name {
-	color: rgb(169, 166, 211);
-}
-
-p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-#guide {
-  background: rgb(169, 166, 211);
-  margin-top: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight:600;
-  font-size: 13px;
-  padding: 20px;
-  border: none;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  width: 200px;
-  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
-}
-#guide:hover,
-#guide:focus {
-  opacity: .7;
-  transition: 1s;
-  cursor: pointer;
-}	
+	#refresh {
+	  width: 25px;
+	  margin-bottom: 20px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  opacity: .7;
+	}
+	
+	#refresh:hover {
+	  opacity: .2;
+	  transition: 1s;
+	  cursor: pointer;
+	}
+	
+	#exchange {
+	  margin: auto;
+	  background: rgb(18, 18, 18);
+	  color: white;
+	  font-weight:700;
+	  font-size: 12px;
+	  letter-spacing: 2px;
+	  padding: 20px;
+	  border: none;
+	  border-radius: 20px;
+	  width: 200px;
+	}
+	#exchange:hover {
+	  background: gray;
+	  color: white;
+	  transition: 1s;
+	  cursor: pointer;
+	}
+	
+	hr {
+	  margin-top: 15px;
+	  background-color: silver;
+	  border: none;
+	  height: 6px;
+	  border-radius: 30px;
+	  width: 90%;
+	  opacity: .4;
+	}
+	
+	#name {
+	  display: inline-flex;
+	  font-size: 10pt;
+	  color: gray;
+	  font-weight: 700;
+	  margin-top: -10px; 
+	  opacity: .8;
+	  margin-bottom: 20px;
+	}
+	
+	#proto-name {
+		color: rgb(169, 166, 211);
+	}
+	
+	p {
+	  margin-right: 10px;
+	  margin-left: 10px;
+	}
+	
+	#guide {
+	  background: rgb(169, 166, 211);
+	  margin-top: 20px;
+	  text-decoration: none;
+	  color: white;
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 5px;
+	  width: 200px;
+	  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
+	}
+	#guide:hover,
+	#guide:focus {
+	  opacity: .7;
+	  transition: 1s;
+	  cursor: pointer;
+	}	
 
 @media screen and (max-width: 650px){
   .exchange-grid {
