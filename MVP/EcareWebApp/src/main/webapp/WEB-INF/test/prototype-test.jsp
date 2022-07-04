@@ -28,16 +28,16 @@
 			var walletOneBalance = 10000.00;
 			var walletOneTokens = 10.00;
 			var walletOneTokenValue = 0.00;
-			var walletOneInput = document.getElementById("input-one")[0].value;
 			
 			//Wallet Two Balance/Tokens/Inputs
 			var walletTwoBalance = 5000.00;
 			var walletTwoTokens = 5.00;	
 			var walletTwoTokenValue = 0.00;
-			var walletTwoInput = document.getElementById("input-two").valueAsNumber;
 
 			//inputTest		
 	        function getInputValue(){
+				var walletOneInput = document.getElementById("input-one").valueAsNumber|0;	
+				var walletTwoInput = document.getElementById("input-two").value;	        
 	            // Selecting the input element and get its value 
 	            
 	            // Displaying the value
