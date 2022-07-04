@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<script src="javascript/RWmodal.min.js"></script>
-		<script>
+		<script type="text/javascript">
 		
 			//Connect Wallet Functions
 			var connectedWalletOne = false;
@@ -36,7 +36,7 @@
 
 			//inputTest		
 	        function getInputValue(){
-				var walletOneInput = document.getElementById("input-one").valueAsNumber|0;	
+				var walletOneInput = parseFloat(document.getElementById("input-one").valueAsNumber|0);	
 				var walletTwoInput = parseFloat(document.getElementById("input-two").valueAsNumber|0);	        
 	            // Selecting the input element and get its value 
 	            
@@ -196,10 +196,7 @@
       <a href="/test" >
         <img id="img" src="/icons&images/appIcon.png"/>
       </a>
-      
-      		<!-- Change below link after test -->
-      <form action="/prototype-test" method="GET">
-      
+        
       <section class="exchange-grid">
 
         <div id="left-top-wallet">
@@ -237,7 +234,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-one" type="number"></input>
+              <input id="input-one" type="number" step="any"></input>
             </div>	
 	
 	            <br></br>
@@ -245,6 +242,7 @@
 	            <button id="connected-wallet">
 	              Connected
 	            </button>  
+     
           </section>
           
         </div>
@@ -259,6 +257,7 @@
           </section>
           
           <section id="wallet-two-connected" style="display:none">
+
             <button class="weth" id="choose-token">
               <img id="ethicon" src="/icons&images/weth-icon.png"/>
               <p id="weth-name">WETH</p>
@@ -283,7 +282,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-two" type="number"></input>
+              <input id="input-two" type="number" step="any"></input>
             </div>										
             
             <br></br>
@@ -309,14 +308,6 @@
           EXCHANGE
       </a>
       
-<!--       <button onclick="exchange()" 
-      type="submit" id="exchange">
-          EXCHANGE
-      </button> -->
-      
-      </form>
-
-
       <hr></hr>
 
       <h3 id="name">
