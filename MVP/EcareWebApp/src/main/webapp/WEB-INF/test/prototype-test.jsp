@@ -36,8 +36,8 @@
 
 			//inputTest		
 	        function getInputValue(){
-				var walletOneInput = parseFloat(document.getElementById("input-one").valueAsNumber|0);	
-				var walletTwoInput = parseFloat(document.getElementById("input-two").valueAsNumber|0);	        
+				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
+				var walletTwoInput = parseFloat(document.getElementById('input-two').value);	        
 	            // Selecting the input element and get its value 
 	            
 	            // Displaying the value
@@ -234,7 +234,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-one" type="number" step="any"></input>
+              <input id="input-one" type="text" step="any" value="0.00" />
             </div>	
 	
 	            <br></br>
@@ -282,7 +282,7 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-two" type="number" step="any"></input>
+              <input id="input-two" type="number" step="any" value="0.00"/>
             </div>										
             
             <br></br>
