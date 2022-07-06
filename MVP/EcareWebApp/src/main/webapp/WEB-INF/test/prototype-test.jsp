@@ -35,13 +35,11 @@
 			var walletTwoTokenValue = 0.00;
 
 			//inputTest		
-	        function getInputValue(){
-				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
-				var walletTwoInput = parseFloat(document.getElementById('input-two').value);	        
+	        function getInputValue(){	        
 	            // Selecting the input element and get its value 
 	            
 	            // Displaying the value
-	            alert(walletOneInput);
+	            alert();
 	        }			
 
 			//Step 1
@@ -89,26 +87,32 @@
 
 			//Step 2
 			function multiplyTokenValuesByTokensExchanged() {
+				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
+				var walletTwoInput = parseFloat(document.getElementById('input-two').value);
 
 				//Base Case
 				if (walletOneTokens < walletOneInput || walletTwoTokens < walletTwoInput){
-					RWmodal.open(1, 'Not Enough Total Tokens');	
+					RWmodal.open(1, 'Limited Total Tokens');	
 					}
-				else if (walletOneInput == null || walletTwoInput == null) {
-					RWmodal.open(1, 'Exchange Tokens Empty');					
+				else if (walletOneInput == "" || walletTwoInput == "") {
+					RWmodal.open(1, 'Input Exchange Tokens');					
 					}
 				else {
 					//Wallet One
 	 				var walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
 		 			//This code is for testing purposes	
+		 			document.getElementById('balance-one-connected-value').style.display = "inline";
+				    document.getElementById('balance-one-connected').style.display = "none";
 	 				document.getElementById('balance-one-connected-value').innerHTML = 
-						walletOneToTwoBalanceAdd;
+	 					walletOneToTwoBalanceAdd.toFixed(2);
 
 					//Wallet Two	
 					var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
 					//This code is for testing purposes	
+		 			document.getElementById('balance-two-connected-value').style.display = "inline";
+				    document.getElementById('balance-two-connected').style.display = "none";					
 	 				document.getElementById('balance-two-connected-value').innerHTML = 
-						walletOneToTwoBalanceAdd;	
+	 					walletTwoToOneBalanceAdd.toFixed(2);	
 
 					RWmodal.open(1, 'Exchange Successful');							
 					
@@ -234,7 +238,9 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-one" type="text" step="any" value="0.00" />
+              <input id="input-one" type="text" 
+              		onkeyup="this.value = this.value.replace(/[^0-9.]/, '')"
+              		step="any" value="0.00" />
             </div>	
 	
 	            <br></br>
@@ -282,7 +288,9 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-two" type="number" step="any" value="0.00"/>
+              <input id="input-two" type="text" 
+              		onkeyup="this.value = this.value.replace(/[^0-9.]/, '')"              
+              		step="any" value="0.00"/>
             </div>										
             
             <br></br>
@@ -304,7 +312,7 @@
       
       <br>
       
-      <a onclick="getInputValue()" id="exchange" style="display:block">
+      <a onclick="multiplyTokenValuesByTokensExchanged()" id="exchange" style="display:block">
           EXCHANGE
       </a>
       
