@@ -98,7 +98,7 @@
 				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
 				var walletTwoInput = parseFloat(document.getElementById('input-two').value);
 
-				//Base Case
+				//Base Case (for Step 3)
 				if (walletOneTokens < walletOneInput || walletTwoTokens < walletTwoInput){
 					RWmodal.open(1, 'Limited Total Tokens');	
 					}
@@ -110,24 +110,37 @@
 					//Wallet One
 	 				var walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
 		 			//This code is for testing purposes	
-		 			document.getElementById('balance-one-connected-value').style.display = "inline";
+/* 		 			document.getElementById('balance-one-connected-value').style.display = "inline";
 				    document.getElementById('balance-one-connected').style.display = "none";
 	 				document.getElementById('balance-one-connected-value').innerHTML = 
-	 					walletOneToTwoBalanceAdd.toFixed(2);
+	 					walletOneToTwoBalanceAdd.toFixed(2); */
 
 					//Wallet Two	
 					var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
 					//This code is for testing purposes	
-		 			document.getElementById('balance-two-connected-value').style.display = "inline";
+/* 		 			document.getElementById('balance-two-connected-value').style.display = "inline";
 				    document.getElementById('balance-two-connected').style.display = "none";					
 	 				document.getElementById('balance-two-connected-value').innerHTML = 
 	 					walletTwoToOneBalanceAdd.toFixed(2);	
 
-					RWmodal.open(1, 'Exchange Successful');							
+					RWmodal.open(1, 'Exchange Successful');		 */					
 					
 					}				
 				
-			}			
+			}		
+
+			//Step 3	
+			function compareContrastExchangeTokens(){
+
+				//Base Cases
+				if (walletOneTokens < walletOneInput || walletTwoTokens < walletTwoInput){
+					RWmodal.open(1, 'Limited Total Tokens');	
+					}
+				else if (document.getElementById('input-one').value == "" || 
+						document.getElementById('input-two').value == "") {
+					RWmodal.open(1, 'Exchange Tokens');					
+					}
+			}
 
 			//Might need this for rounding exchanged Balanced & Tokens:
 			//numberFormat = new Intl.NumberFormat('en-US', 
@@ -142,7 +155,7 @@
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
-					RWmodal.open(1, 'In Development');	
+					RWmodal.open(1, 'Wallets Reset');	
 					}
 			}
 
