@@ -92,7 +92,6 @@
  				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
 				var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
 
-
  				
 				//Step 2
 				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
