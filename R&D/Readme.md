@@ -65,8 +65,9 @@ Wallet 2 Tokens >= Wallet 2 Tokens Exchanged
 #### Step 4: Update Balances (EXCHANGE)
 
 ```
-New Wallet 2 Balance == Wallet 2 Balance - Wallet 2 Value To-Be-Added to Wallet 1 Balance + Wallet 1 Value To-Be-Added to Wallet 2 Balance
-New Wallet 1 Balance == Wallet 1 Balance - Wallet 1 Value To-Be-Added to Wallet 2 Balance + Wallet 2 Value To-Be-Added to Wallet 1 Balance
+//Wallet Balance Mechanics Never Decrease in Value (Mechanics-To-Be-Updated)
+New Wallet 2 Balance == Wallet 2 Balance  + Wallet 1 Value To-Be-Added to Wallet 2 Balance
+New Wallet 1 Balance == Wallet 1 Balance  + Wallet 2 Value To-Be-Added to Wallet 1 Balance
 
 If 
 New Wallet 1 Balance > 999,999,999.99
