@@ -94,8 +94,9 @@
 				if (walletOneTokens < walletOneInput || walletTwoTokens < walletTwoInput){
 					RWmodal.open(1, 'Limited Total Tokens');	
 					}
-				else if (walletOneInput == "" || walletTwoInput == "") {
-					RWmodal.open(1, 'Input Exchange Tokens');					
+				else if (document.getElementById('input-one').value == "" || 
+						document.getElementById('input-two').value == "") {
+					RWmodal.open(1, 'Exchange Tokens');					
 					}
 				else {
 					//Wallet One
