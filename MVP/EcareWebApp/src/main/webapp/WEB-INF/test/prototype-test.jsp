@@ -87,6 +87,14 @@
 
 			//Step 2
 			function multiplyTokenValuesByTokensExchanged() {
+				
+				//Step 1
+ 				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
+				var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
+
+
+ 				
+				//Step 2
 				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
 				var walletTwoInput = parseFloat(document.getElementById('input-two').value);
 
