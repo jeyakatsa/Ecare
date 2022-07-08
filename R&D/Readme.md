@@ -54,8 +54,8 @@ Else
 Wallet 1 Tokens >= Wallet 1 Tokens Exchanged 
   and
 Wallet 2 Tokens >= Wallet 2 Tokens Exchanged   
-  New Wallet 1 Tokens == Wallet 1 Tokens - Wallet 1 Tokens Exchanged + Wallet 2 Tokens Exchanged
-  New Wallet 2 Tokens == Wallet 2 Tokens - Wallet 2 Tokens Exchanged + Wallet 1 Tokens Exchanged
+  New Wallet 1 Tokens == Wallet 1 Tokens - Wallet 1 Tokens Exchanged
+  New Wallet 2 Tokens == Wallet 2 Tokens - Wallet 2 Tokens Exchanged
   Wallet 1 Tokens == New Wallet 1 Tokens
   Wallet 2 Tokens == New Wallet 2 Tokens
 ```
