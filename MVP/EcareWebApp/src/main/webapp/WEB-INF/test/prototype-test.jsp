@@ -139,6 +139,13 @@
 						document.getElementById('input-two').value == "") {
 					RWmodal.open(1, 'Exchange Tokens');					
 					}
+				
+				var walletOneInput = parseFloat(document.getElementById('input-one').value);	
+				var walletTwoInput = parseFloat(document.getElementById('input-two').value);
+
+				var newWalletOneTokens = walletOneTokens - walletOneInput;
+				var newWalletTwoTokens = walletTwoTokens - walletTwoInput;
+				//Loop to reload Total Wallet Tokens To Be Added here
 			}
 
 			//Might need this for rounding exchanged Balanced & Tokens:
@@ -146,6 +153,11 @@
 			//{ minimumFractionDigits: 2 }).format(walletOneBalance);
 			//Display new balances
 			//RWmodal.open(1, 'Exchange Successful');	
+			
+			//Integrates a cross pollination exchange mechanism
+			//During exchange, tokens exchanged are transfered to burn wallets,
+			//while balances of the tokens exchanged are transferred to exchange wallets
+			//During exchange, tokens are subtracted while balances are added
 
 // Combinatorial Mechanism (Above)
 			
