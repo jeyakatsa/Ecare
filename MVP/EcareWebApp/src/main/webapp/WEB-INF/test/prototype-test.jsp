@@ -140,10 +140,12 @@
 				var newWalletOneBalance = 0.00;
 				var newWalletTwoBalance = 0.00;
 
+				//Base Case
 				if (document.getElementById('input-one').value == "" ||
 						document.getElementById('input-two').value == "") {
 					RWmodal.open(1, 'Exchange Tokens');				
 				}
+				//Main Algorithm
 				else {
 					//Step 1
 	 				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
@@ -177,7 +179,21 @@
 			 				document.getElementById('tokens-two-connected-value').innerHTML = 
 			 					walletTwoTokens.toFixed(2);		
 						}					
-					}						
+					}
+					else {
+						walletOneTokens = newWalletOneTokens;
+						walletTwoTokens = newWalletTwoTokens;	
+
+						document.getElementById('tokens-one-connected-value').style.display = "inline";
+					    document.getElementById('tokens-one-connected').style.display = "none";	
+		 				document.getElementById('tokens-one-connected-value').innerHTML = 
+		 					walletOneTokens.toFixed(2);				
+
+						document.getElementById('tokens-two-connected-value').style.display = "inline";
+					    document.getElementById('tokens-two-connected').style.display = "none";	
+		 				document.getElementById('tokens-two-connected-value').innerHTML = 
+		 					walletTwoTokens.toFixed(2);		
+					}								
 					
 				}				
 
@@ -189,6 +205,7 @@
 			//Display new balances
 			//RWmodal.open(1, 'Exchange Successful');	
 			
+			//**UPDATE MECHANICS AFTER SUCCESSFUL CO
 			//Integrates a cross pollination exchange mechanism
 			//During exchange, tokens exchanged are transfered to burn wallets,
 			//while balances of the tokens exchanged are transferred to exchange wallets
