@@ -179,21 +179,7 @@
 			 				document.getElementById('tokens-two-connected-value').innerHTML = 
 			 					walletTwoTokens.toFixed(2);		
 						}					
-					}
-					else {
-						walletOneTokens = newWalletOneTokens;
-						walletTwoTokens = newWalletTwoTokens;	
-
-						document.getElementById('tokens-one-connected-value').style.display = "inline";
-					    document.getElementById('tokens-one-connected').style.display = "none";	
-		 				document.getElementById('tokens-one-connected-value').innerHTML = 
-		 					walletOneTokens.toFixed(2);				
-
-						document.getElementById('tokens-two-connected-value').style.display = "inline";
-					    document.getElementById('tokens-two-connected').style.display = "none";	
-		 				document.getElementById('tokens-two-connected-value').innerHTML = 
-		 					walletTwoTokens.toFixed(2);		
-					}								
+					}						
 					
 				}				
 
