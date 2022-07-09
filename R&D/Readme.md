@@ -76,13 +76,6 @@ New Wallet 2 Balance > 999,999,999.99
   return error  
   break
   
-Else If
-New Wallet 1 Balance < Wallet 1 Balance
-  return Wallet 1 Balance
-  or
-New Wallet 2 Balance < Wallet 2 Balance
-  return Wallet 2 Balance
-  
 Else
 Wallet 1 Balance == New Wallet 1 Balance
 Wallet 2 Balance == New Wallet 2 Balance
