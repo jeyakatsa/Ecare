@@ -117,81 +117,6 @@
 				
 			}		
 
-			//Step 3	
-			function compareContrastExchangeTokens(){
-
-				//Wallet One Balance/Tokens/Inputs
-				var walletOneBalance = 10000.00;
-				var walletOneTokens = 10.00;
-				var walletOneTokenValue = 0.00;
-				var walletOneInput = parseFloat(document.getElementById('input-one').value);
-				
-				//Wallet Two Balance/Tokens/Inputs
-				var walletTwoBalance = 5000.00;
-				var walletTwoTokens = 5.00;	
-				var walletTwoTokenValue = 0.00;
-				var walletTwoInput = parseFloat(document.getElementById('input-two').value);
-				
-				var tokenLimit = 0.00000;
-
-				//Base Case
-				if (document.getElementById('input-one').value == "" ||
-						document.getElementById('input-two').value == "") {
-					RWmodal.open(1, 'Exchange Tokens');				
-				}
-				//Main Algorithm
-				else {
-					//Step 1
-	 				var walletOneTokenValue = (walletOneBalance / walletOneTokens);
-					var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
-
-					//Step 2
-		 			var walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
-					var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
-
-					//Step 3
-					document.getElementById('tokens-one-connected-value').style.display = "inline";
-					document.getElementById('tokens-one-connected').style.display = "none";	
-
-					document.getElementById('tokens-two-connected-value').style.display = "inline";
-				    document.getElementById('tokens-two-connected').style.display = "none";	
-				    
-					if (tokenLimit < walletOneTokens || tokenLimit < walletTwoTokens){
-						
-						var newWalletOneTokens = (walletOneTokens - walletOneInput);
-						var newWalletTwoTokens = (walletTwoTokens - walletTwoInput);
-						//Base Case
-						if (walletOneTokens < walletOneInput || 
-								walletTwoTokens < walletTwoInput){
-							RWmodal.open(1, 'Limited Total Tokens');	
-						}
-						else{
-			 				document.getElementById('tokens-one-connected-value').innerHTML = 
-			 					walletOneTokens.toFixed(2);
-			 				document.getElementById('input-one').value = "";					
-
-			 				document.getElementById('tokens-two-connected-value').innerHTML = 
-			 					walletTwoTokens.toFixed(2);
-			 				document.getElementById('input-two').value = "";		
-						}
-									
-					}
-					else {
-						walletOneTokens = newWalletOneTokens;
-						walletTwoTokens = newWalletTwoTokens;	
-
-		 				document.getElementById('tokens-one-connected-value').innerHTML = 
-		 					walletOneTokens.toFixed(2);
-		 				document.getElementById('input-one').value = "";					
-
-		 				document.getElementById('tokens-two-connected-value').innerHTML = 
-		 					walletTwoTokens.toFixed(2);
-		 				document.getElementById('input-two').value = "";		
-					}					
-					
-				}				
-
-			}
 
 			//Might need this for rounding exchanged Balanced & Tokens:
 			//numberFormat = new Intl.NumberFormat('en-US', 
@@ -227,8 +152,71 @@
 						//This code is for testing purposes
 /* 						divideBalancesByTotalTokens();	 */	
 						//This code is for testing purposes
-						compareContrastExchangeTokens()
+					//Step 3	
+					
+					//Wallet One Balance/Tokens/Inputs
+					var walletOneBalance = 10000.00;
+					var walletOneTokens = 10.00;
+					var walletOneInput = parseFloat(document.getElementById('input-one').value);
+					//Wallet One Balance/Tokens Updates
+					var walletOneTokenValue = 0.00;
+					var walletOneToTwoBalanceAdd = 0.00;
+					
+					//Wallet Two Balance/Tokens/Inputs
+					var walletTwoBalance = 5000.00;
+					var walletTwoTokens = 5.00;	
+					var walletTwoInput = parseFloat(document.getElementById('input-two').value);
+					//Wallet Two Balance/Tokens Updates				
+					var walletTwoTokenValue = 0.00;
+					var walletTwoToOneBalanceAdd = 0.00;
+
+					compareContrastExchangeTokens();
+					
+					function compareContrastExchangeTokens(){
+
+						//Base Cases
+						if (document.getElementById('input-one').value == "" ||
+								document.getElementById('input-two').value == "") {
+							RWmodal.open(1, 'Exchange Tokens');				
+						}
+						else if (walletOneTokens < walletOneInput || 
+								walletTwoTokens < walletTwoInput){
+							RWmodal.open(1, 'Limited Total Tokens');	
+						}					
+						//Main Algorithm
+						else {
+							//Step 1
+			 				walletOneTokenValue = (walletOneBalance / walletOneTokens);
+							walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
+
+							//Step 2
+				 			walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
+							walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
+
+							//Step 3
+							walletOneTokens = (walletOneTokens - walletOneInput);
+							walletTwoTokens = (walletTwoTokens - walletTwoInput);
+							
+							document.getElementById('tokens-one-connected-value').style.display = "inline";
+							document.getElementById('tokens-one-connected').style.display = "none";	
+			 				document.getElementById('tokens-one-connected-value').innerHTML = 
+			 					walletOneTokens.toFixed(2);
+			 				document.getElementById('input-one').value = "";	
+
+							document.getElementById('tokens-two-connected-value').style.display = "inline";
+						    document.getElementById('tokens-two-connected').style.display = "none";	
+			 				document.getElementById('tokens-two-connected-value').innerHTML = 
+			 					walletTwoTokens.toFixed(2);
+			 				document.getElementById('input-two').value = "";	
+
+						}
+		 				const storedWalletOneTokens = sessionStorage.getItem('walletOneTokens');
+		 				sessionStorage.setItem('walletOneTokens', walletOneTokens);
+
+		 				const storedWalletTwoTokens = sessionStorage.getItem('walletTwoTokens');
+		 				sessionStorage.setItem('walletTwoTokens', walletTwoTokens);				
 					}
+				}
 			}
 
 		</script>
