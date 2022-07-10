@@ -102,9 +102,13 @@ body {
   to {center:0; opacity:1}
 	}  
 	
-  .form-group{
+.form-group{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.form-group-tokens{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   #choose-token {
