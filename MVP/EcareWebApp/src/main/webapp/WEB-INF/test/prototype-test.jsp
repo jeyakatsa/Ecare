@@ -219,8 +219,8 @@
 						document.getElementById('input-two').value == "") {
 					RWmodal.open(1, 'Exchange Tokens');				
 				}
-				else if (newWalletOneTokens < walletOneInput || 
-						 newWalletTwoTokens < walletTwoInput){
+				else if (walletOneTokens < walletOneInput || 
+						 walletTwoTokens < walletTwoInput){
 					RWmodal.open(1, 'Limited Total Tokens');	
 				}							
 				//Main Algorithm
@@ -326,7 +326,7 @@
 						//This code is for testing purposes
 					//Step 3	
 
-					compareContrastExchangeTokens();
+					updateBalances();
 				}
 					
 			}
