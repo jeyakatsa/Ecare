@@ -157,28 +157,8 @@ body {
     font-size: 15px;
   }
   
-  #dllr-disconnected{
-    margin-top: 0px;
-    margin-bottom: 15px;
-  	color: #cfcfcf;
-    font-size: 25px;
-  }
-  #balance-not-connected{
-    color: gray;
-    font-family: Arial;
-    font-weight: 700;
-  }
-
-  #tokens-not-connected{
-    margin-top: 0px;
-    margin-bottom: 15px;
-    color: gray;
-    font-family: Arial;
-    font-weight: 700;
-    font-size: 25px;
-  }
   
-  #dllr-connected{
+  #dllr-connected {
     margin-top: 0px;
     margin-bottom: 15px;
   	color: #cfcfcf;
