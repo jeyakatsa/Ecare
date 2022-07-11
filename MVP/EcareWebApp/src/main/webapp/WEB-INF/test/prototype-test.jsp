@@ -22,7 +22,7 @@
 			}
 
 			
-// Combinatorial Mechanism (Below):
+// Combinatorial Mechanism Tests (Below):
 			
 			//Wallet One Balance/Tokens/Inputs
 /* 			var walletOneBalance = 10000.00;
@@ -186,6 +186,19 @@
 				
 			} */
 
+			//For Testing Purposes
+/*   			function calculationTest(){
+
+				var walletOneBalance = 100000.00;
+				var walletOneTokens = 100.00;
+				var walletTwoBalance = (walletOneBalance * walletOneTokens);
+ 				walletTwoFormat = new Intl.NumberFormat('en-US',
+ 		 				{ minimumFractionDigits: 2 }).format(walletTwoBalance);
+				
+				alert("wallet Two Balance Format = " + walletTwoFormat);
+				
+			} */
+
 			//Step 4
 			function updateBalances(){
 				//Wallet One Balance/Tokens/Inputs
@@ -209,7 +222,7 @@
 				var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
 				var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
 				//New Wallet One Balance/Tokens Updates
-				var newWalletTwoBalance = document.getElementById('balance-two-connected-value').innerHTML;					
+				var newWalletTwoBalance = document.getElementById('balance-two-connected-value').innerHTML;						
 				var newWalletTwoTokens = document.getElementById('tokens-two-connected-value').innerHTML;			
 				var newWalletTwoTokenValue = (newWalletTwoBalance / newWalletTwoTokens);
 				var newWalletTwoToOneBalanceAdd = (newWalletTwoTokenValue * walletTwoInput);
@@ -229,16 +242,20 @@
 					//Balances Updating Algorithm
 	 				walletOneBalance = (walletOneBalance + walletTwoToOneBalanceAdd);
 	 				walletTwoBalance = (walletTwoBalance + walletOneToTwoBalanceAdd);
+	 				walletOneFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(walletOneBalance);
+	 				walletTwoFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(walletTwoBalance);	
 
 	 				document.getElementById('balance-one-connected-value').style.display = "inline";
 					document.getElementById('balance-one-connected').style.display = "none";	
 	 				document.getElementById('balance-one-connected-value').innerHTML = 
-	 					walletOneBalance.toFixed(2);
+	 					walletOneFormat;
 
 					document.getElementById('balance-two-connected-value').style.display = "inline";
 				    document.getElementById('balance-two-connected').style.display = "none";	
 	 				document.getElementById('balance-two-connected-value').innerHTML = 
-	 					walletTwoBalance.toFixed(2);
+	 					walletTwoFormat;
 	 				
 					//Tokens Updating Algorithm
 					walletOneTokens = (walletOneTokens - walletOneInput);
@@ -254,7 +271,7 @@
 				    document.getElementById('tokens-two-connected').style.display = "none";	
 	 				document.getElementById('tokens-two-connected-value').innerHTML = 
 	 					walletTwoTokens.toFixed(2);
-	 				document.getElementById('input-two').value = "";
+	 				document.getElementById('input-two').value = ""; 
 				}
 				else if (newWalletOneTokens < walletOneInput || 
 						newWalletTwoTokens < walletTwoInput){
@@ -263,14 +280,23 @@
 				else if (newWalletOneTokens > 0 || newWalletTwoTokens > 0) {	
 
 					//Balances Updating Algorithm
+					newWalletOneBalance = new Intl.NumberFormat('en-US',
+ 		 				{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletOneBalance);
+					newWalletTwoBalance = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletTwoBalance);		 				
+					
 	 				newWalletOneBalance = (newWalletOneBalance + newWalletTwoToOneBalanceAdd);
 	 				newWalletTwoBalance = (newWalletTwoBalance + newWalletOneToTwoBalanceAdd);
+	 				
+	 				newWalletOneFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(newWalletOneBalance);
+	 				newWalletTwoFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(newWalletTwoBalance);	
 	
 	 				document.getElementById('balance-one-connected-value').innerHTML = 
-	 					newWalletOneBalance.toFixed(2);
-	
+	 					newWalletOneFormat;
 	 				document.getElementById('balance-two-connected-value').innerHTML = 
-	 					newWalletTwoBalance.toFixed(2);								
+	 					newWalletTwoFormat;								
 
 					//Tokens Updating Algorithm
 					newWalletOneTokens = (newWalletOneTokens - walletOneInput);
@@ -288,10 +314,6 @@
 			}			
 
 
-			//Might need this for rounding exchanged Balanced & Tokens:
-			//numberFormat = new Intl.NumberFormat('en-US', 
-			//{ minimumFractionDigits: 2 }).format(walletOneBalance);
-			//Display new balances
 			//RWmodal.open(1, 'Exchange Successful');	
 			
 			//**UPDATE MECHANICS AFTER SUCCESSFUL CO
@@ -300,7 +322,14 @@
 			//while balances of the tokens exchanged are transferred to exchange wallets
 			//During exchange, tokens are subtracted while balances are added
 
-// Combinatorial Mechanism (Above)
+// Combinatorial Mechanism Tests (Above)
+			
+			
+			
+			
+//Combinatorial Mechanism (Below)	
+			
+//Combinatorial Mechanism (Above)			
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
