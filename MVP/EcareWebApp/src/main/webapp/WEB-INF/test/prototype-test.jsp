@@ -187,17 +187,17 @@
 			} */
 
 			//For Testing Purposes
-/*   			function calculationTest(){
+   			function calculationTest(){
 
-				var walletOneBalance = 100000.00;
-				var walletOneTokens = 100.00;
-				var walletTwoBalance = (walletOneBalance * walletOneTokens);
- 				walletTwoFormat = new Intl.NumberFormat('en-US',
- 		 				{ minimumFractionDigits: 2 }).format(walletTwoBalance);
+			    var newWalletOneBalance = 100000.00;
+			    var newWalletOneBalanceFormat = new Intl.NumberFormat('en-US',
+ 		 				{ minimumFractionDigits: 2 }).format(newWalletOneBalance);
+			    newWalletOneBalanceFormat = newWalletOneBalanceFormat.replace(/\,/g,'');
+			    newWalletOneBalanceFormat = parseFloat(newWalletOneBalanceFormat,1);	
 				
-				alert("wallet Two Balance Format = " + walletTwoFormat);
+				alert("wallet One Balance Format = " + newWalletOneBalanceFormat);
 				
-			} */
+			} 
 
 			//Step 4
 			function updateBalances(){
@@ -283,7 +283,7 @@
 					newWalletOneBalance = new Intl.NumberFormat('en-US',
  		 				{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletOneBalance);
 					newWalletTwoBalance = new Intl.NumberFormat('en-US',
-	 		 				{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletTwoBalance);		 				
+	 		 			{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletTwoBalance);		 				
 					
 	 				newWalletOneBalance = (newWalletOneBalance + newWalletTwoToOneBalanceAdd);
 	 				newWalletTwoBalance = (newWalletTwoBalance + newWalletOneToTwoBalanceAdd);
@@ -355,7 +355,7 @@
 						//This code is for testing purposes
 					//Step 3	
 
-					updateBalances();
+					calculationTest();
 				}
 					
 			}
