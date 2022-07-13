@@ -187,17 +187,15 @@
 			} */
 
 			//For Testing Purposes
-   			function calculationTest(){
+    		function calculationTest(){
 
-			    var newWalletOneBalance = 100000.00;
-			    var newWalletOneBalanceFormat = new Intl.NumberFormat('en-US',
- 		 				{ minimumFractionDigits: 2 }).format(newWalletOneBalance);
-			    newWalletOneBalanceFormat = newWalletOneBalanceFormat.replace(/\,/g,'');
-			    newWalletOneBalanceFormat = parseFloat(newWalletOneBalanceFormat,1);	
+			    var newWalletOneBalance = 100,000.65;
+			    newWalletOneBalance = newWalletOneBalance.replace(/\,/g,'');
+			    newWalletOneBalance = parseFloat(newWalletOneBalance,1);	
 				
-				alert("wallet One Balance Format = " + newWalletOneBalanceFormat);
+				alert("wallet One Balance Format = " + newWalletOneBalance);
 				
-			} 
+			}
 
 			//Step 4
 			function updateBalances(){
@@ -280,10 +278,11 @@
 				else if (newWalletOneTokens > 0 || newWalletTwoTokens > 0) {	
 
 					//Balances Updating Algorithm
-					newWalletOneBalance = new Intl.NumberFormat('en-US',
- 		 				{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletOneBalance);
-					newWalletTwoBalance = new Intl.NumberFormat('en-US',
-	 		 			{ minimumFractionDigits: 2, useGrouping: false }).format(newWalletTwoBalance);		 				
+					newWalletOneBalance = newWalletOneBalance.replace(/\,/g,'');
+					newWalletTwoBalance = newWalletTwoBalance.replace(/\,/g,'');	
+
+					newWalletOneBalance = parseFloat(newWalletOneBalance,1);	
+					newWalletTwoBalance = parseFloat(newWalletTwoBalance,1);	 				
 					
 	 				newWalletOneBalance = (newWalletOneBalance + newWalletTwoToOneBalanceAdd);
 	 				newWalletTwoBalance = (newWalletTwoBalance + newWalletOneToTwoBalanceAdd);
