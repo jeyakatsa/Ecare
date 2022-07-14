@@ -347,6 +347,25 @@
 					RWmodal.open(1, 'Connect Both Wallets');
 					}
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
+					
+					var walletOneBalance = 100000.00;
+	 				var walletOneFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(walletOneBalance);
+					document.getElementById('balance-one-connected-value').innerHTML = 
+	 					walletOneFormat;
+					var walletOneTokens = 100.00;
+	 				document.getElementById('tokens-one-connected-value').innerHTML = 
+	 					walletOneTokens.toFixed(2);
+ 					
+					var walletTwoBalance = 90000.00;
+	 				var walletTwoFormat = new Intl.NumberFormat('en-US',
+	 		 				{ minimumFractionDigits: 2 }).format(walletTwoBalance);
+					document.getElementById('balance-two-connected-value').innerHTML = 
+						walletTwoFormat;
+					var walletTwoTokens = 90.00;
+	 				document.getElementById('tokens-two-connected-value').innerHTML = 
+	 					walletTwoTokens.toFixed(2);
+ 					
 					RWmodal.open(1, 'Wallets Reset');	
 					}
 			}
