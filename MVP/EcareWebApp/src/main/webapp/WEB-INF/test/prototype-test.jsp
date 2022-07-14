@@ -287,8 +287,8 @@
  					newWalletOneBalance = newWalletOneBalance.replace(/\,/g,'');
 					newWalletTwoBalance = newWalletTwoBalance.replace(/\,/g,'');
 
-					newWalletOneBalance = parseFloat(newWalletOneBalance,10);	
-					newWalletTwoBalance = parseFloat(newWalletOneBalance,10);	
+					newWalletOneBalance = parseFloat(newWalletOneBalance,1);	
+					newWalletTwoBalance = parseFloat(newWalletTwoBalance,1);	
 
 					var newWalletOneTokenValue = (newWalletOneBalance / newWalletOneTokens);
 					var newWalletTwoTokenValue = (newWalletTwoBalance / newWalletTwoTokens);
