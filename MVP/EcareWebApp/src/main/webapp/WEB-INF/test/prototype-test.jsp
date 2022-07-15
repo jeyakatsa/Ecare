@@ -298,6 +298,9 @@
 					
 	 				var newWalletOneBalanced = (newWalletOneBalance + newWalletTwoToOneBalanceAdd);
 	 				var newWalletTwoBalanced = (newWalletTwoBalance + newWalletOneToTwoBalanceAdd);
+
+	 				newWalletOneBalanced = (Math.round(newWalletOneBalanced * 100) / 100).toFixed(2);
+	 				newWalletTwoBalanced = (Math.round(newWalletTwoBalanced * 100) / 100).toFixed(2);
 	 				
 	 				var newWalletOneFormat = new Intl.NumberFormat('en-US',
 	 		 				{ minimumFractionDigits: 2 }).format(newWalletOneBalanced);
