@@ -65,7 +65,7 @@
 		  <a href="https://github.com/jeyakatsa/monalisa"
 		      target="_blank"
 		      id="contact">
-		      <img id="github" src="/icons&images/Github.png">
+		      <img id="github" src="/icons&images/GithubDark.png">
 		  </a>  	
 	</footer>
 	  
