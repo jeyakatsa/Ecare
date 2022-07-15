@@ -22,7 +22,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+	background-color: #f8f8fc;
 	height: 425px;
 	z-index: 1;
 }
@@ -79,7 +79,7 @@ body {
 	}	
 	
 	#guide {
-	  background: white;
+	  background: #f8f8fc;
 	  margin-top: 10px;
 	  text-decoration: none;
 	  color: rgb(169, 166, 211);

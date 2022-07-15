@@ -231,12 +231,20 @@
 				
 				//Base Cases
 				if (document.getElementById('input-one').value == "" ||
-						document.getElementById('input-two').value == "") {
-					RWmodal.open(1, 'Exchange Tokens');				
+					document.getElementById('input-two').value == "") {
+					RWmodal.open(1, 'Enter Valid Tokens');				
+				}
+				else if (document.getElementById('input-one').value == "." ||
+						document.getElementById('input-two').value == ".") {
+					RWmodal.open(1, 'Enter Valid Tokens');	
+				}
+				else if (document.getElementById('input-one').value < "0" ||
+						document.getElementById('input-two').value < "0") {
+					RWmodal.open(1, 'Enter Valid Tokens');	
 				}
 				else if (walletOneTokens < walletOneInput || 
 						 walletTwoTokens < walletTwoInput){
-					RWmodal.open(1, 'Limited Total Tokens');	
+					RWmodal.open(1, 'Exceeded Total Tokens');	
 				}							
 				//Main Algorithm
 				else if (newWalletOneTokens == 0 || newWalletTwoTokens == 0) {
@@ -343,7 +351,21 @@
 			
 //Combinatorial Mechanism (Below)	
 			
-//Combinatorial Mechanism (Above)			
+//Combinatorial Mechanism (Above)		
+			
+			//Input Format Function	
+		   function isNumberKey(evt, obj) {
+	
+	            var charCode = (evt.which) ? evt.which : event.keyCode
+	            var value = obj.value;
+	            var dotcontains = value.indexOf(".") != -1;
+	            if (dotcontains)
+	                if (charCode == 46) return false;
+	            if (charCode == 46) return true;
+	            if (charCode > 31 && (charCode < 48 || charCode > 57))
+	                return false;
+	            return true;
+	        }
 			
 			function resetWallets(){
 				if (connectedWalletOne == false || connectedWalletTwo == false){
@@ -475,8 +497,8 @@
               <label id="label">Exchange Tokens</label>						
               <br>
               <input id="input-one" type="text" 
-              		onkeyup="this.value = this.value.replace(/[^0-9.]/, '')"
-              		step="any" value="0.00" />
+              		onkeypress="return isNumberKey(event,this)"
+              		step="any" value="1.01" />
             </div>	
 	
 	            <br></br>
@@ -524,9 +546,9 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-two" type="text" 
-              		onkeyup="this.value = this.value.replace(/[^0-9.]/, '')"              
-              		step="any" value="0.00"/>
+              <input id="input-two" type="text"
+              		onkeypress="return isNumberKey(event,this)"        
+              		step="any" value="1.01"/>
             </div>										
             
             <br></br>
