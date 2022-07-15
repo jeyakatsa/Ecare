@@ -8,7 +8,7 @@ body {
   background-color: #1f1f1f;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 815px) {
   body {
     -webkit-text-size-adjust: none;
   }
@@ -143,7 +143,7 @@ footer {
 		opacity: .9;
 	}
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 815px){
 	
 #img {
   width: 12px;
