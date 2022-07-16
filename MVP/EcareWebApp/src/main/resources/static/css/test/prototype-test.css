@@ -239,20 +239,6 @@ body {
     height: 15px;
     margin-bottom: -40px;    
   }
-	input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button
-	 {
-	   opacity:0;
-      pointer-events:none;
-	  -webkit-appearance: none;
-	  margin: 0;
-	}
-	noindex:-o-prefocus,
-	input[type=number]
-	 {
-	  -moz-appearance: textfield;
-	  padding-right: 1.2em;
-	}  
 	 input:focus
 	  {
 	    cursor: pointer;

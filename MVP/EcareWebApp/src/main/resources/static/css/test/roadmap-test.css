@@ -27,6 +27,7 @@ body {
 #img:hover {
   opacity: .4;
   transition: 1s;
+  cursor: pointer;
 }
 span {
 	color: white;
@@ -136,6 +137,7 @@ footer {
 
 	#contact:hover {
 		opacity: .3;
+		cursor: pointer;
 		transition: 1s;
 	}
 	#github {
