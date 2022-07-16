@@ -23,7 +23,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #f8f8fc;
-	height: 425px;
+	height: 450px;
 	z-index: 1;
 }
 
@@ -115,9 +115,8 @@ footer {
 	  color: white;
 	  font-weight:600;
 	  font-size: 17px;
-	  padding: 20px;
 	  border: none;
-	  margin-left: 10px;
+	  margin-left: 15px;
 	  letter-spacing: 10px;
 	  opacity: .75;
 	}
@@ -148,7 +147,7 @@ footer {
 	
 #above {
 	padding-top: 80px;
-	height: 410px;
+	height: 435px;
 }	
 
 	.icon {
@@ -196,8 +195,7 @@ footer {
 	
 	#roadmap {
 	  font-size: 12px;
-	  padding: 12px; 
-	  margin-left: 5px;
+	  margin-left: 7px;
 	  letter-spacing: 5px;	  
 	}	
 	
