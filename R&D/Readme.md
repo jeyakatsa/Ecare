@@ -83,43 +83,46 @@ Wallet 2 Balance == New Wallet 2 Balance
 
 ```
 
+#### Cross-pollination exchange system:
 
-### Mechanic Scenarios:
-**Scenario 1:** *Wallet 1 exchanges 1 of their Tokens for 1 Token from Wallet 2.*
+During exchanges, each token exchanged is moved into a burn wallet while the value of the tokens burned are exchanged into the corresponding wallet's balance as follows:
+
+**Scenario 1:** *Wallet 1 exchanges 10 of their Tokens for 25 Tokens from Wallet 2.*
 
 > ***Before Exchange***
 > 
 > | Wallet 1                      | Wallet 2                      |
 > | ----------------------------- | ----------------------------- |
-> | Balance = 2,000 USD           | Balance = 1,000 USD           |
-> | Tokens = 1,000                | Tokens = 1,000                |
-> | 1 Token = 2 USD               | 1 Token = 1 USD               |
+> | Balance = 100,000 USD         | Balance = 90,000 USD          |
+> | Tokens = 100                  | Tokens = 90                   |
+> | 1 Token = 1,000 USD           | 1 Token = 1,000 USD           |
 > 
 > ***After Exchange***
 > 
 > | Wallet 1                      | Wallet 2                      |
 > | ----------------------------  | ----------------------------- |
-> | Balance = 2,000 USD           | Balance = 1,002 USD           |
-> | Tokens = 1,000                | Tokens = 1,000                |
-> | 1 Token = 2 USD               | 1 Token = 1.002 USD           |
+> | Balance = 125,000 USD         | Balance = 100,000 USD         |
+> | Tokens = 90                   | Tokens = 65                   |
+> | 1 Token = 1,388.88 USD        | 1 Token = 1,538.46 USD        |
 
-**Scenario 2:** *Wallet 1 exchanges 50 of their Tokens for 1 Token from Wallet 2.*
+**Scenario 2:** *Wallet 1 exchanges 25.65 of their Tokens for 12.65 Token from Wallet 2.*
 
 > ***Before Exchange***
 > 
 > | Wallet 1                      | Wallet 2                      |
-> | ----------------------------- | ----------------------------- |
-> | Balance = 2,000 USD           | Balance = 1,000 USD           |
-> | Tokens = 1,000                | Tokens = 1,000                |
-> | 1 Token = 2 USD               | 1 Token = 1 USD               |
+> | ----------------------------  | ----------------------------- |
+> | Balance = 125,000 USD         | Balance = 100,000 USD         |
+> | Tokens = 90                   | Tokens = 65                   |
+> | 1 Token = 1,388.88 USD        | 1 Token = 1,538.46 USD        |
 > 
 > ***After Exchange***
 > 
-> | Wallet 1                      | Wallet 2                       |
-> | ----------------------------- | ------------------------------ |
-> | Balance = 2,000 USD           | Balance = 1,099 USD            |
-> | Tokens = 951                  | Tokens = 1,049                 |
-> | 1 Token = 2.103 USD           | 1 Token = 1.048 USD            |
+> | Wallet 1                      | Wallet 2                      |
+> | ----------------------------  | ----------------------------- |
+> | Balance = 144,461.54 USD      | Balance = 135,625 USD         |
+> | Tokens = 64.35                | Tokens = 52.35                |
+> | 1 Token = 2,244.93 USD        | 1 Token = 2,590.73 USD        |
+
 
 
 ## Basic Smart-Contract Framework:
