@@ -117,9 +117,9 @@ footer {
 	  font-size: 13px;
 	  padding: 20px;
 	  border: solid;
-	  border-color: gray;
-	  border-width: 2px;
-	  border-radius: 3px;
+	  border-color: #6d6d6d;
+	  border-width: 4px;
+	  border-radius: 2px;
 	  opacity: .75;
 	}
 	#roadmap:hover,
