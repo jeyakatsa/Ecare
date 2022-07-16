@@ -71,7 +71,7 @@
 	
 	<section id="wrapper-date-top">
 	
-		<h3>Jun 2022 - Aug 2022</h3>
+		<h3>Jun 2022 - Jul 2022</h3>
 	
 	<!-- change link below after test -->
 		<form method="get" target="_blank" action="/prototype-test">
@@ -101,7 +101,7 @@
 	 
 	<section id="wrapper-date">
 	
-		<h3>Sep 2022 - Feb 2023</h3>
+		<h3>Aug 2022 - Jan 2023</h3>
 	
 	<!-- change link below after test -->
 		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/R%26D">
@@ -119,7 +119,7 @@
 	 
 	 <section id="wrapper-date">
 	
-		<h3>Mar 2023 - Aug 2023</h3>
+		<h3>Feb 2023 - Jul 2023</h3>
 	
 	 <!-- change link below after test -->
 		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
@@ -137,7 +137,7 @@
 	 
 	 <section id="wrapper-date">
 	
-		<h3>Sep 2023 - Jan 2025</h3>
+		<h3>Aug 2023 - Aug 2025</h3>
 	
 	 <!-- change link below after test -->
 		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
