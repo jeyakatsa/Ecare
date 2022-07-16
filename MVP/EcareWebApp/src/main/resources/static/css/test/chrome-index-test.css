@@ -23,7 +23,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #f8f8fc;
-	height: 450px;
+	height: 425px;
 	z-index: 1;
 }
 
@@ -114,10 +114,12 @@ footer {
 	  text-decoration: none;
 	  color: white;
 	  font-weight:600;
-	  font-size: 17px;
-	  border: none;
-	  margin-left: 12px;
-	  letter-spacing: 7px;
+	  font-size: 12px;
+	  padding: 15px;
+	  border: solid;
+	  border-color: silver;
+	  border-width: 2px;
+	  border-radius: 3px;
 	  opacity: .75;
 	}
 	#roadmap:hover,
@@ -136,7 +138,7 @@ footer {
 		transition: 1s;
 	}
 	#github {
-		margin-top: 35px;
+		margin-top: 45px;
 		width: 25px;
 	}
 
@@ -145,10 +147,10 @@ footer {
 
 @media screen and (max-width: 650px){
 	
-#above {
-	padding-top: 80px;
-	height: 435px;
-}	
+	#above {
+		padding-top: 80px;
+		height: 410px;
+	}	
 
 	.icon {
 	  width: 40px;
@@ -188,21 +190,10 @@ footer {
 	  margin-top: 10px;
 	}
 	
-footer {
-	padding-top: 35px;
-	height: 120px;
-}
-	
-	#roadmap {
-	  font-size: 13px;
-	  margin-left: 8px;
-	  letter-spacing: 4px;	  
-	}	
-	
-	#github {
-		margin-top: 30px;
+	footer {
+		padding-top: 40px;
+		height: 120px;
 	}
-	
 	
 }
 
