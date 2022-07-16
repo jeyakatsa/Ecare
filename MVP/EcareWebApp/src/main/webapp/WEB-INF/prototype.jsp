@@ -5,10 +5,24 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/prototype.css">	
-		<script src="javascript/JSmodal.min.js">
-		
+		<script src="javascript/RWmodal.min.js">
 		</script>
-		<link rel="stylesheet" href="css/JSmodalani.css" />	
+		<script type="text/javascript">
+		//Input Format Function	
+		   function isNumberKey(evt, obj) {
+	
+	            var charCode = (evt.which) ? evt.which : event.keyCode
+	            var value = obj.value;
+	            var dotcontains = value.indexOf(".") != -1;
+	            if (dotcontains)
+	                if (charCode == 46) return false;
+	            if (charCode == 46) return true;
+	            if (charCode > 31 && (charCode < 48 || charCode > 57))
+	                return false;
+	            return true;
+	        }
+		</script>
+		<link rel="stylesheet" href="css/RWmodalani.css" />	
 			
 		<meta charset="UTF-8">
 		
@@ -78,12 +92,16 @@
               <label id="label" path="email">Exchange Tokens</label>						
               <br>
               <errors id="errors" path="email"></errors>
-              <input id="input" class="form-control" path="email"></input>
+              <input id="input" type="tel" 
+              		onkeypress="return isNumberKey(event,this)"
+                  	pattern="[0-9]*"
+                  	inputmode="numeric"	
+              		step="any" value="0.00"/>
             </div>
 
             <br></br>
 
-            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+            <button onclick="RWmodal.open(1, 'IN DEVELOPMENT')" 
               id="connect-wallet" type="button">
               Connect Wallet One
             </button>
@@ -119,13 +137,16 @@
             <div class="form-group" id="enter-content">
               <label id="label" path="email">Exchange Tokens</label>						
               <br>
-              <errors id="errors" path="email"></errors>
-              <input id="input" class="form-control" path="email"></input>
+              <input id="input" type="tel" 
+              		onkeypress="return isNumberKey(event,this)"
+                  	pattern="[0-9]*"
+                  	inputmode="numeric"	
+              		step="any" value="0.00"/>
             </div>										
             
             <br></br>
 
-            <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+            <button onclick="RWmodal.open(1, 'IN DEVELOPMENT')" 
               id="connect-wallet" type="button">
               Connect Wallet Two
             </button>
@@ -137,7 +158,7 @@
 
       </section>
 
-      <button onclick="JSmodal.open(1, 'IN DEVELOPMENT')" 
+      <button onclick="RWmodal.open(1, 'IN DEVELOPMENT')" 
       type="button" id="exchange">
           EXCHANGE
       </button>
