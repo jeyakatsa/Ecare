@@ -2,9 +2,10 @@ html,
 body {
   text-align: center;
   font-family: Arial;
+  margin-top: 0%;
   margin-left: 0%;
   margin-right: 0%;
-  background-color: white;
+  background-color: #1f1f1f;
   margin-bottom: 0%;
 }
 
@@ -14,18 +15,20 @@ body {
   }
 }
 
-
-
-#about {
-  display: flex;
-  margin-top: 70px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#above {
+	padding-top: 60px;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f8f8fc;
+	height: 425px;
+	z-index: 1;
 }
 
 	.icon {
-	  width: 80px;
+	  width: 60px;
 	  margin-left: auto;
 	  margin-right: auto;
 	}
@@ -34,7 +37,7 @@ body {
 	  font-size: 40pt;
 	  font-weight: 700;
 	  color: gray;   
-	  margin-top: 30px;   
+	  margin-top: 10px;   
 	  letter-spacing: 2px;
 	  opacity: .8;
 	}
@@ -44,100 +47,162 @@ body {
 	  font-size: 12pt;
 	  color: gray;
 	  font-weight: 700;
-	  margin-top: -35px; 
+	  margin-top: -40px; 
 	  letter-spacing: 0px;
 	  opacity: .8;
 	}
 	
 	#names {
-	  margin-right: 10px;
-	  margin-left: 10px;
+	  margin-right: 7px;
+	  margin-left: 7px;
 	}
 	
-#prototype {
-  background: white;
-  margin-top: 20px;
-  text-decoration: none;
-  color: rgb(169, 166, 211);
-  font-weight:600;
-  font-size: 13px;
-  padding: 20px;
-  border: none;
-  letter-spacing: 1px;
-  border-radius: 17px;
-  width: 200px;
-  box-shadow: 0px 3px 7px 1px rgb(169, 166, 211);
-}
-#prototype:hover {
-  background: rgb(18, 18, 18);
-  color: white;
-  transition: 1s;
-  box-shadow: 0px 2px 15px 1px white;
-  opacity: .6;
-}	
-#prototype:focus {
-  background: rgb(18, 18, 18);
-  color: white;
-  transition: 1s;
-  box-shadow: 0px 2px 15px 1px white;
-  opacity: .6;
-}	
+	#prototype {
+	  background: rgb(169, 166, 211);
+	  margin-top: 10px;
+	  text-decoration: none;
+	  color: white;
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 20px;
+	  width: 150px;
+	  box-shadow: 0px 5px 15px 0px rgb(169, 166, 211);
+	}
+	#prototype:hover,
+	#prototype:focus {
+	  opacity: .7;
+	  transition: 1s;
+	  cursor: pointer;
+	}	
 	
+	#guide {
+	  background: #f8f8fc;
+	  margin-top: 10px;
+	  text-decoration: none;
+	  color: rgb(169, 166, 211);
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 5px;
+	  width: 100px;
+	  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
+	}
+	#guide:hover,
+	#guide:focus {
+	  opacity: .7;
+	  transition: 1s;
+	  cursor: pointer;
+	}	
+		
 
+	
 footer {
-	margin-top: 55px;
 	text-decoration: none;
+	padding-top: 43px;
+	width: 100%;
+	height: 130px;
+	background-color: #1f1f1f;
 }
-#contact:hover {
-	opacity: .6;
-	transition: 1s;
-}
-#github {
-    opacity: .5;
-	width: 40px;
-	margin-bottom: 50px;
-}
+
+	#roadmap {
+	  background: #1f1f1f;
+	  text-decoration: none;
+	  color: white;
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: solid;
+	  border-color: silver;
+	  border-width: 2px;
+	  border-radius: 3px;
+	  opacity: .75;
+	}
+	#roadmap:hover,
+	#roadmap:focus {
+	  transition: 1s;
+	  cursor: pointer;
+	  opacity: .3;
+	}	
+
+	#contact {
+		opacity: .75;	
+	}
+	#contact:hover {
+		opacity: .3;
+	    cursor: pointer;
+		transition: 1s;
+	}
+	#github {
+		margin-top: 45px;
+		width: 30px;
+	}
+
+
 
 
 @media screen and (max-width: 650px){
 	
+	#above {
+		padding-top: 80px;
+		height: 410px;
+	}	
+
 	.icon {
-	  width: 60px;
+	  width: 40px;
 	}
 	
 	#title {
-	  font-size: 30pt;
+	  font-size: 25pt;
 	  letter-spacing: 1px;
+	  margin-top: 15px;
 	}
 	
 	#name {
 	  display: block;
-	  font-size: 10pt;
-      margin-top: -15px; 
+	  font-size: 9pt;
+      margin-top: -20px; 
       letter-spacing: 0px;
 	}
 	
 	#names {
-		line-height: 15px;
+	  line-height: 10px;
 	}
 	
 	#prototype {
+	  font-size: 11px;
+	  width: 120px;
+	  padding: 17px;
+	  margin-top: 10px;
+	  border-radius: 17px;
+	}
+	
+	#guide {
 	  font-weight:600;
 	  font-size: 11px;
-	  width: 150px;
-	  margin-bottom: 50px;
-	  margin-top: 20px;
+	  width: 80px;
+	  padding: 17px;
+	  margin-bottom: 20px;
+	  margin-top: 10px;
 	}
 	
 	footer {
-		margin-top: -5px;
+		padding-top: 37px;
+		height: 120px;
 	}
 	
+	#roadmap {
+	  font-size: 12px;
+	  padding: 15px;	
+	}
 	
 	#github {
-		width: 30px;
+		width: 25px;
 	}
-	
 	
 }
 
