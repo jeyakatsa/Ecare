@@ -114,12 +114,11 @@ footer {
 	  text-decoration: none;
 	  color: white;
 	  font-weight:600;
-	  font-size: 12px;
-	  padding: 15px;
-	  border: solid;
-	  border-width: 3px;
-	  letter-spacing: 1px;
-	  border-radius: 6px;
+	  font-size: 17px;
+	  padding: 20px;
+	  border: none;
+	  margin-left: 10px;
+	  letter-spacing: 10px;
 	  opacity: .75;
 	}
 	#roadmap:hover,
@@ -138,8 +137,8 @@ footer {
 		transition: 1s;
 	}
 	#github {
-		margin-top: 40px;
-		width: 30px;
+		margin-top: 35px;
+		width: 25px;
 	}
 
 
@@ -196,13 +195,14 @@ footer {
 }
 	
 	#roadmap {
-	  font-size: 11px;
+	  font-size: 12px;
 	  padding: 12px; 
+	  margin-left: 5px;
+	  letter-spacing: 5px;	  
 	}	
 	
 	#github {
-		margin-top: 35px;
-		width: 25px;
+		margin-top: 30px;
 	}
 	
 	
