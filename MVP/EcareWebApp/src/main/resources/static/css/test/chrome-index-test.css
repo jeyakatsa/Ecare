@@ -129,6 +129,9 @@ footer {
 	  opacity: .3;
 	}	
 
+	#contact {
+		opacity: .75;	
+	}
 	#contact:hover {
 		opacity: .3;
 	    cursor: pointer;
