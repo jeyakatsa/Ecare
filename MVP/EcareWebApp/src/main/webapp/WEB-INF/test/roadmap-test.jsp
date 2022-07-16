@@ -60,7 +60,7 @@
 		<button id="wrapper-content">
 			<p id="milestone">R&D Work 
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>			
 			<p id="status">Ongoing
 			</p>
@@ -78,9 +78,9 @@
 		<button id="wrapper-content">
 			<p id="milestone">Prototype
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>			
-			<p id="status">Completed & Launched
+			<p id="status">Completed | Launched
 			</p>
 		</button>
 		</form>	
@@ -90,9 +90,9 @@
 		<button id="wrapper-content">
 			<p id="milestone">Prototype Guide
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>	
-			<p id="status">Completed & Launched
+			<p id="status">Completed | Launched
 			</p>				
 		</button>
 		</form>
@@ -108,7 +108,7 @@
 		<button id="wrapper-content">
 			<p id="milestone">Base dApp
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>			
 			<p id="status">Research & Development
 			</p>
@@ -119,14 +119,14 @@
 	 
 	 <section id="wrapper-date">
 	
-		<h3>March 2023 - Aug 2023</h3>
+		<h3>Mar 2023 - Aug 2023</h3>
 	
 	 <!-- change link below after test -->
 		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
 		<button id="wrapper-content">
 			<p id="milestone">Internal Market API
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>			
 			<p id="status">Announced
 			</p>
@@ -144,7 +144,7 @@
 		<button id="wrapper-content">
 			<p id="milestone">Full dApp
 			</p>
-			<p id="status-title">Status:
+			<p id="status-title">Status
 			</p>			
 			<p id="status">Announced
 			</p>

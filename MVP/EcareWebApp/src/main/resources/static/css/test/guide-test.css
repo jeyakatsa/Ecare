@@ -8,15 +8,15 @@ body {
   background-color: #e7e6f2;
 
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 700px) {
   body {
     -webkit-text-size-adjust: none;
   }
 }
 		
 #wrapper {
-	width: 600px;
-	height: 1600px;
+	width: 530px;
+	height: 1500px;
 	padding: 30px;
 	margin-top: 30px;
 	border-radius: 5px;
@@ -55,13 +55,13 @@ body {
 	  border: none;
 	  border-radius: 30px;
 	  height: 5px;
-	  width: 350px;
+	  width: 300px;
 	  opacity: .3;
 	}	
 	#about {
 		height: 40px;
 		margin-top: -5px;
-		width: 350px;
+		width: 330px;
 	    margin-left: auto;
 	    margin-right: auto;	
 	    color: gray;
@@ -104,7 +104,7 @@ body {
 		    margin-bottom: 10px;
 			font-weight: 600;	
 			opacity: .5;
-			width: 400px;
+			width: 350px;
 		}	
 		#prototype {
 		  background: rgb(169, 166, 211);
@@ -160,20 +160,20 @@ body {
 			margin: auto;
 			font-weight: 600;	
 			opacity: .75;
-			width: 400px;
+			width: 350px;
 		}
 		#connect-wallets {
 			border-radius: 5px;
-			width: 500px;
+			width: 400px;
 			border: none;
 			box-shadow: 0px 5px 10px 0px #c9c7e2;				
 		}
 	
-@media screen and (max-width: 815px){
+@media screen and (max-width: 700px){
 	
 #wrapper {
-	width: 350px;
-	height: 1160px;
+	width: 300px;
+	height: 1230px;
 }	
 	#img {
 	  margin-top: 20px;
@@ -189,13 +189,14 @@ body {
 	  margin-top: -2px;
 	  height: 5px;
 	  border-radius: 30px;
-	  width: 230px;
+	  width: 170px;
 	}	
 	#about {
-		width: 200px;
+		width: 150px;
 	    font-size: 13px;	
 	}
 	#step-one {
+	    padding-top: 30px;
 		padding-bottom: 40px;
 	}	
 	#step-two, #step-three,
@@ -209,12 +210,12 @@ body {
 	}
 	#describe-prototype{
 		font-size: 11px;
-		width: 260px;
+		width: 200px;
 		margin-bottom: 0px;
 	}		
 	#prototype {
 	  font-size: 11px;
-	  width: 120px;
+	  width: 100px;
 	  padding: 17px;
 	  border-radius: 5px;
 	}
@@ -229,17 +230,17 @@ body {
 	}		
 	#describe{
 		font-size: 11px;
-		width: 260px;
+		width: 200px;
 		padding-bottom: 10px;
 	}	
 	#describe-notice{
 		font-size: 11px;
 		padding-top: 10px;		
-		width: 260px;
+		width: 200px;
 		padding-bottom: 0px;
 	}	
 	
 	#connect-wallets {
-		width: 280px;
+		width: 260px;
 	}
 }

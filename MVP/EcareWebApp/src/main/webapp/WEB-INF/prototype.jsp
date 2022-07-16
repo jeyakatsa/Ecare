@@ -94,8 +94,8 @@
               <errors id="errors" path="email"></errors>
               <input id="input" type="tel" 
               		onkeypress="return isNumberKey(event,this)"
-                  	pattern="[0-9]*"
-                  	inputmode="numeric"	
+                  	pattern="^[0-9]*[.]?[0-9]*"
+                  	inputmode="decimal"	 
               		step="any" value="0.00"/>
             </div>
 
@@ -139,8 +139,8 @@
               <br>
               <input id="input" type="tel" 
               		onkeypress="return isNumberKey(event,this)"
-                  	pattern="[0-9]*"
-                  	inputmode="numeric"	
+                  	pattern="^[0-9]*[.]?[0-9]*"
+                  	inputmode="decimal"	 	
               		step="any" value="0.00"/>
             </div>										
             

@@ -621,10 +621,10 @@
             <div class="form-group-exchange">
               <label id="label">Exchange Tokens</label>						
               <br>
-              <input id="input-one" type="tel" 
+              <input id="input-one" type="text" 
               		onkeypress="return isNumberKey(event,this)"
-                  	pattern="[0-9]*"
-                  	inputmode="numeric"	
+                  	pattern="^[0-9]*[.]?[0-9]*"
+                  	inputmode="decimal"	
               		step="any" value="1.01" />
             </div>	
 	
@@ -675,8 +675,8 @@
               <br>
               <input id="input-two" type="tel" 
               		onkeypress="return isNumberKey(event,this)"
-                  	pattern="[0-9]*"
-                  	inputmode="numeric"	       
+                  	pattern="^[0-9]*[.]?[0-9]*"
+                  	inputmode="decimal"	      
               		step="any" value="1.01"/>
             </div>										
             

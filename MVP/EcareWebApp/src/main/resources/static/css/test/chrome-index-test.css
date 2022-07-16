@@ -111,6 +111,8 @@ footer {
 }
 
 	#roadmap {
+	margin: auto;
+	text-align: center;
 	  background: #1f1f1f;
 	  text-decoration: none;
 	  color: white;
