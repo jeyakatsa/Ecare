@@ -499,20 +499,28 @@
 				else if (connectedWalletOne == true && connectedWalletTwo == true){
 					
 					var walletOneBalance = 100000.00;
+					var walletOneTokens = 100.00;
+					var walletOneInput = parseFloat(document.getElementById('input-one').value);
+					var walletOneTokenValue = (walletOneBalance / walletOneTokens);
+					var walletOneToTwoBalanceAdd = (walletOneTokenValue * walletOneInput);
+					
+					var walletTwoBalance = 90000.00;
+					var walletTwoTokens = 90.00;
+					var walletTwoInput = parseFloat(document.getElementById('input-two').value);
+					var walletTwoTokenValue = (walletTwoBalance / walletTwoTokens);
+					var walletTwoToOneBalanceAdd = (walletTwoTokenValue * walletTwoInput);
+					
 	 				var walletOneFormat = new Intl.NumberFormat('en-US',
 	 		 				{ minimumFractionDigits: 2 }).format(walletOneBalance);
 					document.getElementById('balance-one-connected-value').innerHTML = 
 	 					walletOneFormat;
-					var walletOneTokens = 100.00;
 	 				document.getElementById('tokens-one-connected-value').innerHTML = 
 	 					walletOneTokens.toFixed(2);
- 					
-					var walletTwoBalance = 90000.00;
+
 	 				var walletTwoFormat = new Intl.NumberFormat('en-US',
 	 		 				{ minimumFractionDigits: 2 }).format(walletTwoBalance);
 					document.getElementById('balance-two-connected-value').innerHTML = 
 						walletTwoFormat;
-					var walletTwoTokens = 90.00;
 	 				document.getElementById('tokens-two-connected-value').innerHTML = 
 	 					walletTwoTokens.toFixed(2);
  					
