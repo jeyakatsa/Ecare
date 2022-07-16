@@ -81,9 +81,8 @@
 	      </a>
 	      
 	      <br>
-	      
-	      <!-- Change below link after prototype completion -->	      
-		  <a href="https://github.com/jeyakatsa/monalisa"
+	          
+		  <a href="https://github.com/jeyakatsa/Ecare"
 		      target="_blank"
 		      id="contact">
 		      <img id="github" src="/icons&images/GithubBright.png">

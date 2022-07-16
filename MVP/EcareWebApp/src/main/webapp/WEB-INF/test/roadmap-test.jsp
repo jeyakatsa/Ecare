@@ -46,6 +46,7 @@
 </head>
 	<body>
 	
+<!-- change link below after test -->	
   	<a id="homelink" href="/test">
      	<img id="img" src="/icons&images/guideIcon.png"/>	  
   	</a>	
@@ -55,8 +56,7 @@
 	
 		<h3>Present</h3>
 	
-	<!-- change link below after test -->
-		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/R%26D">
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/Ecare/tree/main/R%26D">
 		<button id="wrapper-content">
 			<p id="milestone">R&D Work 
 			</p>
@@ -103,8 +103,7 @@
 	
 		<h3>Aug 2022 - Jan 2023</h3>
 	
-	<!-- change link below after test -->
-		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/R%26D">
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/Ecare/tree/main/R%26D">
 		<button id="wrapper-content">
 			<p id="milestone">Base dApp
 			</p>
@@ -121,8 +120,7 @@
 	
 		<h3>Feb 2023 - Jul 2023</h3>
 	
-	 <!-- change link below after test -->
-		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/Ecare/tree/main/MVP">
 		<button id="wrapper-content">
 			<p id="milestone">Internal Market API
 			</p>
@@ -139,8 +137,7 @@
 	
 		<h3>Aug 2023 - Aug 2025</h3>
 	
-	 <!-- change link below after test -->
-		<form method="get" target="_blank" action="https://github.com/jeyakatsa/monalisa/tree/main/MVP">
+		<form method="get" target="_blank" action="https://github.com/jeyakatsa/Ecare/tree/main/MVP">
 		<button id="wrapper-content">
 			<p id="milestone">Full dApp
 			</p>
@@ -155,8 +152,7 @@
 	
 		 <footer>
 	      
-	      <!-- Change below link after prototype completion -->
-		  <a href="https://github.com/jeyakatsa/monalisa"
+		  <a href="https://github.com/jeyakatsa/Ecare"
 		      target="_blank"
 		      id="contact">
 		      <img id="github" src="/icons&images/GithubBright.png">

@@ -62,7 +62,7 @@
       </a>
       
       <footer>
-		  <a href="https://github.com/jeyakatsa/monalisa"
+		  <a href="https://github.com/jeyakatsa/Ecare"
 		      target="_blank"
 		      id="contact">
 		      <img id="github" src="/icons&images/GithubDark.png">
