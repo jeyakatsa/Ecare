@@ -77,8 +77,7 @@
       
 	 <footer>
 	 	  	     <!-- Change below link after test -->
-	      <a href="/roadmap-test" id="roadmap">
-	      <span id="roadmap-lettering"> Roadmap</span>
+	      <a href="/roadmap-test" id="roadmap">Roadmap
 	      </a>
 	      
 	      <br>
