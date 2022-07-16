@@ -1,0 +1,247 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #e7e6f2;
+
+}
+@media screen and (max-width: 700px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+		
+#wrapper {
+	width: 530px;
+	height: 1500px;
+	padding: 30px;
+	margin-top: 30px;
+	border-radius: 5px;
+	margin-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f8f8fc;
+    box-shadow: 0px 5px 25px -5px rgb(169, 166, 211);
+}	
+
+	#homelink {
+      text-decoration: none;	
+	}
+	#img {
+	  margin-top: 20px;
+	  width: 22px;
+	  margin-left: auto;
+	  margin-right: auto;	
+	  margin-bottom: -9px;
+	}
+	#img:hover {
+	  opacity: .4;
+	  transition: 1s;
+	  cursor: pointer;
+	}
+	span {
+		color: black;
+		font-size: 35px;
+		margin-left: 12px;
+		letter-spacing: -1px;
+		font-weight: 600;
+		opacity: .6;
+	}	
+	hr {
+	  background-color: silver;
+	  margin-top: -4px;
+	  border: none;
+	  border-radius: 30px;
+	  height: 5px;
+	  width: 300px;
+	  opacity: .3;
+	}	
+	#about {
+		height: 40px;
+		margin-top: -5px;
+		width: 330px;
+	    margin-left: auto;
+	    margin-right: auto;	
+	    color: gray;
+	    font-size: 13px;	
+	    font-weight: 600;
+	    line-height: 15px;	  
+	    opacity: .7; 
+	}
+	
+	
+	#step-one {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 60px;	
+	}
+	
+	#step-two, #step-three,
+	#step-four, #step-five {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;	
+	}
+		#step-one-title {
+			font-size: 25px;
+			color: #6c6c6c;
+			margin-top: 0px;
+			margin-bottom: -15px;
+			letter-spacing: -1px;
+		}	
+		#describe-prototype{
+			font-size: 14px;
+			color: black;
+			padding: 20px;
+			line-height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+		    margin-bottom: 10px;
+			font-weight: 600;	
+			opacity: .5;
+			width: 350px;
+		}	
+		#prototype {
+		  background: rgb(169, 166, 211);
+		  text-decoration: none;
+		  color: white;
+		  font-weight:600;
+		  font-size: 13px;
+		  padding: 20px;
+		  border: none;
+		  letter-spacing: 1px;
+		  border-radius: 5px;
+		  width: 150px;
+		  box-shadow: 0px 5px 15px 0px rgb(169, 166, 211);
+		}
+		#prototype:hover,
+		#prototype:focus {
+		  opacity: .7;
+		  transition: 1s;
+		  cursor: pointer;
+		}		
+		#step-title {
+			font-size: 25px;
+			color: #6c6c6c;
+			margin-top: 0px;
+			margin-bottom: -10px;
+			letter-spacing: -1px;
+		}
+		#optional{
+			font-size: 15px;
+			color: silver;
+			margin-top: 20px;
+			margin-bottom: -10px;
+			font-weight: 600;	
+		}				
+		#describe{
+			font-size: 14px;
+			color: black;
+			padding: 20px;
+			line-height: 20px;
+			margin: auto;
+			font-weight: 600;	
+			opacity: .5;
+			width: 400px;
+		}
+		#describe-notice{
+			font-size: 14px;
+			color: gray;
+			padding-top: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			line-height: 20px;
+			margin: auto;
+			font-weight: 600;	
+			opacity: .75;
+			width: 350px;
+		}
+		#connect-wallets {
+			border-radius: 5px;
+			width: 400px;
+			border: none;
+			box-shadow: 0px 5px 10px 0px #c9c7e2;				
+		}
+	
+@media screen and (max-width: 700px){
+	
+#wrapper {
+	width: 300px;
+	height: 1210px;
+}	
+	#img {
+	  margin-top: 20px;
+	  width: 17px;
+	  margin-bottom: -9px;
+	}
+	span {
+		margin-left: 7px;
+		font-size: 25px;
+		letter-spacing: -1px;
+	}	
+	hr {
+	  margin-top: -2px;
+	  height: 5px;
+	  border-radius: 30px;
+	  width: 200px;
+	}	
+	#about {
+		width: 180px;
+	    font-size: 13px;	
+	}
+	#step-one {
+	    padding-top: 20px;
+		padding-bottom: 40px;
+	}	
+	#step-two, #step-three,
+	#step-four, #step-five {
+		padding-bottom: 10px;	
+	}	
+	
+	#step-one-title {
+		font-size: 20px;
+		margin-bottom: -17px;		
+	}
+	#describe-prototype{
+		font-size: 11px;
+		width: 200px;
+		margin-bottom: 0px;
+	}		
+	#prototype {
+	  font-size: 11px;
+	  width: 100px;
+	  padding: 17px;
+	  border-radius: 5px;
+	}
+	#step-title {
+		font-size: 20px;
+		margin-bottom: -15px;		
+	}
+	#optional{
+		font-size: 13px;
+		margin-top: 25px;
+		margin-bottom: -10px;
+	}		
+	#describe{
+		font-size: 11px;
+		width: 200px;
+		padding-bottom: 10px;
+	}	
+	#describe-notice{
+		font-size: 11px;
+		padding-top: 10px;		
+		width: 200px;
+		padding-bottom: 0px;
+	}	
+	
+	#connect-wallets {
+		width: 260px;
+	}
+}

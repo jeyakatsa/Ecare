@@ -5,7 +5,7 @@
 <html>
 	<head>
 			<!-- Change below link after test -->
-		<link rel="stylesheet" type="text/css" href="css/test/guide-test.css">	
+		<link rel="stylesheet" type="text/css" href="css/guide.css">	
 			
 		<meta charset="UTF-8">
 		
