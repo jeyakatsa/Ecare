@@ -6,7 +6,9 @@
 	<head>
 			<!-- Change below link after test -->
 		<link rel="stylesheet" type="text/css" href="css/test/chrome-index-test.css">	
-			
+	    <!-- For Twitter/ETC -->
+		<link rel="stylesheet" type="text/css" href="css/test/index-test.css">	
+						
 		<meta charset="UTF-8">
 		
 <!-- Below information for social media sharing and search-engine/browser optimization -->		
