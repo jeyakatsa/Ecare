@@ -15,8 +15,8 @@ public class MainController {
 	
 	
 	@GetMapping("")
-	public String index() {
-		return "index.jsp";
+	public String home() {
+		return "home.jsp";
 	}	
 	
 	@GetMapping("/prototype")
@@ -37,7 +37,7 @@ public class MainController {
 	
 	//Comment out bottom getters after successful tests
 	/*
-	 * @GetMapping("/test") public String test() { return "test/index-test.jsp"; }
+	 * @GetMapping("/test") public String test() { return "test/home-test.jsp"; }
 	 * 
 	 * @GetMapping("/prototype-test") public String prototypeTest() { return
 	 * "test/prototype-test.jsp"; }
