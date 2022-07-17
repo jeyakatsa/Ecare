@@ -5,6 +5,9 @@
 <html>
 	<head>
 			
+		<link rel="stylesheet" type="text/css" href="css/chrome-index.css">	
+		
+	    <!-- For Twitter/ETC -->
 		<link rel="stylesheet" type="text/css" href="css/index.css">	
 			
 		<meta charset="UTF-8">
