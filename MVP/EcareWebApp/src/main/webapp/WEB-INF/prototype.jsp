@@ -230,7 +230,7 @@
 				
 		<link rel="canonical" href="https://ecare.exchange/prototype">
 		
-		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/179379419-14c2f8a6-1d2b-478d-9204-df915ce6c3b8.jpg">	
+		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/179379910-a765a965-e34d-45f1-8394-e5fb2477875c.jpg">	
 		<meta property="og:site_name" content="Ecare">	
 		<meta property="og:type" content="object">				
 		<meta property="og:title" content="Ecare">
@@ -242,7 +242,7 @@
 		<meta property="og:image:height" content="400">
 		
 		<meta name="twitter:title" content="Ecare">
-		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/179379419-14c2f8a6-1d2b-478d-9204-df915ce6c3b8.jpg">
+		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/179379910-a765a965-e34d-45f1-8394-e5fb2477875c.jpg">
 				
 		<meta name="twitter:url" content="https://ecare.exchange/prototype">
 		<meta name="twitter:card" content="summary_large_image">
