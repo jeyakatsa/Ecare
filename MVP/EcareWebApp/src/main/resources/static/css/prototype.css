@@ -3,53 +3,116 @@ body {
   font-family: Arial;
   margin-left: 0%;
   margin-right: 0%;
-  background-color: white;
+  margin-top: 0%;
   margin-bottom: 0%;
+  background-color: #f8f8fc;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 50px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
   body {
     -webkit-text-size-adjust: none;
   }
 }
 
 #img {
-  width: 20px;
-  margin-top: 30px;
+  width: 15px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+#img:hover {
+	cursor: pointer;
+	opacity: .2;
+	transition: 1s;
 }
 
 
 .exchange-grid {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   grid-gap: 20px;
   width: 100%;
-  max-width: 770px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
-  #left-top-wallet, #right-bottom-wallet {
-    width: 300px;
-    background: white;
+  #wallet-one-not-connected,
+   #wallet-two-not-connected {
+    width: 250px;
+    height: 85px;
+    background: #f8f8fc;
     border-radius: 50px;
     padding: 30px;
-    box-shadow: 0px 10px 25px -5px gray;
+    box-shadow: 0px 8px 25px -5px rgb(169, 166, 211);
   }
+ 
 
-  .form-group{
-    margin-top: 10px;
+	  #connect-wallet-one, 
+	  #connect-wallet-two {
+	    background: #f8f8fc;
+	    color: rgb(169, 166, 211);
+	    padding: 15px;
+	    font-size: 13px;
+	    border: none;
+	    height: 60px;
+	    letter-spacing: 0.5px;
+	    font-weight: 600;
+	    margin-top: 10px;
+	    width: 200px;
+	    margin-bottom: 20px;
+	    border-radius: 25px;
+	    box-shadow: 0px 3px 12px -2px rgb(169, 166, 211);
+	    opacity: .9;
+	  }
+	  #connect-wallet-one:hover,
+	  #connect-wallet-two:hover {
+	    cursor: pointer;
+	    background: rgb(44, 44, 44);
+	    color: white;
+	    transition: 2s;
+	    box-shadow: 0px 3px 12px -3px rgb(169, 166, 211);
+	    opacity: 1;
+	  }
+
+  #wallet-one-connected,
+  #wallet-two-connected {
+    width: 250px;
+    background: #f8f8fc;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 0px 10px 25px -5px #8b87c2;
+    -webkit-animation-name: connected;
+	-webkit-animation-duration: 2.00s;
+	animation-name: connected;
+	animation-duration: 2.00s;        
+  }
+   @-webkit-keyframes connected {
+  from {center:0; opacity:0}
+  to {center:0; opacity:1}
+	}
+	
+	@keyframes connected {
+  from {center:0; opacity:0}
+  to {center:0; opacity:1}
+	}  
+	
+.form-group{
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.form-group-tokens{
+    margin-top: 5px;
     margin-bottom: 10px;
   }
 
   #choose-token {
-    background:white;
+    background:#f8f8fc;
     display:inline-flex;
     justify-content: center;
     font-weight: 600;
@@ -57,8 +120,8 @@ body {
     font-size: 12px;
     border-width: 2px;
     width: 100px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     border-radius: 15px;
   }
   .eth{
@@ -90,18 +153,78 @@ body {
   #label{
     color: rgb(149, 149, 149);
     font-family: Arial;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: .8;
+    
   }
-
-  #numbers{
+  
+  
+  #dllr-connected {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  	color: #cfcfcf;
+    font-size: 20px;
+    -webkit-animation-name: dllr;
+	-webkit-animation-duration: 2.00s;
+	animation-name: dllr;
+	animation-duration: 2.00s;        
+  }
+   @-webkit-keyframes dllr {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: #cfcfcf}
+	}
+	
+	@keyframes dllr {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: #cfcfcf}
+	}  
+  #balance-one-connected,
+  #balance-two-connected,
+  #balance-one-connected-value,
+  #balance-two-connected-value {
+    color: gray;
+    margin-left: -6px;
+    font-family: Arial;
+    font-weight: 700;
+    -webkit-animation-name: numbers;
+	-webkit-animation-duration: 2.00s;
+	animation-name: numbers;
+	animation-duration: 2.00s;    
+  }
+  #tokens-one-connected,
+  #tokens-two-connected,
+  #tokens-one-connected-value,
+  #tokens-two-connected-value {
+    margin-top: 0px;
+    margin-bottom: 15px;
     color: gray;
     font-family: Arial;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
+    -webkit-animation-name: numbers;
+	-webkit-animation-duration: 2.00s;
+	animation-name: numbers;
+	animation-duration: 2.00s;       
   }
+  	@-webkit-keyframes numbers {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: gray}
+	}
+	
+	@keyframes numbers {
+	  from {center:0; color: rgb(169, 166, 211)}
+	  to {center:0; color: gray}
+	}  
+  }
+  
+.form-group-exchange{
+  margin-top: -5px;
+  margin-bottom: 10px;
+}  
+  
 
-  #input {
+  input {
     text-align: center;
     margin-top: 5px;
     padding: 20px;
@@ -112,114 +235,151 @@ body {
     border-width: 2px;
     font-weight: 700;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 20px;
     height: 15px;
-    margin-bottom: -40px;
+    margin-bottom: -40px;    
   }
-  #input:focus {
-    outline: none;
-    background-color: rgb(216, 216, 216);
-    transition: 1s;
-  }
-  .form-control:focus{
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  #errors{
-    color: #383838;
-    font-style: bold;
-    font-weight: 800;
-  }
-
-  #connect-wallet {
-    background:white;
-    color: rgb(98, 98, 98);
+	 input:focus
+	  {
+	    cursor: pointer;
+	    outline: none;
+	    background-color: #c8c6e3;
+	    transition: 1s;
+	  }
+  
+   #connected-wallet{
+    background: #ececec;
+    color: gray;
     padding: 15px;
     border: none;
     width: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 0px 5px 12px 0px silver;
-  }
-  #connect-wallet:hover {
-    background: rgb(44, 44, 44);
-    color: white;
-    transition: 2s;
-    box-shadow: 0px 5px 8px 1px white;
-  }
-
-  #wallet-connected {
-    display: none;
-  }
+	box-shadow: 0px 5px 12px 0px white;
+	  -webkit-animation-name: connected-wallet;
+	  -webkit-animation-duration: 1.00s;
+	  animation-name: connected-wallet;
+	  animation-duration: 1.00s;
+	  opacity: .7;
+	}
+	
+	/* Add Animation */
+	@-webkit-keyframes connected-wallet {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
+	}
+	
+	@keyframes connected-wallet {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
+	}
+	
+  	#reset {
+	  opacity: .7;
+	  -webkit-animation-name: connected-refresh;
+		-webkit-animation-duration: 20.00s;
+		animation-name: connected-refresh;
+		animation-duration: 20.00s;  
+	  }
+      
+	   @-webkit-keyframes connected-refresh {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
+		}
+		
+		@keyframes connected-refresh {
+	  from {center:0; opacity:0}
+	  to {center:0; opacity:.7}
+		}  	
   
+	#refresh {
+	  width: 25px;
+	  margin-left: auto;
+	  margin-right: auto; 
+  	}	
+	#refresh:hover {
+	  opacity: .2;
+	  transition: 1s;
+	  cursor: pointer;
+	}
+	
+	#exchange {
+	  margin: auto;
+	  margin-top: 0px;
+	  background: rgb(18, 18, 18);
+	  color: white;
+	  font-weight:700;
+	  font-size: 12px;
+	  letter-spacing: 2px;
+	  padding: 20px;
+	  border: none;
+	  border-radius: 20px;
+	  width: 200px;
+	}
+	#exchange:hover {
+	  background: gray;
+	  color: white;
+	  transition: 1s;
+	  cursor: pointer;
+	}
+	
+	hr {
+	  margin-top: 20px;
+	  background-color: silver;
+	  border: none;
+	  height: 6px;
+	  border-radius: 30px;
+	  width: 80%;
+	  opacity: .4;
+	}
+	
+	#name {
+	  display: inline-flex;
+	  font-size: 10pt;
+	  color: gray;
+	  font-weight: 700;
+	  margin-top: -10px; 
+	  opacity: .8;
+	  margin-bottom: 15px;
+	}
+	
+	#proto-name {
+		color: rgb(169, 166, 211);
+	}
+	
+	p {
+	  margin-right: 10px;
+	  margin-left: 10px;
+	}
+	
+	#guide {
+	  background: rgb(169, 166, 211);
+	  margin-top: 20px;
+	  text-decoration: none;
+	  color: white;
+	  font-weight:600;
+	  font-size: 13px;
+	  padding: 20px;
+	  border: none;
+	  letter-spacing: 1px;
+	  border-radius: 5px;
+	  width: 200px;
+	  box-shadow: 0px 3px 8px 0px rgb(169, 166, 211);
+	}
+	#guide:hover,
+	#guide:focus {
+	  opacity: .7;
+	  transition: 1s;
+	  cursor: pointer;
+	}	
 
-#refresh {
-  width: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#refresh:hover {
-  opacity: .7;
-  transition: 3s;
-}
-
-#exchange {
-  background: rgb(18, 18, 18);
-  color: white;
-  font-weight:700;
-  font-size: 12px;
-  letter-spacing: 2px;
-  padding: 20px;
-  border: none;
-  border-radius: 20px;
-  width: 250px;
-}
-#exchange:hover {
-  background: gray;
-  color: white;
-  transition: 1s;
-}
-
-hr {
-  margin-top: 25px;
-  background-color: silver;
-  border: none;
-  height: 6px;
-  border-radius: 30px;
-  width: 90%;
-  opacity: .4;
-}
-
-#name {
-  display: inline-flex;
-  font-size: 10pt;
-  color: gray;
-  font-weight: 700;
-  margin-top: 5px; 
-  opacity: .8;
-  margin-bottom: 20px;
-}
-
-#proto-name {
-	color: rgb(169, 166, 211);
-}
-
-p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 650px){
+@media screen and (max-width: 690px){
   .exchange-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   #name {
     display: block;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-top: 20px;
   }
 
   #names {

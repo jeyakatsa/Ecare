@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<!-- Change below link after test -->
-		<link rel="stylesheet" type="text/css" href="css/test/roadmap-test.css">	
+			
+		<link rel="stylesheet" type="text/css" href="css/roadmap.css">	
 			
 		<meta charset="UTF-8">
 		
@@ -18,24 +18,24 @@
 		<meta name="viewport" id="viewport" content="width=device-width,user-scalable=yes,initial-scale=1" >
 		
 		<link rel="icon" type="image/x-icon" href="/icons&images/Iconic.ico" sizes="156x156">
-		       <!-- Change below link after test -->	
-		<link rel="canonical" href="https://ecare.exchange/roadmap-test">
+		       
+		<link rel="canonical" href="https://ecare.exchange/roadmap">
 		
-		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">	
+		<meta property="og:image" content="https://user-images.githubusercontent.com/51394348/179379910-a765a965-e34d-45f1-8394-e5fb2477875c.jpg">	
 		<meta property="og:site_name" content="Ecare">	
 		<meta property="og:type" content="object">				
 		<meta property="og:title" content="Ecare">
-				<!-- Change below link after test -->
-		<meta propety="og:url" content="https://ecare.exchange/roadmap-test">
+				
+		<meta propety="og:url" content="https://ecare.exchange/roadmap">
 		<meta property="og:description" content="Ethereum Combinatorial Auction Rate Exchange">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="700">
 		<meta property="og:image:height" content="400">
 		
 		<meta name="twitter:title" content="Ecare">
-		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/169722650-92d9cef2-3288-433d-8a9f-9bebb8911c38.jpg">
-				<!-- Change below link after test -->
-		<meta name="twitter:url" content="https://ecare.exchange/roadmap-test">
+		<meta name="twitter:image" content="https://user-images.githubusercontent.com/51394348/179379910-a765a965-e34d-45f1-8394-e5fb2477875c.jpg">
+				
+		<meta name="twitter:url" content="https://ecare.exchange/roadmap">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:description" content="Ethereum Combinatorial Auction Rate Exchange">
 		<meta name="description" content="Ethereum Combinatorial Auction Rate Exchange">
@@ -46,8 +46,7 @@
 </head>
 	<body>
 	
-<!-- change link below after test -->	
-  	<a id="homelink" href="/test">
+  	<a id="homelink" href="/">
      	<img id="img" src="/icons&images/guideIcon.png"/>	  
   	</a>	
     <span>Roadmap</span>
@@ -73,8 +72,8 @@
 	
 		<h3>Jun 2022 - Jul 2022</h3>
 	
-	<!-- change link below after test -->
-		<form method="get" target="_blank" action="/prototype-test">
+	
+		<form method="get" target="_blank" action="/prototype">
 		<button id="wrapper-content">
 			<p id="milestone">Prototype
 			</p>
@@ -85,8 +84,8 @@
 		</button>
 		</form>	
 		
-	<!-- change link below after test -->
-		<form method="get" target="_blank" action="/guide-test">		
+	
+		<form method="get" target="_blank" action="/guide">		
 		<button id="wrapper-content">
 			<p id="milestone">Prototype Guide
 			</p>

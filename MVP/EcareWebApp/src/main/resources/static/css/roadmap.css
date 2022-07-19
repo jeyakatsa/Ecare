@@ -1,0 +1,204 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #1f1f1f;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+#homelink {
+  text-decoration: none;
+}
+#img {
+  padding-top: 45px;
+  width: 14px;
+  margin-left: auto;
+  margin-right: auto;	
+  margin-bottom: -3px;
+}
+#img:hover {
+  opacity: .4;
+  transition: 1s;
+  cursor: pointer;
+}
+span {
+	color: white;
+	font-size: 20px;
+	margin-left: 15px;
+	letter-spacing: 10px;
+	font-weight: 600;
+	opacity: .8;
+}	
+
+#wrapper-ongoing {
+	width: 550px;
+	height: 360px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: #2d2d2d;
+	border-width: 2px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 0px 5px 25px -5px #161616;
+}
+
+#wrapper-date-top {
+	width: 550px;
+	height: 570px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: #2d2d2d;
+	border-width: 2px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 0px 5px 25px -5px #161616;
+}	
+#wrapper-date {
+	width: 550px;
+	height: 360px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: #2d2d2d;
+	border-width: 2px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 0px 5px 25px -5px #161616;
+}	
+
+h3 {
+	color: white;
+	font-size: 12px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	margin: auto;
+	letter-spacing: 5px;
+	font-weight: 600;
+	opacity: .8;
+}	
+
+	#wrapper-content {
+		width: 350px;
+		height: 180px;
+		color: white;
+		padding: 30px;
+		border: none;
+		margin-top: 20px;
+		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #3d3d3d;
+	    box-shadow: 0px 5px 25px -5px #161616;
+	}
+	#wrapper-content:hover,
+	#wrapper-content:focus{
+		opacity: .3;
+		transition: 1s;
+	    cursor: pointer;		
+	}
+		#milestone {
+			opacity: .8;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: -10px;
+			letter-spacing: 1px;
+			
+		}	
+		#status-title {
+			opacity: .45;
+			font-size: 15px;
+			margin-bottom: -10px;
+			letter-spacing: 1px;			
+		}	
+		#status {
+			opacity: .65;
+			font-size: 14px;
+			letter-spacing: 1px;
+			padding-bottom: 10px;
+		}			
+
+footer {
+	text-decoration: none;
+	padding-top: 50px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+}
+
+	#contact:hover {
+		opacity: .3;
+		cursor: pointer;
+		transition: 1s;
+	}
+	#github {
+		width: 25px;
+		opacity: .9;
+	}
+
+@media screen and (max-width: 700px){
+	
+#img {
+  width: 12px;
+  margin-bottom: -4px;
+}
+
+span {
+	font-size: 15px;
+	margin-left: 10px;
+	letter-spacing: 7px;
+}	
+
+#wrapper-ongoing {
+	width: 300px;
+    height: 350px;
+}	
+
+#wrapper-date-top {
+	width: 300px;
+    height: 550px;
+}	
+
+#wrapper-date {
+	width: 300px;	
+    height: 350px;
+}	
+
+	h3 {
+		font-size: 9px;	
+	}	
+	
+	#wrapper-content {
+		width: 160px;
+		height: 180px;
+	}	
+		#milestone {
+			font-size: 14px;
+			margin-bottom: -8px;
+			
+		}	
+		#status-title {
+			font-size: 12px;
+			margin-bottom: -5px;						
+		}	
+		#status {
+		line-height: 15px;
+			font-size: 11px;
+		}
+	
+footer {
+	height: 40px;
+}
+	
+	#github {
+		width: 20px;
+	}	
