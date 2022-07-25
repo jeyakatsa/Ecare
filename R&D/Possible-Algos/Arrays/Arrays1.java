@@ -25,7 +25,7 @@ public class Arrays1 {
   }
 
 
-  //Container with Most Water
+  //Container with Most Water Algorithm
   public int maxArea(int[] height) {
     int maxarea = 0;
     int left = 0; 
