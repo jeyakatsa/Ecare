@@ -3,11 +3,11 @@
 # [ECARE](https://ecare.exchange)
 ## Ethereum Combinatorial Auction Rate Exchange
 
-#### ECARE, is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate a self-sustaining exchange rate ecosystem immune to bear-markets. 
+#### ECARE, is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate a self-sustaining exchange rate ecosystem for public good tokens. 
 
 ### Motivation:
 
-Bear markets are insufficient for public goods operating under Ethereum since ERC-20 tokens in their current forms are mostly used as investment contracts needing consistent investment to maintain their values.
+Bear markets are insufficient for public good tokens operating under Ethereum since ERC-20 tokens in their current forms are mostly used as investment contracts needing consistent investment to maintain their values.
 
 ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" but rather, only exchanged or "swapped" via AMMs (Automated Market Makers like Uniswap or an ECARE AMM). 
 
@@ -15,7 +15,7 @@ ECARE tokens *(ERC-20 tokens using ECARE)* are not to be "bought and sold" but r
 
 ### Mechanics:
 
-Unlike other exchange rate systems, ECARE's system isn't based on the market caps of the tokens, but is based solely on wallet balances and tokens. Thus, the mechanics that helps it remain immune to bear-markets are composed from its cross-pollination exchange system. 
+Unlike other exchange rate systems, ECARE's system isn't based on the market caps of the tokens, but is based solely on wallet balances and tokens. Thus, the mechanics that helps its tokens rise and maintain value are composed from its cross-pollination exchange system. 
 
 #### Cross-pollination exchange system:
 
