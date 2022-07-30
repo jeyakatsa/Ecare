@@ -56,19 +56,19 @@ body {
 	  border: none;
 	  border-radius: 30px;
 	  height: 5px;
-	  width: 300px;
+	  width: 280px;
 	  opacity: .3;
 	}	
 	#about {
 		height: 40px;
-		margin-top: -5px;
+		margin-top: -3px;
 		width: 330px;
 	    margin-left: auto;
 	    margin-right: auto;	
 	    color: gray;
 	    font-size: 13px;	
 	    font-weight: 600;
-	    line-height: 15px;	  
+	    line-height: 16px;	  
 	    opacity: .7; 
 	}
 	
@@ -190,7 +190,7 @@ body {
 	  margin-top: -2px;
 	  height: 5px;
 	  border-radius: 30px;
-	  width: 200px;
+	  width: 170px;
 	}	
 	#about {
 		width: 180px;
