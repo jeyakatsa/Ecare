@@ -1,4 +1,4 @@
-## ECARE MVP (Roadmap) 
+## ECARE Roadmap 
 
 - Ongoing: 
   - [X] Research & Development *[[Ongoing]](https://github.com/jeyakatsa/ecare/tree/main/R%26D)*
