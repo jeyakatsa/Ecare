@@ -108,7 +108,7 @@
 			</p>
 			<p id="status-title">Status
 			</p>			
-			<p id="status">In Development
+			<p id="status">Development
 			</p>
 		</button>
 		</form>	
