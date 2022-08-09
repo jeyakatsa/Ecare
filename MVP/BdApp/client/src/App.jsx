@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1 id="Title">
-        Place Holder
+        Basic Amm
       </h1>
     </div>
   )
