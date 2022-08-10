@@ -21,7 +21,7 @@ public class Arrays1 {
     return null;
     }
     //O(n) Hash Map
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSums(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
