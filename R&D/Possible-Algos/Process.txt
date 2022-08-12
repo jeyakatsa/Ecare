@@ -1,4 +1,4 @@
-Attempt: Arrays: 75 [1]
+Attempt: Arrays: 75 [2]
 Attempt: HashTables/Map: 45 [0]
 Attempt: Dynamic Programming: 30 [0]
 Attempt: Trees: 25 [0]
