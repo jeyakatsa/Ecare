@@ -293,7 +293,24 @@ public class Arrays1 {
 
         // output
         return heap.poll();        
-  }                      
+    } 
+    
+    //Dot Product of Two Sparse Vectors
+    private int[] array;
+
+    Arrays1(int[] nums) {
+        array = nums;
+    }
+
+    public int dotProduct(Arrays1 vec) {
+        int result = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            result += array[i] * vec.array[i];
+        }
+        return result;
+    }      
+  
        
 
 }
