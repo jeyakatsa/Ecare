@@ -57,7 +57,7 @@
       <hr>
 	
 	  <p id="about">
-	  	An exchange system for public good tokens
+	  	An exchange system immune to bear-markets
 	  </p>
 	  
 	  <div id="step-one">
