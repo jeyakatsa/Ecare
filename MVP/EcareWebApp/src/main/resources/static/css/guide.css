@@ -56,7 +56,7 @@ body {
 	  border: none;
 	  border-radius: 30px;
 	  height: 5px;
-	  width: 280px;
+	  width: 300px;
 	  opacity: .3;
 	}	
 	#about {
@@ -190,7 +190,7 @@ body {
 	  margin-top: -2px;
 	  height: 5px;
 	  border-radius: 30px;
-	  width: 170px;
+	  width: 160px;
 	}	
 	#about {
 		width: 180px;
