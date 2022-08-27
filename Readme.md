@@ -3,7 +3,7 @@
 # [ECARE](https://ecare.exchange)
 ## Ethereum Combinatorial Auction Rate Exchange
 
-Ecare was born out of the ashes of a cryptocurrency startup founded in 2019 to lift storytellers out of poverty; Novestic. Novestic gained 600+ users pre-product release, but needed a specific infrastructure in order for it to maintain a successful ecosystem. Thus after years of research and development, Ecare was born.
+Ecare was born out of the ashes of a cryptocurrency ecosystem in 2019 created to lift artists & storytellers out of poverty; Novestic. Though Novestic gained 600+ users pre-product release, it needed a specific infrastructure in order for it to maintain a successful ecosystem that did not yet exist. Thus after years of research and development, Ecare was born.
 
 #### ECARE, is an Ethereum Combinatorial Auction Rate Exchange meant to facilitate a self-sustaining exchange rate ecosystem for public good tokens. 
 
