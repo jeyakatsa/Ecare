@@ -1,13 +1,13 @@
 const main = async () => {
 
 
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const Transactions = await hre.ethers.getContractFactory("Transactions");
+  const transactions = await Transactions.deploy("Hello, Hardhat!");
 
-  await greeter.deployed();
+  await transactions.deployed();
 
   console.log(
-    "Greeter deployed to:", greeter.address
+    "Transactions deployed to: ", transactions.address
   );
 }
 
@@ -21,3 +21,5 @@ const runMain = async () => {
     process.exit(1);
   }
 }
+
+runMain();
