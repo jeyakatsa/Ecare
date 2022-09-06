@@ -1,6 +1,11 @@
-require("@nomicfoundation/hardhat-toolbox");
+require('@nomiclabs/hardhat-waffle');
 
-/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.9",
+  solidity: "0.8.0",
+  networks: {
+    ropsten: {
+      url: 'to be added'
+      //accounts: [ 'to be added' ]
+    }
+  }
 };
