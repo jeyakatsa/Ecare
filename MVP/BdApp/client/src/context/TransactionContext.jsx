@@ -19,5 +19,26 @@ const getEtheremContract = () => {
     console.log({
         provider,
         signer,
+        transactionContract
     })
+
+    export const TransactionProvider = ({ children }) => {
+
+        const checkIfWalletIsConnected = async () => {
+            if(!ethereum) return alert("Please install metamask");
+
+            const accounts = await ethereum.request({ method: 'ethe_accounts' });
+
+            console.log(accounts);
+        }
+
+        const connectWallet = async () => {
+            try {
+                if(!ethereum) return alert("Please install metamask");
+            } catch (error) {
+
+            }
+        }
+
+    }
 }
