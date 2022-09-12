@@ -1,6 +1,9 @@
 import { Loader, Services, Transactions } from './components';
 import './App.css'
 
+import { TransactionContext } from '../context/TransactionContext';
+
+
 function App() {
 
   return (
