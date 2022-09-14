@@ -1,3 +1,5 @@
+import React, { useContext } from 'react';
+
 import { Loader, Services, Transactions } from './components';
 import './App.css'
 
