@@ -30,6 +30,15 @@ export const TransactionProvider = ({ children }) => {
 
         const accounts = await ethereum.request({ method: 'ethe_accounts' });
 
+        if(accounts.length) {
+            setCurrentAccount(accounts[0]);
+
+            // getAllTransactions();
+        }
+        else {
+            console.log('No account found');
+        }
+
         console.log(accounts);
     }
 
