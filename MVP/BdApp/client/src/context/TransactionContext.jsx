@@ -56,6 +56,20 @@ export const TransactionProvider = ({ children }) => {
         }
     }
 
+    const sendTransaction = async () => {
+        try {
+
+        } catch (error) {
+            console.log(error);
+
+            throw new Error("No ethereum object.")
+        }
+    }
+
+    useEffect(() => {
+        checkIfWalletIsConnected();
+    }, []);
+
     return (
         <TransactionContext.Provider value={{ connectWallet }}>
             {children}
