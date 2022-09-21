@@ -2,6 +2,7 @@ import React, {useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 
 import{ contractABI, contractAddress } from '.../utils/constants';
+import { forwardRef } from 'react';
 
 export const TransactionContext = React.createContext();
 
@@ -24,6 +25,14 @@ const getEtheremContract = () => {
 }
 
 export const TransactionProvider = ({ children }) => {
+
+    const [currentAccount, setCurrentAccount] = useState('');
+    const [formData, setFormData] = useState({ 
+        addressTo: '',
+        amount: '',
+        keyword: '',
+        message: ''
+    });
 
     const checkIfWalletIsConnected = async () => {
         if(!ethereum) return alert("Please install metamask");
