@@ -34,6 +34,10 @@ export const TransactionProvider = ({ children }) => {
         message: ''
     });
 
+    const handleChange = (e, name) => {
+        setFormData((prevState) => ({...prevState, [name]: e.target.value}));
+    }
+
     const checkIfWalletIsConnected = async () => {
         if(!ethereum) return alert("Please install metamask");
 
