@@ -1,12 +1,13 @@
-import React, { useContext } from 'react';
-
-import { Loader, Services, Transactions } from './components';
-import './App.css'
-
-import { TransactionContext } from '../context/TransactionContext';
-
+import React, {useEffect, useState } from 'react';
 
 function App() {
+
+  const { 
+    connectWallet, 
+    currentAccount,
+    formData,
+    setFormData,
+    handleChange } = useContext(TransactionContext);
 
   return (
     <div className="App">
