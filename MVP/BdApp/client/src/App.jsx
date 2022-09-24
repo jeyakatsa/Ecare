@@ -9,6 +9,17 @@ function App() {
     setFormData,
     handleChange } = useContext(TransactionContext);
 
+  const handleSubmit = () => {
+    const {
+      addressTo,
+      amount,
+      keyword,
+      message
+    } = formData;
+
+    e.preventDefault();
+  }  
+
   return (
     <div className="App">
       <h1 id="Title">
