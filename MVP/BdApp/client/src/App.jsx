@@ -18,6 +18,10 @@ function App() {
     } = formData;
 
     e.preventDefault();
+
+    if(!addressTo || !amount || !keyword || !message) return;
+
+    sendTransaction();
   }  
 
   return (
