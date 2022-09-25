@@ -72,7 +72,10 @@ export const TransactionProvider = ({ children }) => {
     const sendTransaction = async () => {
         try {
 
-            if(!ethereum) return alert("Please install metamask");            
+            if(!ethereum) return alert("Please install metamask");
+            
+            const { addressTo, amount, keyword, message } = formData;
+            getEtheremContract();
 
         } catch (error) {
             console.log(error);
