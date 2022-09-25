@@ -9,7 +9,7 @@ function App() {
     setFormData,
     handleChange } = useContext(TransactionContext);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     const {
       addressTo,
       amount,

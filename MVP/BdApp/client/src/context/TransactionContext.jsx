@@ -17,11 +17,12 @@ const getEtheremContract = () => {
         signer
     );
 
-    console.log({
-        provider,
-        signer,
-        transactionContract
-    })
+    return transcactionContract;
+    // console.log({
+    //     provider,
+    //     signer,
+    //     transactionContract
+    // })
 }
 
 export const TransactionProvider = ({ children }) => {
@@ -75,7 +76,7 @@ export const TransactionProvider = ({ children }) => {
             if(!ethereum) return alert("Please install metamask");
             
             const { addressTo, amount, keyword, message } = formData;
-            getEtheremContract();
+            const transactionContract = getEtheremContract();
 
         } catch (error) {
             console.log(error);
