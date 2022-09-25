@@ -9,20 +9,6 @@ function App() {
     setFormData,
     handleChange } = useContext(TransactionContext);
 
-  const handleSubmit = (e) => {
-    const {
-      addressTo,
-      amount,
-      keyword,
-      message
-    } = formData;
-
-    e.preventDefault();
-
-    if(!addressTo || !amount || !keyword || !message) return;
-
-    sendTransaction();
-  }  
 
   return (
     <div className="App">
