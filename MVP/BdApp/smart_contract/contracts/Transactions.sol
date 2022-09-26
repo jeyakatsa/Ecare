@@ -22,7 +22,22 @@ contract Transactions {
         uint256 timestamp;
         string keyword;
     }
-    
+
+    TransferStruct[] transactions;
+
+    function addToBlockchain() public {
+
+    }
+
+    function getAllTransactions() public view returns (
+        TransferStruct[] memory) {
+        // return transactions
+    }
+
+    function getTransactionCount() public view returns (uint256) {
+        // return transactionCount
+    }
+
 
 
 
