@@ -4,6 +4,9 @@ import {SiEthereum} from 'react-icons/si';
 import {BsInfoCircle} from 'react-icons/bs';
 
 
+import {TransactionContext} from '../context/TransactIonContext';
+import {Loader} from './';
+
 function App() {
 
   const { 
