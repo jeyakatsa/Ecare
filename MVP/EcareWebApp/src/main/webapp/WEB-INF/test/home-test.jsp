@@ -73,22 +73,47 @@
 	      </a>
 	  
 	  </div>
-
-      
-	 <footer>
-	 	  	     <!-- Change below link after test -->
-	      <a href="/roadmap-test" id="roadmap">Roadmap
-	      </a>
-	      
-	      <br>
-	          
-		  <a href="https://github.com/jeyakatsa/Ecare"
-		      target="_blank"
-		      id="contact">
-		      <img id="github" src="/icons&images/GithubBright.png">
-		  </a>  	
+	  
+	  <div id="about">
+	  
+		  <h3 id="title">About</h3>	  
+	  
+		  <p id="title">Ecare is the infrastructure created
+		  to house an ecosystem to lift storytellers 
+		  out of poverty.</p>
 		  
-	</footer>
+		  <section id="ecosystem">
+		  
+		  	 <img class="icon" src="/icons&images/Icon.png"/>
+		  
+			  <h3 id="title">Ecosystem</h3>
+			  
+			  <h4>Coming Soon</h4>
+	
+		 </section>
+	
+	      
+		 <section id="infrastructure">
+		 
+		 	  <img class="icon" src="/icons&images/Icon.png"/>
+		  
+			  <h3 id="title">Infrastructure</h3>
+		 	  	     <!-- Change below link after test -->
+		 	  	     
+		      <a href="/roadmap-test" id="roadmap">Roadmap
+		      </a>
+		      
+		      <br>
+		          
+			  <a href="https://github.com/jeyakatsa/Ecare"
+			      target="_blank"
+			      id="contact">
+			      <img id="github" src="/icons&images/GithubBright.png">
+			  </a>  	
+			  
+		</section>		  
+
+	 </div>
 	
 	</body>
 </html>

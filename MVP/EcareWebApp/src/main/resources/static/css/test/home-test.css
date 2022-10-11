@@ -100,7 +100,7 @@ body {
 		
 
 	
-footer {
+#infrastructure {
 	text-decoration: none;
 	padding-top: 43px;
 	width: 100%;
@@ -189,7 +189,7 @@ footer {
 	  margin-top: 10px;
 	}
 	
-	footer {
+	#infrastructure {
 		padding-top: 37px;
 		height: 120px;
 	}
