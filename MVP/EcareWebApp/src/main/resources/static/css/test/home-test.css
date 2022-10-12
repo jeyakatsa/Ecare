@@ -100,46 +100,91 @@ body {
 		
 
 	
-#infrastructure {
+#about {
 	text-decoration: none;
 	padding-top: 43px;
 	width: 100%;
-	height: 130px;
+	padding-bottom: 40px;
 	background-color: #1f1f1f;
 }
 
-	#roadmap {
-	  background: #1f1f1f;
-	  text-decoration: none;
-	  color: white;
-	  font-weight:600;
-	  font-size: 13px;
-	  padding: 20px;
-	  border: solid;
-	  border-color: silver;
-	  border-width: 2px;
-	  border-radius: 3px;
-	  opacity: .75;
+	#ecosystem {
+		margin-left: auto;
+	    margin-right: auto;
+		width: 500px;
+		padding: 30px;
+		border-radius: 5px;
+	    background: linear-gradient(181deg, #c21f02, #b3c202, #02c21c, #1902c2, #c202b1, #c26b02);
+	    background-size: 1200% 1200%;
+	
+	    -webkit-animation: AnimationName 19s ease infinite;
+	    -moz-animation: AnimationName 19s ease infinite;
+	    animation: AnimationName 19s ease infinite;
 	}
-	#roadmap:hover,
-	#roadmap:focus {
-	  transition: 1s;
-	  cursor: pointer;
-	  opacity: .3;
-	}	
+	
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:51% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:51% 0%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:51% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:51% 0%}
+	}
+	@keyframes AnimationName {
+	    0%{background-position:51% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:51% 0%}
+	}
+	
+	#infrastructure {
+		margin-left: auto;
+	    margin-right: auto;
+		width: 500px;
+		background-color: #f8f8fc;
+		padding: 30px;
+		border-radius: 5px;
+	}
 
-	#contact {
-		opacity: .75;	
-	}
-	#contact:hover {
-		opacity: .3;
-	    cursor: pointer;
-		transition: 1s;
-	}
-	#github {
-		margin-top: 45px;
-		width: 30px;
-	}
+		.eco-icon, .infra-icon {
+		  width: 40px;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	
+		#roadmap {
+		  background: #1f1f1f;
+		  text-decoration: none;
+		  color: white;
+		  font-weight:600;
+		  font-size: 13px;
+		  padding: 20px;
+		  border: solid;
+		  border-color: silver;
+		  border-width: 2px;
+		  border-radius: 3px;
+		  opacity: .75;
+		}
+		#roadmap:hover,
+		#roadmap:focus {
+		  transition: 1s;
+		  cursor: pointer;
+		  opacity: .3;
+		}	
+	
+		#contact {
+			opacity: .75;	
+		}
+		#contact:hover {
+			opacity: .3;
+		    cursor: pointer;
+			transition: 1s;
+		}
+		#github {
+			margin-top: 45px;
+			width: 30px;
+		}
 
 
 

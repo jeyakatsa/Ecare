@@ -76,17 +76,17 @@
 	  
 	  <div id="about">
 	  
-		  <h3 id="title">About</h3>	  
+		  <h3 id="about-title">About</h3>	  
 	  
-		  <p id="title">Ecare is the infrastructure created
+		  <p id="about-desc">Ecare is the infrastructure created
 		  to house an ecosystem to lift storytellers 
 		  out of poverty.</p>
 		  
 		  <section id="ecosystem">
 		  
-		  	 <img class="icon" src="/icons&images/Icon.png"/>
+		  	 <img class="eco-icon" src="/icons&images/Icon.png"/>
 		  
-			  <h3 id="title">Ecosystem</h3>
+			  <h3 id="eco-title">Ecosystem</h3>
 			  
 			  <h4>Coming Soon</h4>
 	
@@ -95,9 +95,9 @@
 	      
 		 <section id="infrastructure">
 		 
-		 	  <img class="icon" src="/icons&images/Icon.png"/>
+		 	  <img class="infra-icon" src="/icons&images/Icon.png"/>
 		  
-			  <h3 id="title">Infrastructure</h3>
+			  <h3 id="infra-title">Infrastructure</h3>
 		 	  	     <!-- Change below link after test -->
 		 	  	     
 		      <a href="/roadmap-test" id="roadmap">Roadmap
