@@ -108,42 +108,29 @@ body {
 	background-color: #1f1f1f;
 }
 
+#about-desc{
+		margin-left: auto;
+    margin-right: auto;	
+	margin-bottom: 30px;
+	width: 400px;
+}
+
 	#ecosystem {
 		margin-left: auto;
 	    margin-right: auto;
-		width: 500px;
-		padding: 30px;
+		width: 300px;
+		padding: 40px;
 		border-radius: 5px;
-	    background: linear-gradient(181deg, #c21f02, #b3c202, #02c21c, #1902c2, #c202b1, #c26b02);
-	    background-size: 1200% 1200%;
-	
-	    -webkit-animation: AnimationName 19s ease infinite;
-	    -moz-animation: AnimationName 19s ease infinite;
-	    animation: AnimationName 19s ease infinite;
-	}
-	
-	@-webkit-keyframes AnimationName {
-	    0%{background-position:51% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:51% 0%}
-	}
-	@-moz-keyframes AnimationName {
-	    0%{background-position:51% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:51% 0%}
-	}
-	@keyframes AnimationName {
-	    0%{background-position:51% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:51% 0%}
+	    background-color: #f8f8fc;
+	    margin-bottom: 40px;
 	}
 	
 	#infrastructure {
 		margin-left: auto;
 	    margin-right: auto;
-		width: 500px;
+		width: 300px;
 		background-color: #f8f8fc;
-		padding: 30px;
+		padding: 40px;
 		border-radius: 5px;
 	}
 
